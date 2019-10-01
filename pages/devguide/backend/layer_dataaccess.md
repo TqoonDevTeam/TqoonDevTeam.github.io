@@ -1,8 +1,7 @@
 ---
 title: "DataAccess 계층"
-description: "서비스작성가이드 > 5. DataAccess 계층"
-categories: [devGuide, dao, dataaccess]
-tags: [devGuide, item, crud]
+description: "백엔드 작성 > 5. DataAccess 계층"
+tags: [개발가이드, 백엔드, 계층, DataAccess, DAL]
 history:
   - version: '1.0'
     date: '2019-09-09'
@@ -12,14 +11,14 @@ history:
 # 4. DataAccess 계층
 
 ## 4.1. 소개
-이 문서는 백앤드 개발 중 DataAccess 계층 개발에 대한 설명을 담고 있습니다.
+이 문서는 백엔드 개발 중 DataAccess 계층 개발에 대한 설명을 담고 있습니다.
 
 ## 4.2. DataAccess 계층 설명
-DataAccess 계층은 백앤드 개발 중 Database를 핸들링을 하기 위한 계층입니다.
+DataAccess 계층은 백엔드 개발 중 Database를 핸들링을 하기 위한 계층입니다.
 이 계층은 Database에 접근할 수 있는 최상위 계층이자 마지막 계층입니다.
 이 계층에서는 여러 DAO 객체를 생성하여 Database에 접근하며 테이블 뿐만 아니라 뷰, 프로시져 또는 특정목적의 접근방식의 필요로 모듈화 하여 구현할 수 있습니다.
 
-### 4.2.1. DataAccess 계층 구조
+### 4.2.1. DataAccess 계층 구성
 DataAccess 계층은 DAO(Data Access Object)객체와 DTO(Data Transfer Object)객체로 이루어져 있습니다.
 DataAccess 계층 개발은 데이터 처리적 측면의 핵심관심사항이 파편화 되지 않고 모듈화 되도록 주의하며 관리 해야 합니다.
 관리 방법은 모두 디렉토리 및 네임스페이스의 패턴화된 구조로 관리하고 있습니다.
@@ -44,25 +43,25 @@ DataAccess 계층에서 필요한 DAO객체와, DTO객체가 위치해야 하는
 
 ```diff
 .
-└── info
-    └── DAO /* MyDaoName */
-        └── Dao /* Dao 객체가 위치 */
-        └── Model /* Dao 객체가 사용하는 엔티티객체 또는 모델객체가 위치 */
+└──📁info
+    └──📁DaoName /* ex, Orders */
+        └──📁Dao /* Dao 객체가 위치 */
+        └──📁Model /* Dao 객체가 사용하는 엔티티객체 또는 모델객체가 위치 */
 ```
 
 ## 4.3. DataAccess 계층 생성
 DAO(Data Access Object)객체와 DTO(Data Transfer Object)객체로 구성됩니다.
-이 중 DAO객체는 ADO.NET 기술을 사용하며 이를 지원하는 Spring.NET의 템플릿 기반의 DAO작성을 따릅니다.
-티쿤은 자체개발한 Spring.NET의 AdoDaoSupport를 상속받은 ObjectDao 지원객체를 이용하여 일반화된 기능이 추가된 DAO객체를 만듭니다.
-AdoDaoSupport 파생셩인 자체 개발한 ObjectDao를 사용함으로써 티쿤의 DAO객체는 대부분 Generic 기술(Spring.Data.Generic)을 사용하며, 때문에 DTO객체가 항상 함께 구성됩니다.
+이 중 DAO객체는 ADO.NET 기술을 사용하며 이를 지원하는 Spring.NET의 템플릿 기반의 DAO작성 패턴을 따릅니다.
+티쿤은 자체개발한 Spring.NET의 AdoDaoSupport로 부터 파생된 ObjectDao 지원객체를 이용하여 일반화된 기능이 추가된 DAO객체를 만듭니다.
+ObjectDao를 사용함으로써 티쿤의 DAO객체는 대부분 Generic 기술(Spring.Data.Generic)을 사용하며, 때문에 DTO객체가 항상 함께 구성될 필요가 있습니다.
 
-### 4.3.1 DTO (Model, 엔티티) 객체 생성
+### 4.3.1 DTO (엔티티, 모델) 객체 생성
 티쿤의 DAO는 Spring.NET의 Spring.Data.Generic 네임스페이스에 포함된 기술을 사용합니다. 때문에 이 기술의 Generic 객체로 사용할 DTO 객체는 항상 필요합니다.
 DTO 객체는 조회 전용의 리터럴한 모델 객체로 사용하거나, Database의 테이블과 매칭되는 엔티티 객체를 통해 제공되는 일반화된 CRUD 기능을 시도할 수 있습니다.
 
 #### 4.3.1.1. 엔티티 객체 생성 (~DbItem)
 엔티티 객체는 Database의 테이블과 매칭됩니다.
-엔티티 객체는 테이블이름을 유추할 수 있는 클래스 명과 접미어 `DbItem`를 포함하거나 `TableInfo`특성을 사용하여 Database의 Table을 명시하여야 합니다.
+이 객체는 테이블이름을 유추할 수 있는 이름과 함께 접미어 **DbItem**를 사용하여 명명되거나, 또는 기능적 측면의 이름을 사용한다면 **TableInfo**특성을 사용하여 Database의 Table을 유추할 수 있도록 해야합니다.
 제공되는 특별한 특성과 함께 DAO객체에서 사용하면 Table의 입력, 수정, 삭제, 조회를 쉽게 작성할 수 있습니다.
 
 ```cs
@@ -84,11 +83,11 @@ public class SimpleUserInfoDbItem
 
 | attribute | 설명 |
 | --- | --- |
-| `TableInfo(tableName)` | 테이블명을 가르키는 정보가 들어있는 특성입니다.<br>클래스명이 접미어 `DbItem`을 사용하고 있다면, 이 특성을 선언하지 않아도 됩니다.<br>`tableName`을 전달하지 않으면, 클래스명으로 부터 유추 합니다.
+| `TableInfo(string tableName)` | 테이블명을 가르키는 정보가 들어있는 특성입니다.<br>클래스명이 접미어 `DbItem`을 사용하고 있다면, 이 특성을 선언하지 않아도 됩니다.<br>`tableName`을 전달하지 않으면, 클래스명으로 부터 유추 합니다.
 | `IdColumn` | 엔티티객체의 속성 중, 자동증가되는 Identity임을 명시하는 특성입니다.<br>이 특성이 선언되면 입력, 수정 시 해당 속성에 접근하지 않도록 처리됩니다.  |
 
 #### 4.3.1.2. Model 객체 생성
-모델 객체는 View나 Join된 데이터를 가져올 때 리터럴하게 사용되는 객체 입니다.
+모델 객체는 View나 Join된 데이터를 가져올 때, 리터럴하게 사용되는 객체 입니다.
 또는 특별하게 입력, 수정, 삭제가 필요할 경우에도 목적에 맞는 객체로써 생성될 수 있습니다.
 또한, 조회조건이 되는 파라메터 객체가 될 수도 있습니다.
 
@@ -122,13 +121,13 @@ Model과 엔티티 객체는 사용방법에 따라 접미어 규칙을 가지�
 | 접미어 | 용도 | 설명 |
 | --- | --- |
 | `DbItem` | 엔티티 | 테이블과 매칭되는 객체, 이 접미어가 선언된 객체는 Database Table과 매칭 됩니다. 즉, Table의 Column들이 이 객체의 속성이 됩니다.
-| `Item` | 엔티티 & 모델 | `DbItem`을 부터 상속한 객체들은 `Item`을 접미어를 갖습니다. 이 객체는 상속받은 `DbItem`객체 기준의 CUD 가 가능하며, 조회 시 Join 되는 컬럼은 `Item`객체에 추가적인 속성으로 선언합니다. |
+| `Item` | 엔티티 & 모델 | `DbItem`을 부터 상속한 객체들은 `Item`을 접미어를 갖습니다. 이 객체는 상속받은 `DbItem`객체 기준의 CRUD가 가능하며, 조회 시 Join 되는 컬럼은 `Item`객체에 추가적인 속성으로 선언합니다. |
 | `Param` | 파라메터 | 특별한 입력, 수정, 삭제, 조회에 필요한 파라메터 묶음 객체 입니다. 메시징 기반의 많은 파라메터가 필요한 경우 이 객체를 사용합니다. |
 | `VO` | 모델 | 조회결과 만을 표현하기 위한 읽기전용 객체 입니다. 이 객체로 입력, 수정, 삭제의 기능을 수행해서는 안됩니다.<br>알려진 VO의 의미및 용도와는 조금 다르지만 조회영역에서 리터럴하게 사용한다는 것에 공통점을 두고 있습니다. |
 
 ### 4.3.1.4. DTO 객체에서 사용하는 특성들
 아래는 DTO객체 생성시 사용되는 특성에 관한 설명입니다.
-이들 특성으로 `ObjectDao` 지원객체에서 테이블명과 컬럼명 매핑방식 등의 힌트를 얻고 동작하게 됩니다.
+이들 특성으로 **ObjectDao**지원객체에서 테이블명과 컬럼명 매핑방식 등의 힌트를 얻고 동작하게 됩니다.
 
 ```cs
 [TableInfo("tblMyTable")]
@@ -160,12 +159,10 @@ public class MyTableDbItem
 | `JsonParsing` | Property | 속성을 Json String으로 변환하여 전달 합니다. 또 반대로 Json String을 객체로 변환하여 속성에 할당합니다. |
 | `NameChanged` | Property | 속성의 명칭과 컬럼의 명칭이 다를 때, 실제 컬럼명과 매칭을 위해 사용합니다.<br>`[NameChanged(string ChangedName)]]` - 특성에 값을 선언하면 해당 속성은 자동 생성 쿼리에서 변경된 이름으로 동작합니다.<br>엔티티 객체는 가능한한 컬럼명과 일치 시키십시오. |
 
-
-
 ### 4.3.2. DAO (Data Access Object) 객체 생성
-DAO객체는 기본적으로 ADO.NET 기술을 사용하며 Spring.NET의 AdoDaoSupport 지원객체와 이를 상속받는 티쿤의 `ObjectDao` 객체를 상속받음으로 써 생성합니다.
+DAO객체는 기본적으로 ADO.NET 기술을 사용하며 Spring.NET의 AdoDaoSupport 지원객체로 부터 파생된 **ObjectDao** 객체를 상속받음으로 써 생성합니다.
 보통 DTO 객체를 통하여 단일 인스턴스 템플릿기반의 DAO를 생성합니다만, 필요한 경우 Generic 형태가 아닌 비템플릿 기반의 DAO또한 생성할 수 있습니다.
-단일 인스턴스 템플릿과의 차이를 두기위해 `ObjectDao`는 `ObjectDao<ModelClass>`와 `ObjectDao`로 존재 합니다.
+단일 인스턴스 템플릿과의 차이를 두기위해 **ObjectDao**는 **ObjectDao<ModelClass>**와 **ObjectDao**로 존재 합니다.
 이 객체들은 Spring.NET의 각각 Spring.Data.Object, Spring.Data.Generic의 AdoDaoSupport 지원객체를 상속받으며 그 기능과 함께 티쿤에서 제작한 추가적인 기본기능을 제공받습니다.
 
 ```cs
@@ -200,13 +197,13 @@ public class SimpleUserInfoDao2 : ObjectDao, ISimpleUserInfoDao2
 ```
 
 #### 4.3.2.1. ObjectDao의 기본제공 기능
-티쿤의 `ObjectDao` 지원객체는 Spring.NET의 AdoDaoSupport를 상속받습니다.
-때문에 `ObjectDao`를 상속받는 모든 DAO들은 AdoTemplate속성에 접근하여 Spring에서 제공하는 기능을 그대로 사용할 수 있습니다.
+티쿤의 **ObjectDao** 지원객체는 Spring.NET의 AdoDaoSupport로 부터 파생되었습니다.
+때문에 **ObjectDao**를 상속받는 모든 DAO들은 AdoTemplate속성에 접근하여 Spring에서 제공하는 기능을 그대로 사용할 수 있습니다.
 또한 티쿤에서 자체 제공하는 일반화된 편의 기능을 사용할 수 있습니다.
 
-아래는 여기에 추가로 `ObjectDao`에서 제공하는 일반화된 편의기능에 대해 설명합니다.
+아래는 여기에 추가로 **ObjectDao**에서 제공하는 일반화된 편의기능에 대해 설명합니다.
 
-##### `Insert<T>(T item)`
+##### Insert<T>(T item)
 전달된 객체에서 테이블명을 유추하여 새로운 행을 입력합니다.
 Identity 컬럼이 존재하면 증가된 Identity 값을 반환합니다.
 
@@ -215,7 +212,7 @@ MyDao.Insert(myTableItem);
 // SQL> INSERT INTO (col1, col2) VALUES ('', '')
 ```
 
-##### `Insert<T>(T item, bool triggerOff)`
+##### Insert<T>(T item, bool triggerOff)
 전달된 객체에서 테이블명을 유추하여 새로운 행을 입력합니다.
 Identity 컬럼이 존재하면 증가된 Identity 값을 반환합니다.
 트리거 OFF 옵션을 켜면, INSERT 트리거가 동작하지 않습니다.
@@ -226,7 +223,7 @@ MyDao.Insert(myTableItem, true);
 // SQL> INSERT INTO (col1, col2) VALUES ('', '')
 ```
 
-##### `Update<T>(T item)`
+##### Update<T>(T item)
 전달된 객체에서 테이블명과 Identity 속성을 유추합니다.
 유추된 정보와 객체의 내용으로 행을 갱신합니다.
 
@@ -235,7 +232,7 @@ MyDao.Update(myTableItem);
 // SQL> UPDATE MyTable SET col1 = '', col2 = '' WHERE id = 1234
 ```
 
-##### `Update<T>(T item, bool triggerOff)`
+##### Update<T>(T item, bool triggerOff)
 전달된 객체에서 테이블명과 Identity 속성을 유추합니다.
 유추된 정보와 객체의 내용으로 행을 갱신합니다.
 트리거 OFF 옵션을 켜면, UPDATE 트리거가 동작하지 않습니다.
@@ -246,7 +243,7 @@ MyDao.Update(myTableItem, true);
 // SQL> UPDATE MyTable SET col1 = '', col2 = '' WHERE id = 1234
 ```
 
-##### `Delete<T>(T item)`
+##### Delete<T>(T item)
 전달된 객체에서 Identity인 속성을 찾아 단건 1건을 삭제 합니다.
 또는, Identity인 속성을 찾을 수 없는 경우 모든 속성을 Where절 조건으로 하여 삭제합니다.
 
@@ -254,7 +251,7 @@ MyDao.Update(myTableItem, true);
 MyDao.Delete(myTableItem);
 ```
 
-##### `Delete<T>(int id)`
+##### Delete<T>(int id)
 전달된 타입에서 테이블명을 유추하고 해당 id컬럼을 조건으로 ROW를 삭제 합니다.
 
 ```cs
@@ -262,7 +259,7 @@ MyDao.Delete<MyTableDbItem>(10);
 // SQL>  DELETE MyTable WHERE id = 10;
 ```
 
-##### `T Query<T>(ItemQuery<T> query)`
+##### T Query<T>(ItemQuery<T> query)
 단건 조회를 지원합니다. 이 메소드는 DAO 객체 내에서 구현합니다. (protected)
 
 ```cs
@@ -285,7 +282,7 @@ return Query(new ItemQuery<string>
 | DbParam | Query 속성에 할당될 DbParameter를 지정합니다. |
 
 
-##### `IList<T> Query(ListQuery<T> query)`
+##### IList<T> Query(ListQuery<T> query)
 다건 조회를 지원합니다. 이 메소드는 DAO 객체 내에서 구현합니다. (protected)
 
 ```cs
@@ -307,7 +304,7 @@ return Query(new ListQuery<int>
 | DbParam | Query 속성에 할당될 DbParameter를 지정합니다. |
 
 
-##### `int Query(ExecuteQuery query)`
+##### int Query(ExecuteQuery query)
 단순 실행 후 영향받은 ROW를 반환하는 기능입니다.
 보통 프로시져를 호출하거나 삭제 및 갱신 할 때 사용합니다.
 이 메소드는 DAO 객체 내에서 구현합니다. (protected)
@@ -335,5 +332,6 @@ return Query(new ExecuteQuery
 Spring.NET은 객체로써의 RDBMS 작업을 위해 AdoQuery, MappingAdoQuery, AdoNonQuery, StoredProcedure와 같은 매우 편리한 추상객체를 지원합니다.
 하지만, 티쿤에서는 위의 나열된 지원객체들은 사용하지 않습니다.
 
-자체 제공하는 일반화된 기본 제공기능 외에는 위의 나열된 지원객체에서 지원하는 기능은 사용함으로써 얻는 가치보다 객체의 관리, 트랜잭션과 처리와같은 다향성이 발생시키는 비효율이 더 크다고 생각합니다.
-때문에, 티쿤에서는 위의 나열된 지원객체들은 사용하지 않습니다.
+위의 나열된 지원객체에서 지원하는 기능은 여럿 사용함으로써 다른 패턴이 발생하는 것을 주의하고 있습니다. 때문에, 티쿤에서는 위의 나열된 지원객체들은 사용하지 않습니다.
+
+자체 제공하는 일반화된 기본 제공기능을 사용하십시오.

@@ -9,7 +9,7 @@ devguide:
           url: "/devguide/application_diagram.html"
         - title: "기술구조"
           url: "/devguide/technical_structure.html"
-        - title: "백앤드 작성"
+        - title: "백엔드 작성"
           type: header
         - title: "1. QuickStart (Back-End)"
           url: "/devguide/backend/quick_start.html"

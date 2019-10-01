@@ -2,8 +2,8 @@
 title: "CRUD 흐름 - DAO 만들기"
 description: "CRUD 흐름 - DAO 만들기"
 category: 가이드
-subcategory: 백앤드
-tags: [crud, flow, dao, 백앤드]
+subcategory: 백엔드
+tags: [crud, flow, dao, 백엔드]
 ---
 
 ## DAO
