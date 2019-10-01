@@ -1,0 +1,13 @@
+{% if site.debug %}
+<div style="border: solid 1px red">
+    Debug
+    <pre>
+    <!-- {% for page in site.pages %}
+    {% assign paths = page.path | split: "/" %}
+    {% if paths[0] == "pages"%}
+    {{paths}}
+    {% endif %}
+    {% endfor %} -->
+    </pre>
+</div>
+{% endif %}
