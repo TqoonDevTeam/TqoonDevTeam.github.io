@@ -4,6 +4,4 @@
 
 layout: default
 ---
-<div id="page-content" class="page-content">
-asdf
-</div>
+티쿤 개발가이드

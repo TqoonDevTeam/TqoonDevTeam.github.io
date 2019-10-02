@@ -1,8 +1,7 @@
 ---
 title: "View 개발 with angularJs"
 description: "서비스작성가이드 > 3. View 개발 with angularJs"
-categories: [devGuide, dao]
-tags: [devGuide, item, crud]
+tags: [개발가이드, 프론트엔드, view, angualrJs]
 history:
   - version: '1.0'
     date: '2019-09-09'
@@ -15,13 +14,13 @@ history:
 이 문서는 프론트엔드 개발 중 View를 개발하는 방법에 대한 설명과 예제를 담고 있습니다.
 
 ## 3.2. View 개발
-View는 .NET MVC 기술과 함께 DOM의 제어를 위해 angularJs MVW기술을 사용하고 있습니다.
+View는 .NET MVC 기술과 함께 DOM의 제어를 위해 angularJs MVW 디자인패턴을 사용하고 있습니다.
 
 따라서, .NET MVC 전통적인 View 개발 패턴을 사용하여 DOM을 구성하고, 구성된 DOM은 angularJs를 이용하여 컨트롤 합니다.
 정적일 필요가 있는 페이지는 서버사이드 스크립트만을 이용하여 구성하되, 화면에서 동적인 반응이 필요한 경우 angularJs를 사용하여 페이지를 다시 랜더링하지 않고 빠른 응답을 할 수 있도록 처리하고 있습니다.
 그리고 모든 View는 모바일 친화적으로 만들어 지며, SPA 기술을 사용할 수도 있습니다.
 
-아래 모듈 종별 실제 파일 구성표를 참고하여 모듈종별에 따라 Controller와 View, Scripts 파일을 구성하고 개발하십시오.
+아래 모듈타입별 실제 파일 구성표를 참고하여 모듈타입에 따라 Controller와 View, Scripts 파일을 구성하고 개발하십시오.
 
 ```diff
 📁Areas
@@ -52,14 +51,14 @@ View는 .NET MVC 기술과 함께 DOM의 제어를 위해 angularJs MVW기술을
 ```
 
 ### 3.2.1. Controller 작성
-Controller는 모듈 종별에 맞는 지원객제를 상속받아 생성하게 됩니다.
+Controller는 모듈 타입에 맞는 지원객제를 상속받아 생성하게 됩니다.
 아래 각 Areas 지원객체별 Route규칙과 특징 확인하십시오.
 
 | Controller 지원객체 | Route규칙 | 특징 |
 | --- | --- |
-| AbstractPageController | {controller}/{action}/{?id} | 유일하게 주 페이지를 구성할 수 있는 컨트롤러 입니다. 이 컨트롤러 만이 ViewResult를 반환할 수 있습니다.<br>{action} 의 라우팅 기본값은 Index 입니다.<br>{?id} 는 옵션입니다.<br>다른 Areas에 의해 예약된 PageSub, Plugins 를 이름으로 하는 컨트롤러는 만들 수 없습니다.<br> |
-| AbstractPageSubController | PageSub/{controller}/{action}/{?id} | PageSub모듈의 부분 페이지를 구성할 수 있는 컨트롤러 입니다. 이 컨트롤러는 ViewResult를 반환할 수 없습니다. View의 반환은 오직 PartialViewResult 만을 반환합니다.<br>{action} 의 라우팅 기본값은 라우팅되는 controller명과 같습니다. 입니다.<br>{?id} 는 옵션입니다. |
-| AbstractPluginsSubController | Plugins/{controller}/{action}/{?id} | Plugins모듈의 부분 페이지를 구성할 수 있는 컨트롤러 입니다. 이 컨트롤러는 ViewResult를 반환할 수 없습니다. View의 반환은 오직 PartialViewResult 만을 반환합니다.<br>{action} 의 라우팅 기본값은 라우팅되는 controller명과 같습니다. 입니다.<br>{?id} 는 옵션입니다. |
+| AbstractPageController | {controller}/{action}/{?id} | 유일하게 라우팅되는 페이지를 구성할 수 있는 지원객체 입니다. 이 컨트롤러 만이 ViewResult를 반환할 수 있습니다.<br>{action} 라우팅 기본값은 Index 입니다.<br>{?id} 라우팅은 옵션입니다. |
+| AbstractPageSubController | PageSub/{controller}/{action}/{?id} | PageSub모듈의 부분 페이지를 구성할 수 있는 컨트롤러 입니다. 이 컨트롤러는 ViewResult를 반환할 수 없습니다. View의 반환은 오직 PartialViewResult 만을 반환합니다.<br>{action} 의 라우팅 기본값은 라우팅되는 controller명과 같습니다. 입니다.<br>{?id} 라우팅은 옵션입니다. |
+| AbstractPluginsSubController | Plugins/{controller}/{action}/{?id} | Plugins모듈의 부분 페이지를 구성할 수 있는 컨트롤러 입니다. 이 컨트롤러는 ViewResult를 반환할 수 없습니다. View의 반환은 오직 PartialViewResult 만을 반환합니다.<br>{action} 의 라우팅 기본값은 라우팅되는 controller명과 같습니다. 입니다.<br>{?id} 라우팅은 옵션입니다. |
 
 다음 Controller 작성 예제에서 모듈별 ReturnType에 주의 해 주십시오. (ActionResult or ViewResult, PartialViewResult)
 ```cs
@@ -149,10 +148,12 @@ Page, PageSub, Plugins 모듈에 ServicePlugins 모듈을 포함시킬 때 사�
 ### 3.2.3. angularJs 작성
 각각 랜더링되는 모듈의 DOM의 제어를 위해 angularJs 기술을 사용합니다.
 V2아키텍처의 View모듈들은 항상 자신의 이름과 같은 Javascript를 자동으로 로드합니다.
-때문에, angularJs로 작성되는 모듈과 여기서 만들어지는 controller, service, directive 등은 해당 모듈에 종속적이게 작성되어야 합니다.
+때문에, angularJs로 작성되는 모듈과 여기서 만들어지는 controller, service, directive 등은 해당 모듈에 종속적이게 됩니다.
 
 angularJs의 작성은 약속된 구현패턴이 있습니다.
-이 패턴은 angualrJs가 bootstrap 될 때, 매인 app에서 작성된 서브 모듈들이 동작할 수 있도록 자동으로 주입되고, 작성된 module이 일반화된 공통 module을 사용할 수 있도록 처리되는 기술적 지원과 일관된 패턴의 개발으로 코드 리딩과 유지보수에 도음을 주는 관리적 지원을 가능하게 합니다.
+일관된 구현패턴은 코드 리딩과 유지보수에 도움을 줍니다.
+그리고 자주 작성되는 코드의 양을 줄일 수 있습니다.
+패턴을 사용할 때, bootstrap될 메인 app에 작성된 서브 모듈들이 동작할 수 있도록 자동으로 주입되고, 외부에서 작성된 공통기능들이 작성되는 모듈에서 사용할 수 있도록 처리되는 기술적 지원이 있습니다.
 
 `$tq`는 그렇게 하기위한 스크립트 개발의 시작입니다.
 
@@ -184,11 +185,11 @@ $tq로 부터 angulaJs script를 작성할 때, module과 controller, service에
 
 | angularJs 모듈 | 명명 규칙 |
 | --- | --- |
-| module | {V2아키텍처모듈종별}.{V2아키텍처모듈명}<br>ex) `angular.module('Page.SimpleUserInfoManagement', [])'`<br>**속성설명**:<br>*V2아키텍처모듈종별, 모듈명*: 모듈이 위치하는 Areas명 입니다. |
-| controller | {V2아키텍처모듈종별}.{V2아키텍처모듈명}{_추가명명}Ctrl<br>ex) `angular.controller('Page.SimpleUserInfoManagementCtrl', [...])'`<br>**속성설명**:<br>*_추가명명*: 모듈에 컨트롤러가 2개 이상 필요한 경우 접두어 '_'와 함게 간략한 컨트롤러명을 명명하십시오. <br>controller 들은 접미어로 Ctrl을 갖습니다. |
-| service | {V2아키텍처모듈종별}.{V2아키텍처모듈명}.svc<br>ex) `angular.service('Page.SimpleUserInfoManagement.svc', [...])'`<br>모듈에서 $http를 사용하는 모든 호출 로직은 이 하나의 서비스에 구현하십시오. |
+| module | {V2아키텍처모듈타입}.{V2아키텍처모듈명}<br>ex) `angular.module('Page.SimpleUserInfoManagement', [])'`<br>**속성설명**:<br>*V2아키텍처모듈타입, 모듈명*: 모듈이 위치하는 Areas명 입니다. |
+| controller | {V2아키텍처모듈타입}.{V2아키텍처모듈명}{_추가명명}Ctrl<br>ex) `angular.controller('Page.SimpleUserInfoManagementCtrl', [...])'`<br>**속성설명**:<br>*_추가명명*: 모듈에 컨트롤러가 2개 이상 필요한 경우 접두어 '_'와 함게 간략한 컨트롤러명을 명명하십시오. <br>controller 들은 접미어로 Ctrl을 갖습니다. |
+| service | {V2아키텍처모듈타입}.{V2아키텍처모듈명}.svc<br>ex) `angular.service('Page.SimpleUserInfoManagement.svc', [...])'`<br>모듈에서 $http를 사용하는 모든 호출 로직은 이 하나의 서비스에 구현하십시오. |
 | directive, component, filtter etc.. | {유니크한명명}<br>ex) `angular.directive('myDirective', {...})'`<br><br>**속성설명**:<br>*유니크한명명*: directive와 component는 보통 그 존재만으로 다른 모듈에 중복되지 않고 유일성을 갖게 됩니다. 때문에 중복에 대한 고민보다 짧은 명칭을 선호합니다. |
-| i18n value | {V2아키텍처모듈종별}.{V2아키텍처모듈명}.Locale<br>ex) `angular.module('Page.SimpleUserInfoManagement.Locale', [])'`<br>i18n 언어팩은 접미어로 .Locale을 포함합니다. |
+| i18n value | {V2아키텍처모듈타입}.{V2아키텍처모듈명}.Locale<br>ex) `angular.module('Page.SimpleUserInfoManagement.Locale', [])'`<br>i18n 언어팩은 접미어로 .Locale을 포함합니다. |
 
 ###### controller 구현 규칙
 controller, directive, component 에서 사용되는 controller 함수의 구현 규칙을 설명합니다.
@@ -296,18 +297,3 @@ function SimpleUserInfoManagementCtrl($scope, Locale){ // Locale == 'Page.Simple
 아래는 plnker를 통해 상당히 실제 구현과 비슷하게 만든 예제 입니다.
 
 <iframe style="width:100%;height:600px" frameborder="0" src="//embed.plnkr.co/Zj08bTB0U9n8T5ETO8O3?sidebar=tree&autoCloseSidebar=false&show=SimpleUserInfoManagement.cshtml,preview&preview=true"></iframe>
-
-
-
-
-### 3.2.1. 서비스 계층 구조
-V2아키텍처에서 javascript는 단일파일로 압축됩니다.
-때문에, angularJscontroller 함수는 
-
-서비스 계층은 Service객체와 Model과 자식 Module(Service)계층으로 이루어져 있습니다.
-
-최상위 Service 객체는 고객의 요구사항 중심으로 자연어에 가까운 인터페이스와 구현 객체로 구성됩니다.
-Module계층은 서비스 계층의 구조와 유사하며 최상위 Service 객체가 기능적인 관점을 가지고 모듈화되어 있는 것이 Module 계층 입니다. 이 계층은 서비스 계층이 객체지향의 관점을 가진 구현코드가 파편화되지 않고 모듈화 될 수 있는 위치이기도 합니다.
-Model객체는 프리젠테이션 계층으로 보낼 리터널한 VO객체나, 서비스간 모듈간 통신을 위한 파라메터 객체가 존재하는 위치입니다.
-
-이 구조의 관리는 네임스페이스의 패턴화된 구조로 관리하고 있습니다.

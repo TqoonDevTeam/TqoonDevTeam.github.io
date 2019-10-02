@@ -1,0 +1,113 @@
+#sidebar-nav h6 {
+    padding-left: 60px;
+    padding-top: 10px;
+    position: relative;
+    display: block;
+    margin: 0;
+    border-left: 5px solid transparent;
+    color: rgb(137, 144, 153);
+}
+
+.books-history-item {
+    display: flex;
+    white-space: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 1px solid #e3e6f0;
+    border-right: 1px solid #e3e6f0;
+    border-bottom: 1px solid #e3e6f0;
+    line-height: 1.3;
+    width: 100%;
+    padding: 10px 10px;
+    clear: both;
+    font-weight: 400;
+}
+
+.books-history-item-avatar {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin-right: 14px;
+}
+
+.books-history-item-avatar>img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.books-history-info {
+    font-weight: 700
+}
+
+.books-history-info .desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.books-history-info>.date {
+    font-size: 80%;
+    font-weight: 400;
+    color: #b7b9cc;
+}
+
+#bookcontents {
+    position: fixed;
+    background: white;
+    font-size: 2rem;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#bookcontents i {
+    vertical-align: middle;
+}
+
+#bookcontents .dropdown-menu {
+    padding: 0;
+    min-width: 400px;
+}
+
+#bookcontents .panel {
+    margin: 0
+}
+
+#bookcontents .panel-heading {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+}
+
+#bookcontents ul {
+    padding-inline-start: 0px;
+}
+
+#bookcontents ul ul {
+    padding-inline-start: 15px;
+}
+
+#content [id]:before {
+    content: '';
+    display: block;
+    height: 88px;
+    margin-top: -88px;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 640px) {
+    #content [id]:before {
+        content: '';
+        display: block;
+        height: 139px;
+        margin-top: -139px;
+        visibility: hidden;
+    }
+}
+
+p {
+    white-space: pre-wrap;
+}

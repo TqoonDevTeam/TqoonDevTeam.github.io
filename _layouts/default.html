@@ -8,39 +8,48 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>{{page.title}}</title>
-    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-    <link href="/css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="/css/default.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs.min.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="/vendor/chartist/css/chartist-custom.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/common.css">
     {% if page.styles %}
     {% for path in page.styles %}
-    <link href="/css/{{path}}" rel="stylesheet"></script>
+    <link href="/css/{{path}}" rel="stylesheet">
+    </script>
     {% endfor %}
     {% endif %}
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
     <script src="/vendor/jquery/jquery.min.js"></script>
-    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/sb-admin-2.js"></script>
-    {% if layout.js %}
-    {% for path in layout.js %}
-    <script src="/js/{{path}}"></script>
-    {% endfor %}
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="/vendor/chartist/js/chartist.min.js"></script>
+    <script src="/js/klorofil-common.js"></script>
+    <script src="/js/common.js"></script>
+    {% if layout.bookcontents %}
+    <script src="/js/bookcontents.js"></script>
     {% endif %}
 </head>
 
 <body id="page-top">
     <div id="wrapper">
+        {% include topbar.html %}
         {% include sidebar.html %}
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
-                {% include topbar.html %}
-                <div class="container-fluid">
-                    {% include debug.html %}
-                    {{content}}
+                <div class="main">
+                    <div class="main-content">
+                        {% if layout.bookcontents %}
+                        {% include bookcontents.html %}
+                        {% endif %}
+                        <div class="container-fluid">
+                            {{content}}
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Footer -->

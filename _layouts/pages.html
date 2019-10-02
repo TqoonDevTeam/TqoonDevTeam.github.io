@@ -1,7 +1,13 @@
 ---
 layout: default
-js: ["page-content-helper.js"]
+bookcontents: true
 ---
-<div id="page-content" class="page-content d-none">
-    {{ content }}
+{% if page.nowarppanel %}
+{{ content }}
+{% else %}
+<div class="panel">
+    <div class="panel-body">
+        {{ content }}
+    </div>
 </div>
+{% endif %}

@@ -1,22 +1,23 @@
 {% assign sidebar = site.data.sidebars[include.key][include.subkey] %}
 {% if sidebar %}
-<li class="nav-item">
-  <a class="nav-link collapsed" data-toggle="collapse" data-target="#{{include.key}}"
-    aria-expanded="true" aria-controls="{{sidebar.title | url_encode}}">
-    <i class="fas fa-fw {{sidebar.fa}}"></i>
+<li>
+  <a href="#{{include.key}}_{{include.subkey}}" data-toggle="collapse" class="collapsed">
+    <i class="fa fa-fw {{sidebar.fa}}"></i>
     <span>{{sidebar.title}}</span>
+    <i class="icon-submenu lnr lnr-chevron-left"></i>
   </a>
-  <div id="{{include.key}}" class="collapse" aria-labelledby="{{include.key}}"
-    data-parent="#accordionSidebar">
-    <div class="bg-white py-2 collapse-inner rounded">
+  <div id="{{include.key}}_{{include.subkey}}" class="collapse">
+    <ul class="nav">
       {% for item in sidebar.items %}
-      {% if item.type == "header" %}
-      <h6 class="collapse-header">{{item.title}}</h6>
-      {% else %}
-      <a class="collapse-item" href="{{sidebar.baseurl}}{{item.url}}">{{item.title}}</a>
-      {% endif %}
+      <li>
+        {% if item.type == "header" %}
+        <h6 class="collapse-header">{{item.title}}</h6>
+        {% else %}
+        <a href="{{sidebar.baseurl}}{{item.url}}">{{item.title}}</a>
+        {% endif %}
+      </li>
       {% endfor %}
-    </div>
+    </ul>
   </div>
 </li>
 {% endif %}

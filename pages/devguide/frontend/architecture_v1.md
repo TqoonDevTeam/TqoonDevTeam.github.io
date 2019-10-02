@@ -1,7 +1,7 @@
 ---
 title: "V1 아키텍처"
 description: "프론트엔드 작성 > 2. V1 아키텍처"
-tags: [개발가이드, V2아키텍처]
+tags: [개발가이드, 프론트엔드, V1아키텍처]
 history:
   - version: '1.0'
     date: '2019-09-09'

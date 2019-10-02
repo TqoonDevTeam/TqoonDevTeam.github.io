@@ -1,0 +1,25 @@
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+        <i class="lnr lnr-history" data-toggle="tooltip" data-placement="bottom" title="개정이력"></i>
+    </a>
+    <ul class="dropdown-menu">
+        {% for his in page.history %}
+        <li>
+            <div class="books-history-item">
+                <div class="books-history-item-avatar">
+                    {% if site.data.profile[his.user].git %}
+                    <img src="//github.com/{{site.data.profile[his.user].git}}.png?size=60"
+                        alt="">
+                    {% else %}
+                    <div>{{his.user}}</div>
+                    {% endif %}
+                </div>
+                <div class="books-history-info">
+                    <div class="desc">{{his.desc}}</div>
+                    <div class="date">{{his.user}} · {{his.date}}</div>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</li>

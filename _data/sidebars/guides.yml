@@ -1,12 +1,12 @@
 devguide:
     title: "개발가이드"
     baseurl: "/pages"
-    fa: "fa-folder"
+    fa: "fa-book"
     items:
         - title: "아키텍처"
           type: header
-        - title: "어플리케이션 구성도"
-          url: "/devguide/application_diagram.html"
+        - title: "프로젝트 구성"
+          url: "/devguide/projectlist.html"
         - title: "기술구조"
           url: "/devguide/technical_structure.html"
         - title: "백엔드 작성"
