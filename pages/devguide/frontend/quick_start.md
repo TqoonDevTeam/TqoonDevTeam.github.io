@@ -15,10 +15,10 @@ history:
 
 ## 1.2. 프론트엔드(Front-End) 서비스 설명
 티쿤의 프론트엔드 개발은 .NET MVC 기술을 사용하며 IIS에서 서비스 됩니다.
-이들 웹 에플리케이션은 모바일 친화적이며, 향후 SPA 아키텍처를 포함하고 있습니다.
+이들 웹 에플리케이션은 모바일 친화적이며, SPA지원을 위한 아키텍처를 포함하고 있습니다.
 그리고 jQuery, momentjs, underscore, angularJs와 같은 익숙하고 널리 사용되는 자바스크립트 라이브러리가 포함되어 있습니다.
 
-티쿤은 몇가지 상징될만한 기술들의 조합으로 개발하고 있으며, 이를 명명하여 웹 에플리케이션의 기술분표를 구분 짓고 있습니다.
+티쿤은 몇가지 상징될만한 기술들의 조합으로 개발하고 있으며, 이를 명명하여 웹 에플리케이션의 기술분포를 구분 짓고 있습니다.
 
 | 기술명명 | 사용기술 | 프로젝트 |
 | --- | --- | --- |
@@ -74,8 +74,8 @@ public class SimpleUserInfoManagementController : AbstractPageController
   }
 }
 ```
-컨트롤러는 이미 고객의 니즈에 가까운 자연어에 가까운 인터페이스를 가지는 서비스 객체를 호출합니다.
-때문에, 컨트롤러들에 구현된 많은 주소는 서비스 객체의 명과 같거나 비슷하게 됩니다.
+컨트롤러는 이미 사용자의 요구를 반영한 자연어에 가까운 인터페이스를 가지는 서비스 객체를 호출합니다.
+때문에, 컨트롤러들에 구현된 많은 메소드는 서비스 객체의 명과 같거나 비슷하게 됩니다.
 
 ### 1.3.2. View 만들기 (cshtml)
 티쿤의 웹 에플리케이션의 화면 구성은 헤더, 푸터, 메뉴 등 일반화 할 수 있는 많은 것들이 공통화 되어 있고 layout 의해 자동으로 include 됩니다.
@@ -112,8 +112,8 @@ public class SimpleUserInfoManagementController : AbstractPageController
 ```
 
 ### 1.3.3. View Controller 만들기 (js)
-웹 에플리케이션은 서버사이드 스크립트(cshtml, aspx, razor)에 의해 구성되고 DOM의 컨트롤을 위해 javascript를 사용합니다.
-티쿤의 웹 에플리케이션은 여기서 좀 더 빠른 응답과 향상된 UX를 위해 angularJs의 MVC 패턴을 사용하고 있습니다.
+웹 에플리케이션은 서버사이드 스크립트(cshtml, aspx)에 의해 구성되고 DOM의 컨트롤을 위해 javascript를 사용합니다.
+티쿤의 웹 에플리케이션은 여기서 좀 더 빠른 응답과 향상된 UX를 위해 angularJs의 MVW 패턴을 사용하고 있습니다.
 View는 자신의 DOM을 컨트롤하기 위해 하나이상의 javascript로 된 controller를 갖게 됩니다.
 아래의 예제는 View를 컨트롤하기 위한 javascript 예제 입니다.
 

@@ -1,7 +1,7 @@
 ---
 title: "V2 아키텍처"
 description: "프론트엔드 작성 > 2. V2 아키텍처"
-tags: [개발가이드, V2 아키텍처]
+tags: [개발가이드, 프론트엔드, V2, 아키텍처]
 history:
   - version: '1.0'
     date: '2019-09-09'
@@ -15,13 +15,13 @@ history:
 V2아키텍처는 .NET MVC 기술과 jQuery, angularJs로 이루어져 있으며 여러 유용한 외부 라이브러리를 함께 포함하고 있습니다.
 
 ## 2.2. 모듈
-V2아키텍처는 기능적인 관점에서 **모듈**이라는 단위로 응집성을 갖으며 물리적인 파일을 갖게 됩니다.
-때문에 모듈은 기능제공을 위한 Controller와 View, Javascript, Css와 같은 파일들의 집합을 의미하기도 합니다.
+V2아키텍처는 기능적인 관점에서 **모듈**이라는 단위로 응집성을 갖으며 물리적인 파일들의 집합으로 구분됩니다.
+때문에 **모듈**은 컴포넌트 이며, Controller와 View, Javascript, Css와 같은 파일들의 집합을 의미하기도 합니다.
 
 이러한 모듈은 재사용이 가능하며, 한 모듈이 다른 모듈을 포함하여 새로운 모듈을 만들수도 있습니다.
 
 ### 2.2.1. 모듈의 구성
-V2아키텍처는 전통적인 .NET MVC 기술과 DOM의 제어를 위해 MVC디자인 패턴을 제공하는 angularJs Framework를 사용하여 구성됩니다.
+V2아키텍처는 전통적인 .NET MVC 기술과 DOM의 제어를 위해 angularJs Framework를 사용하여 구성됩니다.
 - .NET MVC
   - **Model** (razor view model)
   - **View** (cshtml)
@@ -49,10 +49,10 @@ V2아키텍처는 전통적인 .NET MVC 기술과 DOM의 제어를 위해 MVC디
 ```
 
 #### 2.2.1.1 모듈의 자동 로드
-전통적인 .NET MVC 기술 에서는 Route된 주소로부터 Model, View, Controller가 Route 규칙기반으로 로드되지만, 추가적으로 필요한 외부 파일은 View에서 구현해야 합니다.
+전통적인 .NET MVC 기술 에서는 Route된 주소로부터 Model, View, Controller가 Route 규칙으로 부터 로드되지만, 추가적으로 필요한 구현과 외부 참조 파일은 View에서 구현하거나 참조해야 합니다.
 하지만, V2아키텍처에서는 ViewEngine이 View 파일이 위치한 디렉토리 안의 동일한 View이름을 가지는 다른 정적 컨텐츠들을 자동으로 로드합니다.
 
-전통적으로 개발자는 모듈에서 사용하는 외부 컨텐츠를 .NET MVC의 seciton을 이용하여 구성하지만, 아래의 예시와 같은 개발패턴은 V2아키텍처에서 사용하지 않습니다.
+전통적으로 개발자는 View에서 사용하는 외부 컨텐츠를 .NET MVC의 seciton을 이용하여 구성하지만, 아래의 예제와 같은 개발패턴은 V2아키텍처에서 사용하지 않습니다.
 ```html
 <!-- 전통적인 .NET MVC의 section을 이용한 외부 컨텐츠 포함 구문, V2아키텍처에서는 사용되지 않습니다. -->
 @styles <!-- 사용하지 않음 -->
@@ -68,13 +68,15 @@ V2아키텍처는 전통적인 .NET MVC 기술과 DOM의 제어를 위해 MVC디
 }
 ```
 
-V2아키텍처에 의해 자동으로 로드 된, 실제 파일 구성으로 부터 자동 로드된 내용
+V2아키텍처에 의해 자동으로 로드되는 예제
 ```html
 ...
 <head>
+  <!-- SimpleUserInfomanagement 모듈의 자동로드 -->
   <link rel="stylesheet" href="/Model/SimpleUserInfomanagement/Index.css">
   <script src="/Model/SimpleUserInfomanagement/Index.js"></script>
   <script src="/Model/SimpleUserInfomanagement/i18n/Index-locale{userNation}.js"></script>
+  <!-- SimpleUserInfomanagement 모듈의 자동로드 End -->
 </head>
 ...
 <!-- Index.cshtml Start -->
@@ -84,21 +86,20 @@ V2아키텍처에 의해 자동으로 로드 된, 실제 파일 구성으로 부
 <!-- Index.cshtml End -->
 ```
 
+### 2.2.2. 모듈의 타입
+모듈은 페이지를 구성하는 역활에 따라 타입이 나누어 지며, .NET MVC의 Areas 규칙과 동일하게 구분됩니다.
 
-### 2.2.2. 모듈의 종별
-V2아키텍처에서 페이지를 구성하는 방법에 따라 모듈의 종별이 나누어 지며, .NET MVC의 Areas와 같이 구분됩니다.
-
-| 모듈종별 및 Areas | 설명 |
+| 모듈타입 및 Areas | 설명 |
 | --- | --- |
 | Page | 페이지를 구성하는 모듈 입니다.<br>Page는 Url로 노출되며 다른 Plugins모듈이나 PageSub모듈을 포함하여 구성됩니다.<br>이 모듈에서는 다른 Plugins이나 PageSub등을 호출하거나 모듈들의 분기 및 버저닝 등 시스템적 로직과 매우 일반화된 기능만이 구현됩니다. |
 | PageSub | Plugins의 상위 모듈 입니다. 이 모듈은 필요한 기능이 여러 Plugins모듈들의 집합이나. 기능적 관점에서 다수의 파일들로 구현되어야 할 때 사용됩니다.  |
 | Plugins | 재사용 반드시 고려된 매우 응집도은 가장 작은단위의 기능을 표현한 모듈입니다. |
 
-#### 모둘 종별 실제 파일 구성
-모듈의 종별에 따라 .NET MVC의 PageArea 기술을 사용합니다.
+#### 모둘 타입 실제 파일 구성
+모듈의 타입에 따라 .NET MVC의 PageArea 기술을 사용합니다.
 앞서 **모듈의 파일 구성** 그림에서 설명한 내용이 실제로 PageArea 사용하는 파일구성에서는 어떻게 표현되는지 확인하십시오.
 
-모듈 종별 실제 파일 구성
+모듈 타입 실제 파일 구성
 ```diff
 📁Areas
 ├── 📁Page
@@ -108,7 +109,7 @@ V2아키텍처에서 페이지를 구성하는 방법에 따라 모듈의 종별
 |       └── 📁SimpleUserInfoManagement
 |           └── 📁i18n
 |           |   └── Index-locale.js
-|           └── Index.cshtml /* Page의 Action 라우팅은 기본 Index로 연결된다. */
+|           └── Index.cshtml /* Page Area의 Action 라우팅은 기본 Index로 연결된다. */
 ├── 📁PageSub
 |   ├── 📁Controllers
 |   |   └── MyPageSubController.cs
@@ -116,7 +117,7 @@ V2아키텍처에서 페이지를 구성하는 방법에 따라 모듈의 종별
 |       └── 📁MyPageSub
 |           └── 📁i18n
 |           |   └── MyPageSub-locale.js
-|           └── MyPageSub.cshtml /* PageSub의 Action 라우팅은 기본 모듈명으로 연결된다. */
+|           └── MyPageSub.cshtml /* PageSub Area의 Action 라우팅은 기본 모듈명으로 연결된다. */
 └── 📁Plugins
     ├── 📁Controllers
     |   └── MyPluginsController.cs
@@ -124,9 +125,9 @@ V2아키텍처에서 페이지를 구성하는 방법에 따라 모듈의 종별
         └── 📁MyPlugins
             └── 📁i18n
             |   └── MyPlugins-locale.js
-            └── MyPlugins.cshtml /* Plugins의 Action 라우팅은 기본 모듈명으로 연결된다. */
+            └── MyPlugins.cshtml /* Plugins Area의 Action 라우팅은 기본 모듈명으로 연결된다. */
 ```
-기본적으로 Page Area는 페이지를 만들기 위한 영역이며, 나머지 영역은 페이지 위에 적재되는 서브모듈(PartialView) 이라는 것을 기억해야 합니다.
+기본적으로 Page Area는 라우팅되는 페이지를 만들기 위한 영역이며, 나머지 영역은 페이지 위에 적재되는 서브모듈(PartialView) 또는 API의 역활을 합니다.
 다음의 V2 모듈의 적재구조 그림을 참고 하십시오.
 
 #### V2모듈의 적재구조
@@ -136,7 +137,7 @@ V2아키텍처에서 페이지를 구성하는 방법에 따라 모듈의 종별
 
 ### 2.2.3. V2아키텍처 모듈개념이 도입된 이유
 프론트엔드 서비스에 사용된 WebFrom과 .NET MVC 2 기술을 시작으로 한 많은 레거시 코드들은 페이지들이 필요로하는 script, style등의 외부 컨텐츠들이 오랜 시간동안 쓰여지고 지워져 왔습니다.
-이들 중 잘 관리되고 정리된 경우도 있지만 일부 그렇지 못한 코드들은 오랜 시간동안 쌓여 왔습니다.
+이들 중 잘 관리되고 정리된 경우도 있지만 그렇지 못한 코드들은 오랜 시간동안 쌓여 왔습니다.
 
 이렇게 관리되지 못하는 상황을 방지하고자 이러한 모듈방식의 아키텍처를 적용하게 되었습니다.
-기능은 기능적으로 모듈화 되고 응집되어 분리구현되며 각각의 책임하에 외부 컨텐츠들을 처리하게하여 프로젝트가 오랜시간 사용되더라도 앞선 문제들이 최소화 되도록 하였습니다.
+기능과 역활로 모듈화 되고 각각의 책임된 영역만들 처리하게하여 프로젝트가 오랜시간 사용되더라도 앞선 문제들이 최소화 되도록 하였습니다.

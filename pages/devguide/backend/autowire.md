@@ -76,7 +76,7 @@ Autowire 특성은 기본적으로 DI될 속성만을 가르킵니다.
 하지만 대상의 타입이 가지는 내부 속성을 정의하고 싶을 때, 같이 사용하는 특성이 있습니다.
 이 특성들은 XML 구성에서 Object의 Property 속성을 정의 하는 것과 유사한 기능을 제공합니다.
 
-#### `AdoTemplateName(string adoTemplateName)`
+#### AdoTemplateName(string adoTemplateName)
 Spring.NET 기술을 사용하는 DAO 객체는 AdoTemplate 정보가 주입되어야 합니다.
 때문에 AdoTemplate에 대한 구성이 Spring 컨텍스트에 등록되어 있어야 하며, 티쿤에서 이 구성은 동적이 아닌 사전 XML로 구성됩니다.
 
