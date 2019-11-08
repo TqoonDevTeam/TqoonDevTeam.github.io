@@ -57,8 +57,8 @@ Controller는 모듈 타입에 맞는 지원객제를 상속받아 생성하게 
 | Controller 지원객체 | Route규칙 | 특징 |
 | --- | --- |
 | AbstractPageController | {controller}/{action}/{?id} | 유일하게 라우팅되는 페이지를 구성할 수 있는 지원객체 입니다. 이 컨트롤러 만이 ViewResult를 반환할 수 있습니다.<br>{action} 라우팅 기본값은 Index 입니다.<br>{?id} 라우팅은 옵션입니다. |
-| AbstractPageSubController | PageSub/{controller}/{action}/{?id} | PageSub모듈의 부분 페이지를 구성할 수 있는 컨트롤러 입니다. 이 컨트롤러는 ViewResult를 반환할 수 없습니다. View의 반환은 오직 PartialViewResult 만을 반환합니다.<br>{action} 의 라우팅 기본값은 라우팅되는 controller명과 같습니다. 입니다.<br>{?id} 라우팅은 옵션입니다. |
-| AbstractPluginsSubController | Plugins/{controller}/{action}/{?id} | Plugins모듈의 부분 페이지를 구성할 수 있는 컨트롤러 입니다. 이 컨트롤러는 ViewResult를 반환할 수 없습니다. View의 반환은 오직 PartialViewResult 만을 반환합니다.<br>{action} 의 라우팅 기본값은 라우팅되는 controller명과 같습니다. 입니다.<br>{?id} 라우팅은 옵션입니다. |
+| AbstractPageSubController | PageSub/{controller}/{action}/{?id} | PageSub모듈의 부분 페이지를 구성할 수 있는 컨트롤러 입니다. 이 컨트롤러는 ViewResult를 반환할 수 없습니다. View의 반환은 오직 PartialViewResult 만을 반환합니다.<br>{action} 의 라우팅 기본값은 라우팅되는 controller명과 같습니다.<br>{?id} 라우팅은 옵션입니다. |
+| AbstractPluginsSubController | Plugins/{controller}/{action}/{?id} | Plugins모듈의 부분 페이지를 구성할 수 있는 컨트롤러 입니다. 이 컨트롤러는 ViewResult를 반환할 수 없습니다. View의 반환은 오직 PartialViewResult 만을 반환합니다.<br>{action} 의 라우팅 기본값은 라우팅되는 controller명과 같습니다.<br>{?id} 라우팅은 옵션입니다. |
 
 다음 Controller 작성 예제에서 모듈별 ReturnType에 주의 해 주십시오. (ActionResult or ViewResult, PartialViewResult)
 ```cs
