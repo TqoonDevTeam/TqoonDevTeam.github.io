@@ -162,7 +162,7 @@ public class MyTableDbItem
 ### 4.3.2. DAO (Data Access Object) 객체 생성
 DAO객체는 기본적으로 ADO.NET 기술을 사용하며 Spring.NET의 AdoDaoSupport 지원객체로 부터 파생된 **ObjectDao** 객체를 상속받음으로 써 생성합니다.
 보통 DTO 객체를 통하여 단일 인스턴스 템플릿기반의 DAO를 생성합니다만, 필요한 경우 Generic 형태가 아닌 비템플릿 기반의 DAO또한 생성할 수 있습니다.
-단일 인스턴스 템플릿과의 차이를 두기위해 **ObjectDao**는 ObjectDao<ModelClass>와 ObjectDao로 존재 합니다.
+단일 인스턴스 템플릿과의 차이를 두기위해 **ObjectDao**는 ObjectDao&lt;ModelClass&gt;와 ObjectDao로 존재 합니다.
 이 객체들은 Spring.NET의 각각 Spring.Data.Object, Spring.Data.Generic의 AdoDaoSupport 지원객체를 상속받으며 그 기능과 함께 티쿤에서 제작한 추가적인 기본기능을 제공받습니다.
 
 ```cs
