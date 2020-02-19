@@ -1,0 +1,12 @@
+{% assign items = include.model %}
+{% if items %}
+<ul class="nav">
+  {% for item in items %}
+    {% if item.items %}
+      {% include menu/withSub.html model=item %}
+    {% else %}
+      {% include menu/withoutSub.html model=item %}
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endif %}

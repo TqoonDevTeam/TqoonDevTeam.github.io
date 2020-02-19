@@ -1,10 +1,7 @@
 <div id="sidebar-nav" class="sidebar">
     <div class="sidebar-scroll">
         <nav>
-            <ul class="nav">
-                <li><a href="/"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-                {% include sidebar_part_by_data_sidebars_key.html key="guides" subkey="devguide" %}
-            </ul>
+            {% include menu/struct.html model=site.data.sidebars.menu %}
         </nav>
     </div>
 </div>
