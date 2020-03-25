@@ -1,4 +1,18 @@
 {% assign item = include.model %}
 <li>
-    <a href="{{item.url}}">{{item.title}}</a>
+    {% if item.url %}
+    <a href="{{item.url}}">
+
+
+      {% if item.fa %}
+      <i class="fa fa-fw {{item.fa}}"></i>
+      {% endif %}
+      <span>{{item.title}}</span>
+
+    </a>
+    {% else %}
+    <div class="q">{{item.title}}</div>
+    {% endif %}
 </li>
+
+

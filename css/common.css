@@ -111,3 +111,7 @@
 p {
     white-space: pre-wrap;
 }
+
+
+.h2, h2 {margin-top: 60px;}
+.h3, h3 {margin-top: 40px;}

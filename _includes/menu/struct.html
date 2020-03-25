@@ -5,7 +5,7 @@
     {% if item.items %}
       {% include menu/withSub.html model=item %}
     {% else %}
-      {% include menu/withoutSub.html model=item %}
+      {% include menu/item.html model=item %}
     {% endif %}
   {% endfor %}
 </ul>

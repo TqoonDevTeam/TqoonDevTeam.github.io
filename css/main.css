@@ -359,8 +359,20 @@ ul.notifications > li {
  ********************/
 .sidebar {
   z-index: 9; }
-  .sidebar .nav > li > a {
-    padding: 18px 30px;
+  .sidebar .nav .collapse, .sidebar .nav .collapsing {
+    margin-left: 10px; }
+  .sidebar .nav > li > div.q {
+    /* color:#666 !important; */
+    /* color: #fff !important; */
+    /* margin: 20px 0 0 50px; */
+    /* padding: 2px !important; */
+    /* background-color:#666; */
+    color: #fff !important;
+    font-size:1.2em !important;
+    /* font-weight: bold !important; */
+    }
+  .sidebar .nav > li > a, .sidebar .nav > li > div.q {
+    padding: 12px 20px;
     color: #AEB7C2;
     border-left: 5px solid transparent; }
     .sidebar .nav > li > a:hover, .sidebar .nav > li > a:focus, .sidebar .nav > li > a.active {
@@ -414,10 +426,10 @@ ul.notifications > li {
       top: -2px; }
     .sidebar .nav .nav {
       background-color: #252c35; }
-      .sidebar .nav .nav > li > a {
+      .sidebar .nav .nav > li > a, .sidebar .nav .nav > li > div.q {
         padding-left: 60px;
-        padding-top: 10px;
-        padding-bottom: 10px; }
+        padding-top: 5px;
+        padding-bottom: 5px; }
         .sidebar .nav .nav > li > a:focus, .sidebar .nav .nav > li > a.active {
           background-color: transparent;
           border-left-color: transparent; }

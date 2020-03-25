@@ -1,13 +1,14 @@
 {% assign item = include.model %}
+{% assign tag = "now" | date: "%N" %}
   <li>
-    <a href="#{{item.title}}" data-toggle="collapse" class="collapsed">
+    <a href="#{{tag}}" data-toggle="collapse" class="collapsed">
       {% if item.fa %}
       <i class="fa fa-fw {{item.fa}}"></i>
       {% endif %}
       <span>{{item.title}}</span>
       <i class="icon-submenu lnr lnr-chevron-left"></i>
     </a>
-    <div id="{{item.title}}" class="collapse">
+    <div id="{{tag}}" class="collapse">
       {% include menu/struct.html model=item.items %}
     </div>
   </li> 
