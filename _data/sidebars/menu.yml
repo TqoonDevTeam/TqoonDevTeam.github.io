@@ -9,56 +9,56 @@
 
 - title: "프로젝트"
   fa : "fa-send"
-  url: "/pages/devGuide/gettingStarted.html"
+  url: "/pages/devguide/gettingStarted.html"
 
 - title: "Coding Convention"
   fa : "fa-indent"
   items:
     - title: "C#"
-      url: "/pages/devGuide/codingConvention/csharp.html"
+      url: "/pages/devguide/codingConvention/csharp.html"
     - title: "javascript"
-      url: "/pages/devGuide/codingConvention/javascript.html"
+      url: "/pages/devguide/codingConvention/javascript.html"
 
 - title: "Database"
   fa: "fa-database"
   items:
     - title: "시작하기"
-      url: "/pages/devGuide/database/gettingStarted.html"
+      url: "/pages/devguide/database/gettingStarted.html"
     - title: "테이블 생성"
-      url: "/pages/devGuide/database/createTable.html"
+      url: "/pages/devguide/database/createTable.html"
     - title: "공통기능"
-      url: "/pages/devGuide/database/commonFunction.html"
+      url: "/pages/devguide/database/commonFunction.html"
     - title: "배포"
-      url: "/pages/devGuide/database/deploy.html"
+      url: "/pages/devguide/database/deploy.html"
 
 - title: "Libraries"
   fa: "fa-book"
   url: "test"
   items:
     # - title: "시작하기"
-    #   url: "/pages/devGuide/backend/quick_start.html"
+    #   url: "/pages/devguide/backend/quick_start.html"
     # - title: "-구조 - 각 라이브러리 역활, 참조 상황"
     #   url: "empty"
     - title: "계층 및 처리흐름"
-      url: "/pages/devGuide/backend/layers.html"
+      url: "/pages/devguide/backend/layers.html"
     - title: "DataAccess 계층"
-      url: "/pages/devGuide/backend/layer_dataaccess.html"
+      url: "/pages/devguide/backend/layer_dataaccess.html"
     - title: "Service 계층"
-      url: "/pages/devGuide/backend/layer_service.html"
+      url: "/pages/devguide/backend/layer_service.html"
     - title: "Autowire"
-      url: "/pages/devGuide/backend/autowire.html"
+      url: "/pages/devguide/backend/autowire.html"
     - title: "예외처리"
-      url: "/pages/devGuide/backend/exceptions.html"
+      url: "/pages/devguide/backend/exceptions.html"
     - title: "공통기능"
       items: 
         - title: "TCon"
-          url: "/pages/devGuide/libraries/tcon.html"
+          url: "/pages/devguide/libraries/tcon.html"
         - title: "CommonCode"
-          url: "/pages/devGuide/libraries/commonCode.html"
+          url: "/pages/devguide/libraries/commonCode.html"
         # - title: "L.T"
-        #   url: "/pages/devGuide/libraries/L.T.html"
+        #   url: "/pages/devguide/libraries/L.T.html"
         - title: "메일발송"
-          url: "/pages/devGuide/libraries/email.html"
+          url: "/pages/devguide/libraries/email.html"
 
 - title: "WebProject"
   fa: "fa-globe"
@@ -67,37 +67,37 @@
     - title: "Tqoon 1.0"
       items:
       - title: "아키텍처 및 개발"
-        url: "/pages/devGuide/frontend/architecture_v1.html"
+        url: "/pages/devguide/frontend/architecture_v1.html"
 
     - title: "Tqoon 2.0"
       items:
       - title: "QuickStart (Front-End)"
-        url: "/pages/devGuide/frontend/quick_start.html"
+        url: "/pages/devguide/frontend/quick_start.html"
       - title: "아키텍처"
-        url: "/pages/devGuide/frontend/architecture_v2.html"
+        url: "/pages/devguide/frontend/architecture_v2.html"
       - title: "View 개발"
-        url: "/pages/devGuide/frontend/dev_v2view.html"
+        url: "/pages/devguide/frontend/dev_v2view.html"
       - title: "예외처리"
-        url: "/pages/devGuide/frontend/exceptions.html"
+        url: "/pages/devguide/frontend/exceptions.html"
       - title: "메뉴구성"
-        url: "/pages/devGuide/webProject/tqoon2/linkTree.html"
+        url: "/pages/devguide/webProject/tqoon2/linkTree.html"
       - title: "Static Info"
-        url: "/pages/devGuide/webProject/tqoon2/staticInfo.html"
+        url: "/pages/devguide/webProject/tqoon2/staticInfo.html"
 
     - title: "Partner"
       items:
         - title: "구조"
-          url: "/pages/devGuide/webProject/partner/architecture.html"
+          url: "/pages/devguide/webProject/partner/architecture.html"
         - title: "공통기능"
           items: 
           - title: "메뉴"
-            url: /pages/devGuide/webProject/partner/menu.html
+            url: /pages/devguide/webProject/partner/menu.html
           - title: "페이징처리"
-            url: /pages/devGuide/webProject/partner/pagination.html
+            url: /pages/devguide/webProject/partner/pagination.html
           # - title: "팝업"
-          #   url: /pages/devGuide/webProject/partner/popup.html
+          #   url: /pages/devguide/webProject/partner/popup.html
           - title: "CurrentSite"
-            url: "/pages/devGuide/webProject/partner/currentSite.html"
+            url: "/pages/devguide/webProject/partner/currentSite.html"
           
     
 
@@ -107,9 +107,9 @@
   items:
     - title: "개발산출물"
     - title: "Backend Test"
-      url: "/pages/devGuide/tdd/backend.html"
+      url: "/pages/devguide/tdd/backend.html"
     - title: "Frontend Test"
-      url: "/pages/devGuide/tdd/frontend.html"
+      url: "/pages/devguide/tdd/frontend.html"
       
 # - title: "테스트환경설정`"
 #   fa: "fa-check"
