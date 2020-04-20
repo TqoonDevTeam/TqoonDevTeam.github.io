@@ -7,6 +7,10 @@
 #   fa: "fa-object-group"
 #   url: "/pages/projectStruct.html"
 
+- title: "개발가이드"
+  fa : "fa-question"
+  url: "/pages/devguide/introduce.html"
+
 - title: "프로젝트"
   fa : "fa-send"
   url: "/pages/devguide/gettingStarted.html"
