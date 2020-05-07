@@ -9,7 +9,13 @@
 
 - title: "개발가이드"
   fa : "fa-question"
-  url: "/pages/devguide/introduce.html"
+  items: 
+    - title: "소개"
+      url: "/pages/devguide/guide/introduce.html"
+    - title: "Jekyll 설치"
+      url: "/pages/devguide/guide/jekyll.html"
+    - title: "가이드 작성"
+      url: "/pages/devguide/guide/write.html"
 
 - title: "프로젝트"
   fa : "fa-send"
@@ -40,29 +46,29 @@
   url: "test"
   items:
     # - title: "시작하기"
-    #   url: "/pages/devguide/backend/quick_start.html"
+    #   url: "/pages/devguide/libraries/quick_start.html"
     # - title: "-구조 - 각 라이브러리 역활, 참조 상황"
     #   url: "empty"
     - title: "계층 및 처리흐름"
-      url: "/pages/devguide/backend/layers.html"
+      url: "/pages/devguide/libraries/layers.html"
     - title: "DataAccess 계층"
-      url: "/pages/devguide/backend/layer_dataaccess.html"
+      url: "/pages/devguide/libraries/layer_dataaccess.html"
     - title: "Service 계층"
-      url: "/pages/devguide/backend/layer_service.html"
+      url: "/pages/devguide/libraries/layer_service.html"
     - title: "Autowire"
-      url: "/pages/devguide/backend/autowire.html"
+      url: "/pages/devguide/libraries/autowire.html"
     - title: "예외처리"
-      url: "/pages/devguide/backend/exceptions.html"
+      url: "/pages/devguide/libraries/exceptions.html"
     - title: "공통기능"
       items: 
         - title: "TCon"
-          url: "/pages/devguide/libraries/tcon.html"
+          url: "/pages/devguide/libraries/common/tcon.html"
         - title: "CommonCode"
-          url: "/pages/devguide/libraries/commonCode.html"
+          url: "/pages/devguide/libraries/common/commonCode.html"
         # - title: "L.T"
-        #   url: "/pages/devguide/libraries/L.T.html"
+        #   url: "/pages/devguide/libraries/common/L.T.html"
         - title: "메일발송"
-          url: "/pages/devguide/libraries/email.html"
+          url: "/pages/devguide/libraries/common/email.html"
 
 - title: "WebProject"
   fa: "fa-globe"
@@ -71,18 +77,18 @@
     - title: "Tqoon 1.0"
       items:
       - title: "아키텍처 및 개발"
-        url: "/pages/devguide/frontend/architecture_v1.html"
+        url: "/pages/devguide/webProject/tqoon1/architecture_v1.html"
 
     - title: "Tqoon 2.0"
       items:
       - title: "QuickStart (Front-End)"
-        url: "/pages/devguide/frontend/quick_start.html"
+        url: "/pages/devguide/webProject/tqoon2/quick_start.html"
       - title: "아키텍처"
-        url: "/pages/devguide/frontend/architecture_v2.html"
+        url: "/pages/devguide/webProject/tqoon2/architecture_v2.html"
       - title: "View 개발"
-        url: "/pages/devguide/frontend/dev_v2view.html"
+        url: "/pages/devguide/webProject/tqoon2/dev_v2view.html"
       - title: "예외처리"
-        url: "/pages/devguide/frontend/exceptions.html"
+        url: "/pages/devguide/webProject/tqoon2/exceptions.html"
       - title: "메뉴구성"
         url: "/pages/devguide/webProject/tqoon2/linkTree.html"
       - title: "Static Info"
@@ -95,13 +101,11 @@
         - title: "공통기능"
           items: 
           - title: "메뉴"
-            url: /pages/devguide/webProject/partner/menu.html
+            url: /pages/devguide/webProject/partner/common/menu.html
           - title: "페이징처리"
-            url: /pages/devguide/webProject/partner/pagination.html
-          # - title: "팝업"
-          #   url: /pages/devguide/webProject/partner/popup.html
+            url: /pages/devguide/webProject/partner/common/pagination.html
           - title: "CurrentSite"
-            url: "/pages/devguide/webProject/partner/currentSite.html"
+            url: "/pages/devguide/webProject/partner/common/currentSite.html"
           
     
 

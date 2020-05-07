@@ -11,10 +11,9 @@ history:
 
 
 # 티쿤 프로젝트 구성
----
+
 
 ## Web Project
----
 > <div>
 >   <div class="row">
 >     <div class="col col-md-3">
@@ -102,10 +101,9 @@ history:
 >   </div>
 > </div>
 
-
+<br><br>
 
 ## Worker Project
----
 > <div>
 >   <div class="row">
 >     <div class="col col-md-3">
@@ -141,8 +139,9 @@ history:
 >   </div>
 > </div>
 
+<br><br>
+
 ## API Project
----
 > <div>
 >   <div class="row">
 >     <div class="col col-md-3">
@@ -168,10 +167,9 @@ history:
 >   </div>
 > </div>
 
-
+<br><br>
 
 ## Libraries
----
 > <div>
 >   <div class="row">
 >     <div class="col col-md-3">
@@ -251,7 +249,7 @@ history:
 >
 > </div>
 
-
+<br><br>
 
 ## CCNET Worker
 > <div>
@@ -269,15 +267,9 @@ history:
 >   </div>
 > </div>
 
-
-
-
-
-
-
+<br><br>
 
 ## Database
----
 #### Local Database Engine
 
 > <div>
@@ -346,8 +338,6 @@ history:
 >     </div>
 >   </div>
 > </div>
-
-
 
 #### Global Database Engine
 

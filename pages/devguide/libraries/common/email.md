@@ -10,12 +10,10 @@ history:
 ---
 
 # 메일발송
----
 메일 컨텐츠 구성에 필요한 데이터가 (로고 이미지 / 헤더 / 푸터)는 웹 프로젝트에 포함 되어 있습니다.
 메일이 트리거 되는 라이브러리에서는 이를 알 수 없기 때문에 컨텐츠가 담긴 url 만 저장해 두고 별도 워커에서 메일을 발송합니다.
 
 ## QuickStart
----
 1. 웹프로젝트에 메일 컨텐츠 페이지를 생성합니다.
 2. 메일을 발송하려는 로직에서는 `JangBoGo.Service.Email.EmailService` 혹은 `Adprint.Service.AutoMail.AutoMailService` 를 이용하여 메일을 발송 풀에 추가합니다.
 
@@ -26,7 +24,6 @@ AutoMailService.NewMailContents(id, siteUrl);
 
 
 ## 컨텐츠 작성
----
 
 메일 컨텐츠는 메일을 발송하는 웹사이트에서 구성 합니다. 
 접근 경로는 //{siteUrl}/Mail/{mailType}/{id} 형식으로 되어 있습니다.
@@ -56,7 +53,6 @@ public ActionResult NewMailContents(int id)
 
 
 ## 전송풀에 추가
----
 ### EmailService 이용하기
 `JangBoGo.Service.Email.EmailService`
 `JangBoGo.dbo.Email` 테이블에 데이터를 삽입합니다.
@@ -82,7 +78,6 @@ EmailService.Insert(new EmailItem{    //Contents 내용을 바로 메일로 전�
 시스템에서 자동으로 발송하는 메일은 이 서비스를 이용하여 호출 됩니다. 보통 CCNET 워커에서 트리거 됩니다. 내부에서 `JangBoGo.Service.Email.EmailService` 호출합니다.
 
 ## 메일 전송 프로세스
----
 1. `JangBoGo.dbo.Email` 테이블에 데이터 삽입
 2. CCNET 워커에서 ContentsUrl 을 보고 Contents 에 컨텐츠 업데이트 하고 isContentsGet 컬럼을 업데이트
 3. CCNET 워커에서 Contents가 있는 데이터를 전송 하고 isSendComplete 컬럼을 업데이트
