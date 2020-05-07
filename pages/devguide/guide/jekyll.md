@@ -15,7 +15,7 @@ Jekyll은 정적 사이트 생성기로 markdown 문서를 html 문서로 자동
 
 ## 루비 설치
 
-https://rubyinstaller.org/downloads/
+<https://rubyinstaller.org/downloads/>
 
 jekyll 기동에 필요한 루비 권장 버전을 설치한다.
 
@@ -33,7 +33,7 @@ jekyll -v
 
 ## 개발 가이드 클론
 
-https://github.com/TqoonDevTeam/tqoondevteam.github.io.git
+<https://github.com/TqoonDevTeam/tqoondevteam.github.io.git>
 
 ## jekyll 구동
 
@@ -54,4 +54,4 @@ Configuration file: C:/Dev/Tqoon/tqoondevteam.github.io/_config.yml
 
 ## 페이지 접속
 
-http://localhost:4000 에서 확인
+<http://localhost:4000> 에서 확인
