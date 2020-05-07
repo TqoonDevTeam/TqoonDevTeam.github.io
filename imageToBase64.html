@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    여기에 붙여 넣으세요 : <input id='editor' type="text">
+    <br>
+    base 64 인코딩 : 
+    <input id='result' type="text"></div>
+    <button onclick="copyImg()">클립보드로 복사</button>
+
+    <script>
+        var editor = document.getElementById("editor");
+        var result = document.getElementById("result");
+
+        function handler(e) {
+            var orgEvent = e;
+            for (var i = 0; i < orgEvent.clipboardData.items.length; i++) {
+                if (orgEvent.clipboardData.items[i].kind == "file" && orgEvent.clipboardData.items[i].type == "image/png") {
+                    var imageFile = orgEvent.clipboardData.items[i].getAsFile();
+                    var fileReader = new FileReader();
+                    fileReader.onloadend = function () {
+                        result.value = fileReader.result;
+                        copyImg();
+                    }
+                    fileReader.readAsDataURL(imageFile);
+                    break;
+                }
+            }
+        }
+
+        function copyImg(){
+            result.select();
+            document.execCommand('copy'); 
+        }
+
+        editor.addEventListener("paste", handler, false);
+    </script>
+</body>
+</html>

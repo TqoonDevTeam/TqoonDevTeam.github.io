@@ -115,3 +115,12 @@ p {
 
 .h2, h2 {margin-top: 60px;}
 .h3, h3 {margin-top: 40px;}
+
+h1, h2, .h1, .h2 {
+    padding-bottom: .3em;
+    border-bottom: 1px solid #eaecef;
+}
+
+.panel-body img {
+    max-width: 100%;
+}

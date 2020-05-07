@@ -10,15 +10,13 @@ history:
 ---
 
 # Tqoon Config
----
 이용사별 설정 항목들을 저장하고 읽습니다. 이용사가 따로 설정하지 않은 값은 기본값을 사용합니다.
 **PG정보같은 보안이슈가 있는 항목을 TCon에 저장하면 안됩니다. TCon 에 저장된 값은 외부로 공개되어 있습니다.**
 
 ## Quick Start
----
 1. JangBoGo.dbo.TqoonBaseConfig 에 신규 항목 추가
 2. Partner 관리자 페이지에서 이용사별 설정값 수정
-3. 웹 프로젝트에서 `Tcon` 스태틱 객체의 `Val(string group, string key)` 메서드 사용하여 값 획득
+3. `Tcon` 스태틱 객체의 `Val(string group, string key)` 메서드 사용하여 값 획득
 
 ```cs
 var autoMailConfigItem = TCon.Val<Adprint.TqService.TqoonConfig.Model.AutoMailConfigItem>("AutoMail", "MakeBegin");
@@ -34,7 +32,6 @@ module.controller("ctrl", ["$scope", "$tCon", function($scope, $tCon){
 
 
 ## DataBase 구조
----
 
 | 테이블 | 설명 |
 | --- | --- |
@@ -44,7 +41,6 @@ module.controller("ctrl", ["$scope", "$tCon", function($scope, $tCon){
 
 
 ## 신규 설정 항목 생성
----
 JangBoGo.dbo.TqoonBaseConfig 에 신규 행을 추가합니다. 
 항목 추가기능은 따로 없으면 테이블에 직접 인서트 해야 합니다.
 
@@ -61,11 +57,9 @@ JangBoGo.dbo.TqoonBaseConfig 에 신규 행을 추가합니다.
 
 
 ## 이용사별 설정 항목 수정
----
 Parter 관리자 페이지 > 사이트 > [사이트설정](https://partner.adprint.jp/Config/Main) 항목에서 값 변경
 
 ## 웹 사이트에서 Tcon 사용
----
 웹페이지 최초 로딩시 `TCon` 스태틱 객체에 `TqoonBaseConfig`와 이용사의  `TqoonDetailConfig`를 로딩하고
 `TCon.Val` 로 값을 가지고 올때 `TqoonDetailConfig`에 값이 있으면 이 값을, 없으면 `TqoonBaseConfig`의 `defaultValue`의 값을 가지고 옵니다.
 

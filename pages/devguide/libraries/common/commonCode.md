@@ -10,12 +10,10 @@ history:
 ---
 
 # Common Code
----
 이용사별 카테고리나 상품 재질, 옵션의 코드 값을 다룹니다. 코드를 고객 측 언어로 출력하거나, 관리자측 언어로 변화합니다.
 개발 시점이나, 사용 용도에 따라 저장되는 디비 테이블이 달라서 직접사용이 어렵기 때문에 `JangBoGo.CommonCode.CommonCode` 클래스를 이용합니다.
 
 ## Quick Start
----
 
 ```cs
 // 결제방법 값인 code 를 관리자 언어로 변경
@@ -40,7 +38,6 @@ CommonCode에서 다루는 코드는 크게 세가지 종류입니다.
 
 
 ## DataBase 구조
----
 tblCodeType 와 tblCode 가 한쌍으로
 parterCodeType 와 parterCode 가 한쌍으로 동작합니다.
 각 테이블은 adprintNewDb와 OrderMall 데이터베이스에 별도 존재합니다.
