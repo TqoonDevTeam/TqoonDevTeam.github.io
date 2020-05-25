@@ -69,15 +69,15 @@ data-err 디렉티브를 사용하여 ParamException을 발생 시킬때  pramNa
 
 ~~~ html
 <button type="submit" class="join" tq-loading="regBtn">
-                    <span class="msg-err">
-                        <span data-err="required">{{::L.InputError_Required}}</span>
-                        <span data-err="email">{{::L.InputError_Email}}</span>
-                        <span data-err="$http_duplicate">{{::L.InputError_Duplicate}}</span>
-                        <span data-err="pattern,maxlength">{{::L.InputError_Password}}</span>
-                        <span data-err="$http_leaved">{{::L.InputError_Leaved}}</span>
-                    </span>
-                    <span>{{::L.Join}}</span>
-                </button>
+    <span class="msg-err">
+        <span data-err="required">{{::L.InputError_Required}}</span>
+        <span data-err="email">{{::L.InputError_Email}}</span>
+        <span data-err="$http_duplicate">{{::L.InputError_Duplicate}}</span>
+        <span data-err="pattern,maxlength">{{::L.InputError_Password}}</span>
+        <span data-err="$http_leaved">{{::L.InputError_Leaved}}</span>
+    </span>
+    <span>{{::L.Join}}</span>
+</button>
 ~~~
 
 ##### 5.2.2.1.2 form 사용하지 않는 경우
