@@ -3,10 +3,10 @@ title: "예외처리"
 description: "프론트엔드 작성 > 5. 예외처리"
 tags: [개발가이드, 프론트엔드, 예외]
 history:
-  - version: '1.0'
-    date: '2019-09-09'
-    user: '최동호'
-    desc: '초안'
+  - version: '1.1'
+    date: '2020-05-22'
+    user: '안현규'
+    desc: ''
 ---
 # 5. 예외처리
 
@@ -30,7 +30,61 @@ history:
 
 jQuery의 $.ajax, angularJs $http를 사용하여 Ajax기술을 사용할 때, 기본적으로 모든 에러를 핸들링하여 필요한 경우 화면에 표시 하거나 alert으로 알리게 됩니다.
 
-서버측에서 발생시키는 관리되는 예외는 [백엔드 6.예외처리](/pages/devguide/backend/exceptions.html)장에서 확인할 수 있습니다.
+서버측에서 exception 던지는 방식은 [Libraries 예외처리](pages/devguide/libraries/exceptions.html) 에서 확인할 수 있습니다.
+
+서버에서 발생시킨 ParamException을 클라이언트에서 의미있는 단어로 변경하여 처리하거나 에러를 표기할 수 있습니다. 크게 두 가지 경우로 나눌수 있습니다.
+
+* #####  form 사용하는 경우
+
+* ##### form 사용하지 않는 경우
+
+##### 5.2.2.1.1 form 사용하는 경우
+
+form을 사용하는 경우 formCheck 디렉티브를 사용합니다. 
+
+~~~ html
+<form name="userInfoForm" novalidate form-check>
+            <fieldset>
+                <div>
+                    <div>
+                        <label for="OrderUserInfo-name">{{::L.Name}}</label>
+                        <div class="box-input">
+                            <input type="text" id="OrderUserInfo-name" name="name" placeholder="{{::L.PlaceHolder_Name}}" ng-model="$ctrl.sel.name" required>
+                        </div>
+                    </div>
+                </div>
+               <div class="box-btn">
+                    <button type="submit" class="toggle-$ctrl.Select action" ng-click="evt.onUpdate()">
+                        <span class="msg-err"><span>{{::L.InvalidSubmit}}</span></span>
+                        <span>{{::L.Continue}}</span>   
+                    </button>
+                </div> 
+	    </fieldset>
+</form>
+~~~
+
+submit 버튼 클릭시 service에서 ParamException을 발생시킨 경우 msg-err class를 지정한 내용을 보여줍니다.
+
+data-err 디렉티브를 사용하여 ParamException을 발생 시킬때  pramName 인자로 표기할 메세지를 구분할 수 있습니다.
+
+~~~ html
+<button type="submit" class="join" tq-loading="regBtn">
+                    <span class="msg-err">
+                        <span data-err="required">{{::L.InputError_Required}}</span>
+                        <span data-err="email">{{::L.InputError_Email}}</span>
+                        <span data-err="$http_duplicate">{{::L.InputError_Duplicate}}</span>
+                        <span data-err="pattern,maxlength">{{::L.InputError_Password}}</span>
+                        <span data-err="$http_leaved">{{::L.InputError_Leaved}}</span>
+                    </span>
+                    <span>{{::L.Join}}</span>
+                </button>
+~~~
+
+##### 5.2.2.1.2 form 사용하지 않는 경우
+
+form을 사용하지 않고 exception 처리를 하는 부분은 아직 개발되지 않은 것으로 추측 됩니다.
+
+form을 사용하지 않을 경우의 패턴을 아시는 분은 추가 바랍니다.
 
 #### 5.2.2.2. Script Validation 예외
 Script에 의해 발생시키는 예외는 Form Validation 규칙을 이용한 예외와 직접 alert 메시지를 발생시키는 예외가 있습니다.
