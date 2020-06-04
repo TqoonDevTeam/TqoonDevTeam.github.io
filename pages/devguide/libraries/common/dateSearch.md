@@ -17,7 +17,7 @@ tags: [개발가이드, 템플릿 ]
      var _startDate = $("#startDate").val();
      var _endDate = $("#endDate").val();
           
-           $http.post('/Customer/GetPurchaseCustomerList', _startDate,_endDate).then(function (res) {
+           $http.post('/Customer/GetPurchaseCustomerList', { 'startDate': _startDate, 'endDate': _endDate}).then(function (res) {
                  $scope.DateResultList = res.data.List;
         });
 
