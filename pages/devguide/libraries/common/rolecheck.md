@@ -132,11 +132,12 @@ public class CurrentUser
 ```
 ```csharp
 
+//$CurrentUser.isInRole을 사용하여 권한을 확인할 수 있습니다.
 angular.module("Page.TqCafeBoardArticleModify", [])
 .controller("Page.TqCafeBoardArticleModify.PluginCtrl", ["$scope","$CurrentUser",
       function ($scope, $CurrentUser) {
           $scope.canDelete = function (userId) {
-              return $CurrentUser.UserId === userId || $CurrentUser.IsInRole("MasterAdmin, PartnerAdmin");
+              return $CurrentUser.UserId === userId || $CurrentUser.IsInRole("MasterAdmin, PartnerAdmin"); 
           }
 tqAddModule("Page.TqCafeBoardArticleModify");
 
