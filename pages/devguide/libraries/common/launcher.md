@@ -3,10 +3,10 @@ title: "TqoonLibrariesExecutor"
 description: "TqoonLibrariesExecutor "
 tags: [개발가이드, Woker, TqoonLibrariesExecutor]
 history:
-  - version: '1.0'
-    date: '2020-05-29'
+  - version: '1.1'
+    date: '2020-06-23'
     user: '이종기'
-    desc: '초안'
+    desc: '경로 추가'
 ---
 
 # TqoonLibrariesExecutor
@@ -42,3 +42,8 @@ TqoonLibrariesExecutor.exe /T:TqoonLib.Service.OrderInfo.OrderInfoService.GetOrd
 
 이 프로그램이 호출하는 객체에 `[Transaction]` 특성이 선언되어 있다면, 현재는 트랜잭션 처리가 되지 않습니다.
 그 이유는 최초 진입 인스턴스는 Spring이 아닌 이 프로그램에서 생성하며, 이후의 속성들의 Aop, DI를 Spring에서 관리하기 때문입니다. 이 것은, 해당 서비스를 호출하는 도메인 클래스를 Batch 프로젝트에 생성하여 호출함으로써 해결할 수 있습니다.
+
+### 경로
+프로젝트명 : TqoonCcnetPlugin
+
+경로 : C:\Dev\TqoonCcnetPlugin\TqoonLibrariesExecutor\bin\Debug\TqoonLibrariesExecutor.exe
