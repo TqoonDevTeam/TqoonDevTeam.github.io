@@ -59,6 +59,8 @@
       url: "/pages/devguide/libraries/autowire.html"
     - title: "예외처리"
       url: "/pages/devguide/libraries/exceptions.html"
+    - title: "Transaction"
+      url: "/pages/devguide/libraries/transaction.html"
     - title: "공통기능"
       items: 
         - title: "TCon"
