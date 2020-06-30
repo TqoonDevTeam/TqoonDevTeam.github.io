@@ -68,7 +68,7 @@ public class TransactionController
 }
 ```
 
-### 7.4.2 호출하는 메소드에 Transaction Attribute 사용
+### 7.2.2 호출하는 메소드에 Transaction Attribute 사용
 
 실제 호출하는 메소드에 `[Transaction]`을 사용해야합니다.
 
@@ -126,7 +126,7 @@ public class TransactionController
 }
 ```
 
-### 7.4.3 여러 DB에 Transaction 처리
+## 7.3 여러 DB에 Transaction 처리
 
 Provider에 Transaction Manager DB별로 선업합니다.
 Attribute로 Manager 사용을 명시적으로 선언합니다.
