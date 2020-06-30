@@ -8,13 +8,13 @@ history:
     user: '이정희'
     desc: '초안'
 ---
-# 7. Transaction
+# Transaction
 
-## 7.1 소개
+## 소개
 
 이 문서는 Transaction 처리 방법에 대해 설명하고 있습니다.
 
-## 7.2 Transaction 처리 방법
+## Transaction 처리 방법
 
 기본적으로 클래스의 public 메소드 위에 `[Transaction]`을 사용하면 Transaction 처리가 가능합니다.
 
@@ -25,7 +25,7 @@ public void Test(){
 }
 ```
 
-### 7.2.1 Autowire된 객체에서 Transaction 처리 가능
+### Autowire된 객체에서 Transaction 처리 가능
 
 Spring.NET이 생성한 인스턴스(Proxy 객체)에서만 Transaction 처리가 가능합니다. 
 그렇기 때문에 Autowire 된 객체에서 Transaction 처리가 가능합니다.
@@ -68,42 +68,9 @@ public class TransactionController
 }
 ```
 
-### 7.2.2 호출하는 메소드에 Transaction Attribute 사용
+### 호출하는 메소드에 Transaction Attribute 사용
 
-실제 호출하는 메소드에 `[Transaction]`을 사용해야합니다.
-
-```cs
-// Service 
-public class TransactionTestService : ITransactionTestService
-{
-  [Autowire]    
-  public ITransactionTestDao TransactionTestDao { get; set; }
-
-  public void Do1()
-  {
-    DoDbProc1();
-  }
-
-  [Transaction]
-  public void Do2()
-  {
-    DoDbProc2();
-  }
-
-  [Transaction]
-  public void DoDBProc1()
-  {
-    TransactionTestDao.Insert(1);
-    TransactionTestDao.Delete(2);
-  }
-
-  public void DoDBProc2()
-  {
-    TransactionTestDao.Insert(1);
-    TransactionTestDao.Delete(2);
-  }
-}
-```
+Spring에 의해 랩핑된 메서드를 호출할 때만 Transaction 처리가 가능하므로 객체 내부 호출은 Transaction 처리가 안 됩니다. 실제 호출하는 메소드에 `[Transaction]`을 사용해야 합니다.
 
 ```cs
 // Controller
@@ -126,7 +93,41 @@ public class TransactionController
 }
 ```
 
-## 7.3 여러 DB에 Transaction 처리
+```cs
+// Service 
+// [Transaction] 위치 주의
+public class TransactionTestService : ITransactionTestService
+{
+  [Autowire]    
+  public ITransactionTestDao TransactionTestDao { get; set; }
+
+  public void Do1()
+  {
+    DoDbProc1();
+  }
+
+  [Transaction]
+  public void DoDBProc1()
+  {
+    TransactionTestDao.Insert(1);
+    TransactionTestDao.Delete(2);
+  }
+
+  [Transaction]
+  public void Do2()
+  {
+    DoDbProc2();
+  }
+
+  public void DoDBProc2()
+  {
+    TransactionTestDao.Insert(1);
+    TransactionTestDao.Delete(2);
+  }
+}
+```
+
+## 여러 DB에 Transaction 처리
 
 Provider에 Transaction Manager DB별로 선업합니다.
 Attribute로 Manager 사용을 명시적으로 선언합니다.
