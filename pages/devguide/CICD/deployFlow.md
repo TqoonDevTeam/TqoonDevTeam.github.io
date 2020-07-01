@@ -39,7 +39,7 @@ history:
 
 ## 배포 전체 흐름
 
-![flow](./img/flow.png)
+![flow](./img/deployFlow.png)
 
 #### 코드병합신청
 > github를 PullRequest 코드를 병합을 진행하고 주소를 레드마인 이슈에 기재한다.
