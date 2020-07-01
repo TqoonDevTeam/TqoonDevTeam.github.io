@@ -78,7 +78,7 @@
         - title : "실행기"
           url: "/pages/devguide/libraries/common/launcher.html"
         - title : "2.0 권한체크"
-          url: "/pages/devguide/libraries/common/roleCheck.html"
+          url: "/pages/devguide/libraries/common/rolecheck.html"
 - title: "WebProject"
   fa: "fa-globe"
   items:
