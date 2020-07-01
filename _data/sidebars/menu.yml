@@ -119,9 +119,9 @@
   fa: "fa-refresh"          
   items:
     - title: "브랜치 전략"
-      url: /pages/devguide/cicd/branchStrategy.html
+      url: /pages/devguide/CICD/branchStrategy.html
     - title : "배포 플로우"
-      url: /pages/devguide/cicd/deployFlow.html
+      url: /pages/devguide/CICD/deployFlow.html
 - title: "외주개발"
   fa: "fa-outdent"
   items:
