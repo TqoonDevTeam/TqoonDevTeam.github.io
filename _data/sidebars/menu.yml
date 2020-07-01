@@ -111,10 +111,11 @@
             url: /pages/devguide/webProject/partner/common/pagination.html
           - title: "CurrentSite"
             url: "/pages/devguide/webProject/partner/common/currentSite.html"
-          
-    
-
-
+- title: "CI/CD"
+  fa: "fa-CI/CD"          
+  items:
+    - title: "브랜치 전략"
+      url: /pages/devguide/CICD/branchStrategy.html
 - title: "외주개발"
   fa: "fa-outdent"
   items:
