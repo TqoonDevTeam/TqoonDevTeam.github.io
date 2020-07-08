@@ -94,6 +94,10 @@
         url: "/pages/devguide/webProject/tqoon2/linkTree.html"
       - title: "Static Info"
         url: "/pages/devguide/webProject/tqoon2/staticInfo.html"
+      - title: "부가기능"
+        items:
+          - title: "GoodsOptionDependency사용법"
+            url: "/pages/devguide/webProject/tqoon2/additional/goodsoptiondendencyrules.html"
 
     - title: "Partner"
       items:
