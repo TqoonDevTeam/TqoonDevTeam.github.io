@@ -42,43 +42,43 @@ jQuery의 $.ajax, angularJs $http를 사용하여 Ajax기술을 사용할 때, �
 
 form을 사용하는 경우 formCheck 디렉티브를 사용합니다. 
 
-~~~ html
+```html
 <form name="userInfoForm" novalidate form-check>
-            <fieldset>
-                <div>
-                    <div>
-                        <label for="OrderUserInfo-name">{{::L.Name}}</label>
-                        <div class="box-input">
-                            <input type="text" id="OrderUserInfo-name" name="name" placeholder="{{::L.PlaceHolder_Name}}" ng-model="$ctrl.sel.name" required>
-                        </div>
-                    </div>
-                </div>
-               <div class="box-btn">
-                    <button type="submit" class="toggle-$ctrl.Select action" ng-click="evt.onUpdate()">
-                        <span class="msg-err"><span>{{::L.InvalidSubmit}}</span></span>
-                        <span>{{::L.Continue}}</span>   
-                    </button>
-                </div> 
-	    </fieldset>
+  <fieldset>
+    <div>
+      <div>
+        <label for="OrderUserInfo-name">{{::L.Name}}</label>
+        <div class="box-input">
+          <input type="text" id="OrderUserInfo-name" name="name" placeholder="{{::L.PlaceHolder_Name}}" ng-model="$ctrl.sel.name" required>
+        </div>
+      </div>
+    </div>
+    <div class="box-btn">
+      <button type="submit" class="toggle-$ctrl.Select action" ng-click="evt.onUpdate()">
+        <span class="msg-err"><span>{{::L.InvalidSubmit}}</span></span>
+        <span>{{::L.Continue}}</span>   
+      </button>
+    </div> 
+  </fieldset>
 </form>
-~~~
+```
 
 submit 버튼 클릭시 service에서 ParamException을 발생시킨 경우 msg-err class를 지정한 내용을 보여줍니다.
 
 data-err 디렉티브를 사용하여 ParamException을 발생 시킬때  pramName 인자로 표기할 메세지를 구분할 수 있습니다.
 
-~~~ html
+```html
 <button type="submit" class="join" tq-loading="regBtn">
-    <span class="msg-err">
-        <span data-err="required">{{::L.InputError_Required}}</span>
-        <span data-err="email">{{::L.InputError_Email}}</span>
-        <span data-err="$http_duplicate">{{::L.InputError_Duplicate}}</span>
-        <span data-err="pattern,maxlength">{{::L.InputError_Password}}</span>
-        <span data-err="$http_leaved">{{::L.InputError_Leaved}}</span>
-    </span>
-    <span>{{::L.Join}}</span>
+  <span class="msg-err">
+    <span data-err="required">{{::L.InputError_Required}}</span>
+    <span data-err="email">{{::L.InputError_Email}}</span>
+    <span data-err="$http_duplicate">{{::L.InputError_Duplicate}}</span>
+    <span data-err="pattern,maxlength">{{::L.InputError_Password}}</span>
+    <span data-err="$http_leaved">{{::L.InputError_Leaved}}</span>
+  </span>
+  <span>{{::L.Join}}</span>
 </button>
-~~~
+```
 
 ##### 5.2.2.1.2 form 사용하지 않는 경우
 

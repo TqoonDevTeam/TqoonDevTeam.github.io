@@ -59,6 +59,8 @@
       url: "/pages/devguide/libraries/autowire.html"
     - title: "예외처리"
       url: "/pages/devguide/libraries/exceptions.html"
+    - title: "Transaction"
+      url: "/pages/devguide/libraries/transaction.html"
     - title: "공통기능"
       items: 
         - title: "TCon"
@@ -71,6 +73,12 @@
           url: "/pages/devguide/libraries/common/email.html"
         - title: "배열 파라미터 처리"
           url: "/pages/devguide/libraries/common/arrayParam.html"
+        - title: "표준 날짜 검색 쿼리"
+          url: "/pages/devguide/libraries/common/dateSearch.html"
+        - title : "실행기"
+          url: "/pages/devguide/libraries/common/launcher.html"
+        - title : "2.0 권한체크"
+          url: "/pages/devguide/libraries/common/rolecheck.html"
 - title: "WebProject"
   fa: "fa-globe"
   items:
@@ -111,10 +119,13 @@
             url: /pages/devguide/webProject/partner/common/pagination.html
           - title: "CurrentSite"
             url: "/pages/devguide/webProject/partner/common/currentSite.html"
-          
-    
-
-
+- title: "CI/CD"
+  fa: "fa-refresh"          
+  items:
+    - title: "브랜치 전략"
+      url: /pages/devguide/CICD/branchStrategy.html
+    - title : "배포 플로우"
+      url: /pages/devguide/CICD/deployFlow.html
 - title: "외주개발"
   fa: "fa-outdent"
   items:
