@@ -102,6 +102,10 @@
         url: "/pages/devguide/webProject/tqoon2/linkTree.html"
       - title: "Static Info"
         url: "/pages/devguide/webProject/tqoon2/staticInfo.html"
+      - title: "부가기능"
+        items:
+          - title: "GoodsOptionDependency사용법"
+            url: "/pages/devguide/webProject/tqoon2/additional/goodsoptiondendencyrules.html"
       - title: "계산식"
         items:
         - title: "basicCalcData 데이터 변경 쿼리"
@@ -117,7 +121,6 @@
         - title: "범용 스티커 계산식"
           url: "/pages/devguide/webProject/tqoon2/formula/universalCalculationFormula.html"
     
-
     - title: "Partner"
       items:
         - title: "구조"
