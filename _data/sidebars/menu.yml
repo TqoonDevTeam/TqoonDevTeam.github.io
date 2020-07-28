@@ -102,6 +102,21 @@
         url: "/pages/devguide/webProject/tqoon2/linkTree.html"
       - title: "Static Info"
         url: "/pages/devguide/webProject/tqoon2/staticInfo.html"
+      - title: "계산식"
+        items:
+        - title: "basicCalcData 데이터 변경 쿼리"
+          items: 
+          - title: "BasicCalcData_AU"
+            url: "/pages/devguide/webProject/tqoon2/formula/basiccalcdata/BasicCalcData_AU.html"
+          - title: "BasicCalcData_MY"
+            url: "/pages/devguide/webProject/tqoon2/formula/basiccalcdata/BasicCalcData_MY.html"
+          - title: "BasicCalcData_SG"
+            url: "/pages/devguide/webProject/tqoon2/formula/basiccalcdata/BasicCalcData_SG.html"
+          - title: "BasicCalcData_US"
+            url: "/pages/devguide/webProject/tqoon2/formula/basiccalcdata/BasicCalcData_US.html"
+        - title: "범용 스티커 계산식"
+          url: "/pages/devguide/webProject/tqoon2/formula/universalCalculationFormula.html"
+    
 
     - title: "Partner"
       items:
