@@ -10,7 +10,7 @@ tags: [개발가이드, BasicCalcData ]
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -73,7 +73,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -108,7 +108,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -143,7 +143,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -178,7 +178,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1" , "coating" : "GLOSSY"      , "shape" : "CUT"             , "color" : "F4"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "1.406" }, { "sellUnit" : 200, "rate" : "0.766" }, { "sellUnit" : 300, "rate" : "0.552" }, { "sellUnit" : 400, "rate" : "0.446" }, { "sellUnit" : 500, "rate" : "0.382" }, { "sellUnit" : 1000, "rate" : "0.276" }]}
+              {"bandage" : "L1" , "coating" : "GLOSSY"      , "shape" : "CUT"             , "color" : "F4"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "1.406" }, { "sellUnit" : 200, "rate" : "0.766" }, { "sellUnit" : 300, "rate" : "0.552" }, { "sellUnit" : 400, "rate" : "0.446" }, { "sellUnit" : 500, "rate" : "0.382" }, { "sellUnit" : 1000, "rate" : "0.276" }]}
             , {"bandage" : "L1" , "coating" : "GLOSSY"      , "shape" : "THOMSON_DCUT", "color" : "F4"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "1.644" }, { "sellUnit" : 200, "rate" : "0.886" }, { "sellUnit" : 300, "rate" : "0.632" }, { "sellUnit" : 400, "rate" : "0.506" }, { "sellUnit" : 500, "rate" : "0.43"  }, { "sellUnit" : 1000, "rate" : "0.3"   }]}
             , {"bandage" : "L1" , "coating" : "GLOSSY"        , "shape" : "CUT"           , "color" : "F4B1", "cmRate" : [{ "sellUnit" : 100, "rate" : "2.038" }, { "sellUnit" : 200, "rate" : "1.082" }, { "sellUnit" : 300, "rate" : "0.764" }, { "sellUnit" : 400, "rate" : "0.604" }, { "sellUnit" : 500, "rate" : "0.508" }, { "sellUnit" : 1000, "rate" : "0.338" }]}
             , {"bandage" : "L1" , "coating" : "GLOSSY"        , "shape" : "THOMSON_DCUT", "color" : "F4B1", "cmRate" : [{ "sellUnit" : 100, "rate" : "2.278" }, { "sellUnit" : 200, "rate" : "1.202" }, { "sellUnit" : 300, "rate" : "0.842" }, { "sellUnit" : 400, "rate" : "0.664" }, { "sellUnit" : 500, "rate" : "0.556" }, { "sellUnit" : 1000, "rate" : "0.362" }]}
@@ -191,13 +191,12 @@ tags: [개발가이드, BasicCalcData ]
             , {"bandage" : "K1" , "coating" : "GLOSSY"      , "shape" : "CUT"             , "color" : "F4B1", "cmRate" : [{ "sellUnit" : 100, "rate" : "3.212" }, { "sellUnit" : 200, "rate" : "1.688" }, { "sellUnit" : 300, "rate" : "1.18"  }, { "sellUnit" : 400, "rate" : "0.926" }, { "sellUnit" : 500, "rate" : "0.774" }, { "sellUnit" : 1000, "rate" : "0.476" }]}
             , {"bandage" : "K1" , "coating" : "GLOSSY"      , "shape" : "THOMSON_DCUT", "color" : "F4B1", "cmRate" : [{ "sellUnit" : 100, "rate" : "3.618" }, { "sellUnit" : 200, "rate" : "1.89" },  { "sellUnit" : 300, "rate" : "1.314" }, { "sellUnit" : 400, "rate" : "1.028" }, { "sellUnit" : 500, "rate" : "0.854" }, { "sellUnit" : 1000, "rate" : "0.518" }]}
         ]
-    }
     ```
 * SG ST02
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -260,7 +259,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -295,7 +294,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -330,7 +329,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -365,7 +364,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"                , "color" : "F4"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "1.87" }, { "sellUnit" : 200, "rate" : "0.996" }, { "sellUnit" : 300, "rate" : "0.706" }, { "sellUnit" : 400, "rate" : "0.56"  }, { "sellUnit" : 500, "rate" : "0.472" }, { "sellUnit" : 1000, "rate" : "0.306"}]}
+              {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"                , "color" : "F4"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "1.87" }, { "sellUnit" : 200, "rate" : "0.996" }, { "sellUnit" : 300, "rate" : "0.706" }, { "sellUnit" : 400, "rate" : "0.56"  }, { "sellUnit" : 500, "rate" : "0.472" }, { "sellUnit" : 1000, "rate" : "0.306"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT"   , "color" : "F4"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.276"}, { "sellUnit" : 200, "rate" : "1.2"   }, { "sellUnit" : 300, "rate" : "0.84"  }, { "sellUnit" : 400, "rate" : "0.662" }, { "sellUnit" : 500, "rate" : "0.554" }, { "sellUnit" : 1000, "rate" : "0.346"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"                , "color" : "F4B1", "cmRate" : [{ "sellUnit" : 100, "rate" : "2.764"}, { "sellUnit" : 200, "rate" : "1.444" }, { "sellUnit" : 300, "rate" : "1.004" }, { "sellUnit" : 400, "rate" : "0.784" }, { "sellUnit" : 500, "rate" : "0.652" }, { "sellUnit" : 1000, "rate" : "0.396"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT"   , "color" : "F4B1", "cmRate" : [{ "sellUnit" : 100, "rate" : "3.17" }, { "sellUnit" : 200, "rate" : "1.646" }, { "sellUnit" : 300, "rate" : "1.138" }, { "sellUnit" : 400, "rate" : "0.884" }, { "sellUnit" : 500, "rate" : "0.732" }, { "sellUnit" : 1000, "rate" : "0.436"}]}
@@ -376,7 +375,7 @@ tags: [개발가이드, BasicCalcData ]
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -439,7 +438,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -474,7 +473,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -509,7 +508,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -544,7 +543,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"                , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.09"},  { "sellUnit" : 200, "rate" : "1.142"}, { "sellUnit" : 300, "rate" : "0.828" }, { "sellUnit" : 400, "rate" : "0.67" }, { "sellUnit" : 500, "rate" : "0.574"}, { "sellUnit" : 1000, "rate" : "0.394"}]}
+              {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"                , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.09"},  { "sellUnit" : 200, "rate" : "1.142"}, { "sellUnit" : 300, "rate" : "0.828" }, { "sellUnit" : 400, "rate" : "0.67" }, { "sellUnit" : 500, "rate" : "0.574"}, { "sellUnit" : 1000, "rate" : "0.394"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT"   , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.496"}, { "sellUnit" : 200, "rate" : "1.346"}, { "sellUnit" : 300, "rate" : "0.962" }, { "sellUnit" : 400, "rate" : "0.772"}, { "sellUnit" : 500, "rate" : "0.656"}, { "sellUnit" : 1000, "rate" : "0.434"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"                , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.13" }, { "sellUnit" : 200, "rate" : "1.662"}, { "sellUnit" : 300, "rate" : "1.174" }, { "sellUnit" : 400, "rate" : "0.93" }, { "sellUnit" : 500, "rate" : "0.782"}, { "sellUnit" : 1000, "rate" : "0.498"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT"   , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.536"}, { "sellUnit" : 200, "rate" : "1.866"}, { "sellUnit" : 300, "rate" : "1.31"  }, { "sellUnit" : 400, "rate" : "1.032"}, { "sellUnit" : 500, "rate" : "0.864"}, { "sellUnit" : 1000, "rate" : "0.538"}]}
@@ -561,7 +560,7 @@ tags: [개발가이드, BasicCalcData ]
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -624,7 +623,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -659,7 +658,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -694,7 +693,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -729,7 +728,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"                , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.114" }, { "sellUnit" : 200, "rate" : "1.16"  }, { "sellUnit" : 300, "rate" : "0.84"  }, { "sellUnit" : 400, "rate" : "0.682" }, { "sellUnit" : 500, "rate" : "0.586" }, { "sellUnit" : 1000, "rate" : "0.404"}]}
+              {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"                , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.114" }, { "sellUnit" : 200, "rate" : "1.16"  }, { "sellUnit" : 300, "rate" : "0.84"  }, { "sellUnit" : 400, "rate" : "0.682" }, { "sellUnit" : 500, "rate" : "0.586" }, { "sellUnit" : 1000, "rate" : "0.404"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT"   , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.52"  }, { "sellUnit" : 200, "rate" : "1.362" }, { "sellUnit" : 300, "rate" : "0.976" }, { "sellUnit" : 400, "rate" : "0.784" }, { "sellUnit" : 500, "rate" : "0.668" }, { "sellUnit" : 1000, "rate" : "0.444"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"                , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.17"  }, { "sellUnit" : 200, "rate" : "1.688" }, { "sellUnit" : 300, "rate" : "1.192" }, { "sellUnit" : 400, "rate" : "0.946" }, { "sellUnit" : 500, "rate" : "0.798" }, { "sellUnit" : 1000, "rate" : "0.508"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT"   , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.576" }, { "sellUnit" : 200, "rate" : "1.89"  }, { "sellUnit" : 300, "rate" : "1.328" }, { "sellUnit" : 400, "rate" : "1.048" }, { "sellUnit" : 500, "rate" : "0.878" }, { "sellUnit" : 1000, "rate" : "0.55" }]}
@@ -740,7 +739,7 @@ tags: [개발가이드, BasicCalcData ]
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -803,7 +802,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -838,7 +837,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -873,7 +872,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -908,7 +907,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"              , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.65" }, { "sellUnit" : 200, "rate" : "1.476"}, { "sellUnit" : 300, "rate" : "1.084" }, { "sellUnit" : 400, "rate" : "0.888" }, { "sellUnit" : 500, "rate" : "0.772" }, { "sellUnit" : 1000, "rate" : "0.544"}]}
+              {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"              , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.65" }, { "sellUnit" : 200, "rate" : "1.476"}, { "sellUnit" : 300, "rate" : "1.084" }, { "sellUnit" : 400, "rate" : "0.888" }, { "sellUnit" : 500, "rate" : "0.772" }, { "sellUnit" : 1000, "rate" : "0.544"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.056"}, { "sellUnit" : 200, "rate" : "1.68" }, { "sellUnit" : 300, "rate" : "1.22"  }, { "sellUnit" : 400, "rate" : "0.99"  }, { "sellUnit" : 500, "rate" : "0.852" }, { "sellUnit" : 1000, "rate" : "0.586"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"              , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.902"}, { "sellUnit" : 200, "rate" : "2.102"}, { "sellUnit" : 300, "rate" : "1.502" }, { "sellUnit" : 400, "rate" : "1.202" }, { "sellUnit" : 500, "rate" : "1.022" }, { "sellUnit" : 1000, "rate" : "0.67" }]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "4.308"}, { "sellUnit" : 200, "rate" : "2.304"}, { "sellUnit" : 300, "rate" : "1.638" }, { "sellUnit" : 400, "rate" : "1.304" }, { "sellUnit" : 500, "rate" : "1.102" }, { "sellUnit" : 1000, "rate" : "0.71" }]}
@@ -919,7 +918,7 @@ tags: [개발가이드, BasicCalcData ]
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -982,7 +981,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -1017,7 +1016,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -1052,7 +1051,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -1087,7 +1086,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"              , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.48" }, { "sellUnit" : 200, "rate" : "1.362"}, { "sellUnit" : 300, "rate" : "0.99"  }, { "sellUnit" : 400, "rate" : "0.804" }, { "sellUnit" : 500, "rate" : "0.692"}, { "sellUnit" : 1000, "rate" : "0.476"}]}
+              {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"              , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.48" }, { "sellUnit" : 200, "rate" : "1.362"}, { "sellUnit" : 300, "rate" : "0.99"  }, { "sellUnit" : 400, "rate" : "0.804" }, { "sellUnit" : 500, "rate" : "0.692"}, { "sellUnit" : 1000, "rate" : "0.476"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.886"}, { "sellUnit" : 200, "rate" : "1.566"}, { "sellUnit" : 300, "rate" : "1.126" }, { "sellUnit" : 400, "rate" : "0.906" }, { "sellUnit" : 500, "rate" : "0.774"}, { "sellUnit" : 1000, "rate" : "0.518"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"              , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.618"}, { "sellUnit" : 200, "rate" : "1.932"}, { "sellUnit" : 300, "rate" : "1.37"  }, { "sellUnit" : 400, "rate" : "1.088" }, { "sellUnit" : 500, "rate" : "0.92" }, { "sellUnit" : 1000, "rate" : "0.59" }]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "4.024"}, { "sellUnit" : 200, "rate" : "2.134"}, { "sellUnit" : 300, "rate" : "1.504" }, { "sellUnit" : 400, "rate" : "1.19"  }, { "sellUnit" : 500, "rate" : "1"    }, { "sellUnit" : 1000, "rate" : "0.63" }]}
@@ -1102,7 +1101,7 @@ tags: [개발가이드, BasicCalcData ]
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -1165,7 +1164,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -1200,7 +1199,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -1235,7 +1234,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -1270,7 +1269,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"              , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.626"}, { "sellUnit" : 200, "rate" : "1.46" }, { "sellUnit" : 300, "rate" : "1.072" }, { "sellUnit" : 400, "rate" : "0.876" }, { "sellUnit" : 500, "rate" : "0.76"  }, { "sellUnit" : 1000, "rate" : "0.534"}]}
+              {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"              , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.626"}, { "sellUnit" : 200, "rate" : "1.46" }, { "sellUnit" : 300, "rate" : "1.072" }, { "sellUnit" : 400, "rate" : "0.876" }, { "sellUnit" : 500, "rate" : "0.76"  }, { "sellUnit" : 1000, "rate" : "0.534"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.032"}, { "sellUnit" : 200, "rate" : "1.662"}, { "sellUnit" : 300, "rate" : "1.206" }, { "sellUnit" : 400, "rate" : "0.978" }, { "sellUnit" : 500, "rate" : "0.842" }, { "sellUnit" : 1000, "rate" : "0.576"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"              , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.862"}, { "sellUnit" : 200, "rate" : "2.078"}, { "sellUnit" : 300, "rate" : "1.482" }, { "sellUnit" : 400, "rate" : "1.186" }, { "sellUnit" : 500, "rate" : "1.008" }, { "sellUnit" : 1000, "rate" : "0.658"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "4.268"}, { "sellUnit" : 200, "rate" : "2.28" }, { "sellUnit" : 300, "rate" : "1.618" }, { "sellUnit" : 400, "rate" : "1.288" }, { "sellUnit" : 500, "rate" : "1.088" }, { "sellUnit" : 1000, "rate" : "0.7"  }]}
@@ -1286,7 +1285,7 @@ tags: [개발가이드, BasicCalcData ]
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -1349,7 +1348,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -1384,7 +1383,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -1419,7 +1418,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -1454,7 +1453,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1", "coating" : "GLOSSY"      , "shape" : "CUT"              , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "1.406"}, { "sellUnit" : 200, "rate" : "0.766"}, { "sellUnit" : 300, "rate" : "0.552" }, { "sellUnit" : 400, "rate" : "0.446" }, { "sellUnit" : 500, "rate" : "0.382"}, { "sellUnit" : 1000, "rate" : "0.276"}]}
+              {"bandage" : "L1", "coating" : "GLOSSY"      , "shape" : "CUT"              , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "1.406"}, { "sellUnit" : 200, "rate" : "0.766"}, { "sellUnit" : 300, "rate" : "0.552" }, { "sellUnit" : 400, "rate" : "0.446" }, { "sellUnit" : 500, "rate" : "0.382"}, { "sellUnit" : 1000, "rate" : "0.276"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY"      , "shape" : "THOMSON_DCUT" , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "1.644"}, { "sellUnit" : 200, "rate" : "0.886"}, { "sellUnit" : 300, "rate" : "0.632" }, { "sellUnit" : 400, "rate" : "0.506" }, { "sellUnit" : 500, "rate" : "0.43" }, { "sellUnit" : 1000, "rate" : "0.3"  }]}
             , {"bandage" : "L1", "coating" : "GLOSSY"      , "shape" : "CUT"              , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.038"}, { "sellUnit" : 200, "rate" : "1.082"}, { "sellUnit" : 300, "rate" : "0.764" }, { "sellUnit" : 400, "rate" : "0.604" }, { "sellUnit" : 500, "rate" : "0.508"}, { "sellUnit" : 1000, "rate" : "0.338"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY"      , "shape" : "THOMSON_DCUT" , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.278"}, { "sellUnit" : 200, "rate" : "1.202"}, { "sellUnit" : 300, "rate" : "0.842" }, { "sellUnit" : 400, "rate" : "0.664" }, { "sellUnit" : 500, "rate" : "0.556"}, { "sellUnit" : 1000, "rate" : "0.362"}]}
@@ -1473,7 +1472,7 @@ tags: [개발가이드, BasicCalcData ]
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -1536,7 +1535,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -1547,13 +1546,6 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 4000  , "marginRate" : 1.380 }
             , { "sellUnit" : 5000  , "marginRate" : 1.350 }
             , { "sellUnit" : 6000  , "marginRate" : 1.320 }
-            , { "sellUnit" : 7000  , "marginRate" : 1.290 }
-            , { "sellUnit" : 8000  , "marginRate" : 1.260 }
-            , { "sellUnit" : 9000  , "marginRate" : 1.230 }
-            , { "sellUnit" : 10000 , "marginRate" : 1.200 }
-            , { "sellUnit" : 20000 , "marginRate" : 1.190 }
-            , { "sellUnit" : 30000 , "marginRate" : 1.180 }
-            , { "sellUnit" : 40000 , "marginRate" : 1.170 }
             , { "sellUnit" : 50000 , "marginRate" : 1.160 }
             , { "sellUnit" : 60000 , "marginRate" : 1.150 }
             , { "sellUnit" : 70000 , "marginRate" : 1.140 }
@@ -1571,7 +1563,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -1606,7 +1598,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -1641,19 +1633,19 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"              , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "1.87" }, { "sellUnit" : 200, "rate" : "0.996"}, { "sellUnit" : 300, "rate" : "0.706" }, { "sellUnit" : 400, "rate" : "0.56"  }, { "sellUnit" : 500, "rate" : "0.472 }, { "sellUnit" : 1000, "rate" : "0.306"}]}
-            , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT" , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.276"}, { "sellUnit" : 200, "rate" : "1.2"  }, { "sellUnit" : 300, "rate" : "0.84"  }, { "sellUnit" : 400, "rate" : "0.662" }, { "sellUnit" : 500, "rate" : "0.554 }, { "sellUnit" : 1000, "rate" : "0.346"}]}
+              {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"              , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "1.87" }, { "sellUnit" : 200, "rate" : "0.996"}, { "sellUnit" : 300, "rate" : "0.706" }, { "sellUnit" : 400, "rate" : "0.56"  }, { "sellUnit" : 500, "rate" : "0.472"}, { "sellUnit" : 1000, "rate" : "0.306"}]}
+            , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT" , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.276"}, { "sellUnit" : 200, "rate" : "1.2"  }, { "sellUnit" : 300, "rate" : "0.84"  }, { "sellUnit" : 400, "rate" : "0.662" }, { "sellUnit" : 500, "rate" : "0.554"}, { "sellUnit" : 1000, "rate" : "0.346"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"              , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.764"}, { "sellUnit" : 200, "rate" : "1.444"}, { "sellUnit" : 300, "rate" : "1.004" }, { "sellUnit" : 400, "rate" : "0.784" }, { "sellUnit" : 500, "rate" : "0.652"}, { "sellUnit" : 1000, "rate" : "0.396"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT" , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.17" }, { "sellUnit" : 200, "rate" : "1.646"}, { "sellUnit" : 300, "rate" : "1.138" }, { "sellUnit" : 400, "rate" : "0.884" }, { "sellUnit" : 500, "rate" : "0.732"}, { "sellUnit" : 1000, "rate" : "0.436"}]}
         ]
     }
     ```
-
+    
 * SG SS03
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -1716,7 +1708,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -1751,7 +1743,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -1786,7 +1778,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -1821,14 +1813,14 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"              , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.09" }, { "sellUnit" : 200, "rate" : "1.142"}, { "sellUnit" : 300, "rate" : "0.828" }, { "sellUnit" : 400, "rate" : "0.67"  }, { "sellUnit" : 500, "rate" : "0.574"}, { "sellUnit" : 1000, "rate" : "0.394"}]}
+              {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"              , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.09" }, { "sellUnit" : 200, "rate" : "1.142"}, { "sellUnit" : 300, "rate" : "0.828" }, { "sellUnit" : 400, "rate" : "0.67"  }, { "sellUnit" : 500, "rate" : "0.574"}, { "sellUnit" : 1000, "rate" : "0.394"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT" , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.496"}, { "sellUnit" : 200, "rate" : "1.346"}, { "sellUnit" : 300, "rate" : "0.962" }, { "sellUnit" : 400, "rate" : "0.772" }, { "sellUnit" : 500, "rate" : "0.656"}, { "sellUnit" : 1000, "rate" : "0.434"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"              , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.13" }, { "sellUnit" : 200, "rate" : "1.662"}, { "sellUnit" : 300, "rate" : "1.174" }, { "sellUnit" : 400, "rate" : "0.93"  }, { "sellUnit" : 500, "rate" : "0.782"}, { "sellUnit" : 1000, "rate" : "0.498"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT" , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.536"}, { "sellUnit" : 200, "rate" : "1.866"}, { "sellUnit" : 300, "rate" : "1.31"  }, { "sellUnit" : 400, "rate" : "1.032" }, { "sellUnit" : 500, "rate" : "0.864"}, { "sellUnit" : 1000, "rate" : "0.538"}]}
-                , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"              , "color" : "F4F1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.13" }, { "sellUnit" : 200, "rate" : "1.662"}, { "sellUnit" : 300, "rate" : "1.174" }, { "sellUnit" : 400, "rate" : "0.93"  }, { "sellUnit" : 500, "rate" : "0.782 }, { "sellUnit" : 1000, "rate" : "0.498"}]}
-            , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT" , "color" : "F4F1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.536"}, { "sellUnit" : 200, "rate" : "1.866"}, { "sellUnit" : 300, "rate" : "1.31"  }, { "sellUnit" : 400, "rate" : "1.032" }, { "sellUnit" : 500, "rate" : "0.864 }, { "sellUnit" : 1000, "rate" : "0.538"}]}
+                , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"              , "color" : "F4F1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.13" }, { "sellUnit" : 200, "rate" : "1.662"}, { "sellUnit" : 300, "rate" : "1.174" }, { "sellUnit" : 400, "rate" : "0.93"  }, { "sellUnit" : 500, "rate" : "0.782"}, { "sellUnit" : 1000, "rate" : "0.498"}]}
+            , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT" , "color" : "F4F1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.536"}, { "sellUnit" : 200, "rate" : "1.866"}, { "sellUnit" : 300, "rate" : "1.31"  }, { "sellUnit" : 400, "rate" : "1.032" }, { "sellUnit" : 500, "rate" : "0.864"}, { "sellUnit" : 1000, "rate" : "0.538"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"              , "color" : "F4F1B1", "cmRate" : [{ "sellUnit" : 100, "rate" : "4.17" }, { "sellUnit" : 200, "rate" : "2.184"}, { "sellUnit" : 300, "rate" : "1.52"  }, { "sellUnit" : 400, "rate" : "1.19"  }, { "sellUnit" : 500, "rate" : "0.99" }, { "sellUnit" : 1000, "rate" : "0.602"}]}
-            , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT" , "color" : "F4F1B1", "cmRate" : [{ "sellUnit" : 100, "rate" : "4.576 }, { "sellUnit" : 200, "rate" : "2.386"}, { "sellUnit" : 300, "rate" : "1.656" }, { "sellUnit" : 400, "rate" : "1.292" }, { "sellUnit" : 500, "rate" : "1.072"}, { "sellUnit" : 1000, "rate" : "0.642"}]}
+            , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT" , "color" : "F4F1B1", "cmRate" : [{ "sellUnit" : 100, "rate" : "4.576"}, { "sellUnit" : 200, "rate" : "2.386"}, { "sellUnit" : 300, "rate" : "1.656" }, { "sellUnit" : 400, "rate" : "1.292" }, { "sellUnit" : 500, "rate" : "1.072"}, { "sellUnit" : 1000, "rate" : "0.642"}]}
         ]
     }
     ```
@@ -1837,7 +1829,7 @@ tags: [개발가이드, BasicCalcData ]
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -1900,7 +1892,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -1935,7 +1927,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -1970,7 +1962,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -2005,20 +1997,19 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"              , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.114"}, { "sellUnit" : 200, "rate" : "1.16" }, { "sellUnit" : 300, "rate" : "0.84"  }, { "sellUnit" : 400, "rate" : "0.682" }, { "sellUnit" : 500, "rate" : "0.586"}, { "sellUnit" : 1000, "rate" : "0.404"}]}
+              {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"              , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.114"}, { "sellUnit" : 200, "rate" : "1.16" }, { "sellUnit" : 300, "rate" : "0.84"  }, { "sellUnit" : 400, "rate" : "0.682" }, { "sellUnit" : 500, "rate" : "0.586"}, { "sellUnit" : 1000, "rate" : "0.404"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT" , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.52" }, { "sellUnit" : 200, "rate" : "1.362"}, { "sellUnit" : 300, "rate" : "0.976" }, { "sellUnit" : 400, "rate" : "0.784" }, { "sellUnit" : 500, "rate" : "0.668"}, { "sellUnit" : 1000, "rate" : "0.444"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "CUT"              , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.17" }, { "sellUnit" : 200, "rate" : "1.688"}, { "sellUnit" : 300, "rate" : "1.192" }, { "sellUnit" : 400, "rate" : "0.946" }, { "sellUnit" : 500, "rate" : "0.798"}, { "sellUnit" : 1000, "rate" : "0.508"}]}
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT" , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.576"}, { "sellUnit" : 200, "rate" : "1.89" }, { "sellUnit" : 300, "rate" : "1.328" }, { "sellUnit" : 400, "rate" : "1.048" }, { "sellUnit" : 500, "rate" : "0.878"}, { "sellUnit" : 1000, "rate" : "0.55" }]}
         ]
     }
-
-    ```
-
+```
+    
 * SG SS05
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -2081,7 +2072,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -2116,7 +2107,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -2151,7 +2142,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -2186,7 +2177,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"            , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.65" }, { "sellUnit" : 200, "rate" : "1.476" }, { "sellUnit" : 300, "rate" : "1.084" }, { "sellUnit" : 400, "rate" : "0.888" }, { "sellUnit" : 500, "rate" : "0.772"}, { "sellUnit" : 1000, "rate" : "0.544"}]}
+              {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"            , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.65" }, { "sellUnit" : 200, "rate" : "1.476" }, { "sellUnit" : 300, "rate" : "1.084" }, { "sellUnit" : 400, "rate" : "0.888" }, { "sellUnit" : 500, "rate" : "0.772"}, { "sellUnit" : 1000, "rate" : "0.544"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.056"}, { "sellUnit" : 200, "rate" : "1.68"  }, { "sellUnit" : 300, "rate" : "1.22"  }, { "sellUnit" : 400, "rate" : "0.99"  }, { "sellUnit" : 500, "rate" : "0.852"}, { "sellUnit" : 1000, "rate" : "0.586"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"            , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.902"}, { "sellUnit" : 200, "rate" : "2.102" }, { "sellUnit" : 300, "rate" : "1.502" }, { "sellUnit" : 400, "rate" : "1.202" }, { "sellUnit" : 500, "rate" : "1.022"}, { "sellUnit" : 1000, "rate" : "0.67" }]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "4.308"}, { "sellUnit" : 200, "rate" : "2.304" }, { "sellUnit" : 300, "rate" : "1.638" }, { "sellUnit" : 400, "rate" : "1.304" }, { "sellUnit" : 500, "rate" : "1.102"}, { "sellUnit" : 1000, "rate" : "0.71" }]}
@@ -2198,7 +2189,7 @@ tags: [개발가이드, BasicCalcData ]
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -2261,7 +2252,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -2296,7 +2287,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -2331,7 +2322,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -2366,7 +2357,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"            , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.48" }, { "sellUnit" : 200, "rate" : "1.362" }, { "sellUnit" : 300, "rate" : "0.99"  }, { "sellUnit" : 400, "rate" : "0.804" }, { "sellUnit" : 500, "rate" : "0.692"}, { "sellUnit" : 1000, "rate" : "0.476"}]}
+              {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"            , "color" : "F4"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.48" }, { "sellUnit" : 200, "rate" : "1.362" }, { "sellUnit" : 300, "rate" : "0.99"  }, { "sellUnit" : 400, "rate" : "0.804" }, { "sellUnit" : 500, "rate" : "0.692"}, { "sellUnit" : 1000, "rate" : "0.476"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.886"}, { "sellUnit" : 200, "rate" : "1.566" }, { "sellUnit" : 300, "rate" : "1.126" }, { "sellUnit" : 400, "rate" : "0.906" }, { "sellUnit" : 500, "rate" : "0.774"}, { "sellUnit" : 1000, "rate" : "0.518"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"            , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.618"}, { "sellUnit" : 200, "rate" : "1.932" }, { "sellUnit" : 300, "rate" : "1.37"  }, { "sellUnit" : 400, "rate" : "1.088" }, { "sellUnit" : 500, "rate" : "0.92" }, { "sellUnit" : 1000, "rate" : "0.59" }]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "4.024"}, { "sellUnit" : 200, "rate" : "2.134" }, { "sellUnit" : 300, "rate" : "1.504" }, { "sellUnit" : 400, "rate" : "1.19"  }, { "sellUnit" : 500, "rate" : "1.0"  }, { "sellUnit" : 1000, "rate" : "0.63" }]}
@@ -2382,7 +2373,7 @@ tags: [개발가이드, BasicCalcData ]
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -2445,7 +2436,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRateCut": [
-            { "sellUnit" : 100   , "marginRate" : 1.620 }
+              { "sellUnit" : 100   , "marginRate" : 1.620 }
             , { "sellUnit" : 200   , "marginRate" : 1.590 }
             , { "sellUnit" : 300   , "marginRate" : 1.560 }
             , { "sellUnit" : 400   , "marginRate" : 1.530 }
@@ -2480,7 +2471,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "sellUnit" : 190000, "marginRate" : 1.020 }
         ],
         "MarginRateThomsonCut" : [
-            {"sellUnit" : 100     , "marginRate" : 1.820}
+              {"sellUnit" : 100     , "marginRate" : 1.820}
             , {"sellUnit" : 200     , "marginRate" : 1.790}
             , {"sellUnit" : 300     , "marginRate" : 1.760}
             , {"sellUnit" : 400     , "marginRate" : 1.730}
@@ -2515,7 +2506,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.220}
         ],
         "MarginRateThomsonCut006" : [
-            {"sellUnit" : 100     , "marginRate" : 2.020}
+              {"sellUnit" : 100     , "marginRate" : 2.020}
             , {"sellUnit" : 200     , "marginRate" : 1.990}
             , {"sellUnit" : 300     , "marginRate" : 1.960}
             , {"sellUnit" : 400     , "marginRate" : 1.930}
@@ -2550,13 +2541,13 @@ tags: [개발가이드, BasicCalcData ]
             , {"sellUnit" : 190000  , "marginRate" : 1.420}
         ],
         "OneCmRate" : [
-            {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"            , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.626"}, { "sellUnit" : 200, "rate" : "1.46"  }, { "sellUnit" : 300, "rate" : "1.072" }, { "sellUnit" : 400, "rate" : "0.876" }, { "sellUnit" : 500, "rate" : "0.76" }, { "sellUnit" : 1000, "rate" : "0.534"}]}
+              {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"            , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "2.626"}, { "sellUnit" : 200, "rate" : "1.46"  }, { "sellUnit" : 300, "rate" : "1.072" }, { "sellUnit" : 400, "rate" : "0.876" }, { "sellUnit" : 500, "rate" : "0.76" }, { "sellUnit" : 1000, "rate" : "0.534"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4"      , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.032"}, { "sellUnit" : 200, "rate" : "1.662" }, { "sellUnit" : 300, "rate" : "1.206" }, { "sellUnit" : 400, "rate" : "0.978" }, { "sellUnit" : 500, "rate" : "0.842"}, { "sellUnit" : 1000, "rate" : "0.576"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"            , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.862"}, { "sellUnit" : 200, "rate" : "2.078" }, { "sellUnit" : 300, "rate" : "1.482" }, { "sellUnit" : 400, "rate" : "1.186" }, { "sellUnit" : 500, "rate" : "1.008"}, { "sellUnit" : 1000, "rate" : "0.658"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "4.268"}, { "sellUnit" : 200, "rate" : "2.28"  }, { "sellUnit" : 300, "rate" : "1.618" }, { "sellUnit" : 400, "rate" : "1.288" }, { "sellUnit" : 500, "rate" : "1.088"}, { "sellUnit" : 1000, "rate" : "0.7"  }]}
                 , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"            , "color" : "F4F1"    , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.862"}, { "sellUnit" : 200, "rate" : "2.078" }, { "sellUnit" : 300, "rate" : "1.482" }, { "sellUnit" : 400, "rate" : "1.186" }, { "sellUnit" : 500, "rate" : "1.008"}, { "sellUnit" : 1000, "rate" : "0.658"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4F1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "4.268"}, { "sellUnit" : 200, "rate" : "2.28"  }, { "sellUnit" : 300, "rate" : "1.618" }, { "sellUnit" : 400, "rate" : "1.288" }, { "sellUnit" : 500, "rate" : "1.088"}, { "sellUnit" : 1000, "rate" : "0.7"  }]}
-            , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"            , "color" : "F4F1B1", "cmRate" : [{ "sellUnit" : 100, "rate" : "5.096"}, { "sellUnit" : 200, "rate" : "2.696  }, { "sellUnit" : 300, "rate" : "1.894" }, { "sellUnit" : 400, "rate" : "1.494" }, { "sellUnit" : 500, "rate" : "1.254"}, { "sellUnit" : 1000, "rate" : "0.782"}]}
+            , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "CUT"            , "color" : "F4F1B1", "cmRate" : [{ "sellUnit" : 100, "rate" : "5.096"}, { "sellUnit" : 200, "rate" : "2.696" }, { "sellUnit" : 300, "rate" : "1.894" }, { "sellUnit" : 400, "rate" : "1.494" }, { "sellUnit" : 500, "rate" : "1.254"}, { "sellUnit" : 1000, "rate" : "0.782"}]}
             , {"bandage" : "L1", "coating" : "GLOSSY", "shape" : "THOMSON_DCUT" , "color" : "F4F1B1", "cmRate" : [{ "sellUnit" : 100, "rate" : "5.502"}, { "sellUnit" : 200, "rate" : "2.898" }, { "sellUnit" : 300, "rate" : "2.03"  }, { "sellUnit" : 400, "rate" : "1.596" }, { "sellUnit" : 500, "rate" : "1.336"}, { "sellUnit" : 1000, "rate" : "0.822"}]}
         ]
     }
@@ -2565,7 +2556,7 @@ tags: [개발가이드, BasicCalcData ]
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -2628,7 +2619,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "MarginRate": [
-            {"minSellUnit" : 0   , "maxSellUnit" : 200 , "marginRate" : "1"   }
+              {"minSellUnit" : 0   , "maxSellUnit" : 200 , "marginRate" : "1"   }
             , {"minSellUnit" : 200 , "maxSellUnit" : 300 , "marginRate" : "0.99"}
             , {"minSellUnit" : 300 , "maxSellUnit" : 400 , "marginRate" : "0.98"}
             , {"minSellUnit" : 400 , "maxSellUnit" : 500 , "marginRate" : "0.97"}
@@ -2666,7 +2657,7 @@ tags: [개발가이드, BasicCalcData ]
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -2733,9 +2724,10 @@ tags: [개발가이드, BasicCalcData ]
 
 * SG PD1
     ``` json
+    
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -2798,7 +2790,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2300}
         ],
         "MaterialRateDic": [
-            { "key": "06PD01", "value" : 0.08 }
+              { "key": "06PD01", "value" : 0.08 }
             , { "key": "06PD02", "value" : 0.08 }
             , { "key": "06PD03", "value" : 0.12 }
             , { "key": "06PD04", "value" : 0.15 }
@@ -2811,22 +2803,22 @@ tags: [개발가이드, BasicCalcData ]
             , { "key": "06PD14", "value" : 0.28 }
         ],
         "BandageRateDic": [
-            { "key": "L1", "value" : 0.0  }
+              { "key": "L1", "value" : 0.0  }
             , { "key": "K1", "value" : 0.10 }
         ],
         "CoatingRateDic": [
-            { "key": "NOLAMINATION",  "value" : 0.0  }
+              { "key": "NOLAMINATION",  "value" : 0.0  }
             , { "key": "GLOSSY",        "value" : 0.10 }
             , { "key": "MATTE",         "value" : 0.15 }
         ]
     }
-    ```
-
+```
+    
 * SG PD2
     ``` json
     {
         "ExportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 5180}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 5860}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 6550}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 7230}
@@ -2889,7 +2881,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"minWeight": 30.0, "maxWeight": 999999.0,"DeliveryCost": 2100}
         ],
         "ImportDeliveryCost": [
-            {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 21000}
+              {"minWeight":  0.0, "maxWeight":  0.5,    "DeliveryCost": 21000}
             , {"minWeight":  0.5, "maxWeight":  1.0,    "DeliveryCost": 23100}
             , {"minWeight":  1.0, "maxWeight":  1.5,    "DeliveryCost": 25200}
             , {"minWeight":  1.5, "maxWeight":  2.0,    "DeliveryCost": 27300}
