@@ -319,6 +319,13 @@ history:
     VALUES((SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SE_01'), N'Common Sticker SE 01', N'{"환율" : 800, "소비세율" : 1.07, "타공기본금액" : 35000, "달러전환" : 100, "후가공_HAKU_달러전환" : 100, "후가공_HAKU_환율" : 800, "후가공_HAKU_야리통수" : 2000, "후가공_HAKU_박지단가" : 0.2, "후가공_HAKU_동판단가" : 250, "후가공_HAKU_가공비기본" : 100000, "후가공_HAKU_세금" : 1.07, "후가공_HAKU_박비용" : 0.5,  "후가공_KATAOSI_달러전환" : 100, "후가공_KATAOSI_환율" : 800, "후가공_KATAOSI_야리통수" : 2000, "후가공_KATAOSI_박지단가" : 0.2, "후가공_KATAOSI_동판단가" : 250, "후가공_KATAOSI_가공비기본" : 100000, "후가공_KATAOSI_세금" : 1.07, "후가공_KATAOSI_박비용" : 0.5, "후가공_HOLE_달러전환" : 100, "후가공_HOLE_환율" : 800, "후가공_HOLE_타공기본금액" : 35000, "용지사이즈W" : 450, "용지사이즈H" : 370, "내외측" : 14, "기본자리수" : 12, "도당필름값" : 10000, "도당인쇄값" : 300, "야리지" : 100, "배달비용" : 10000, "무게요율" : 0.0003, "마진" : 0.5 }', '', NULL, NULL)
     ```
 
+  * CalcData AU SE
+
+    ``` sql
+    INSERT INTO [dbo].[CalcData]([calcInfoId], [name], [contents], [priceTableInfo], [goodsSizeInput], [tmp_id])
+    VALUES((SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SE_01'), N'Common Sticker SE 01', N'{"환율" : 800, "소비세율" : 1.07, "타공기본금액" : 35000, "달러전환" : 100, "후가공_HAKU_달러전환" : 100, "후가공_HAKU_환율" : 800, "후가공_HAKU_야리통수" : 2000, "후가공_HAKU_박지단가" : 0.2, "후가공_HAKU_동판단가" : 250, "후가공_HAKU_가공비기본" : 100000, "후가공_HAKU_세금" : 1.07, "후가공_HAKU_박비용" : 0.5,  "후가공_KATAOSI_달러전환" : 100, "후가공_KATAOSI_환율" : 800, "후가공_KATAOSI_야리통수" : 2000, "후가공_KATAOSI_박지단가" : 0.2, "후가공_KATAOSI_동판단가" : 250, "후가공_KATAOSI_가공비기본" : 100000, "후가공_KATAOSI_세금" : 1.07, "후가공_KATAOSI_박비용" : 0.5, "후가공_HOLE_달러전환" : 100, "후가공_HOLE_환율" : 800, "후가공_HOLE_타공기본금액" : 35000, "용지사이즈W" : 450, "용지사이즈H" : 370, "내외측" : 14, "기본자리수" : 12, "도당필름값" : 10000, "도당인쇄값" : 300, "야리지" : 100, "배달비용" : 10000, "무게요율" : 0.0003, "마진" : 1.0 }', '', NULL, NULL)
+    ```
+
   * CalcData PD 01
 
     ``` SQL
