@@ -111,13 +111,13 @@
         - title: "basicCalcData 데이터 변경 쿼리"
           items: 
           - title: "BasicCalcData_AU"
-            url: "/pages/devguide/webProject/tqoon2/formula/basiccalcdata/BasicCalcData_AU.html"
+            url: "/pages/devguide/webProject/tqoon2/formula/basicCalcData/basicCalcData_AU.html"
           - title: "BasicCalcData_MY"
-            url: "/pages/devguide/webProject/tqoon2/formula/basiccalcdata/BasicCalcData_MY.html"
+            url: "/pages/devguide/webProject/tqoon2/formula/basicCalcData/basicCalcData_MY.html"
           - title: "BasicCalcData_SG"
-            url: "/pages/devguide/webProject/tqoon2/formula/basiccalcdata/BasicCalcData_SG.html"
+            url: "/pages/devguide/webProject/tqoon2/formula/basicCalcData/basicCalcData_SG.html"
           - title: "BasicCalcData_US"
-            url: "/pages/devguide/webProject/tqoon2/formula/basiccalcdata/BasicCalcData_US.html"
+            url: "/pages/devguide/webProject/tqoon2/formula/basicCalcData/basicCalcData_US.html"
         - title: "후가공"
           items:
           - title: "후가공_AMCalc_Sub_1_HAKU"
