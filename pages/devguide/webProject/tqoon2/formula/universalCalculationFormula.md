@@ -353,14 +353,14 @@ history:
 
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01' AND [name] = 'Common Sticker ST 01') ) 
     WHERE strCategoryPath = '06ST01'
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01' AND [name] = 'Common Sticker ST 01' ) )  
@@ -371,14 +371,14 @@ history:
     
       ``` sql
       UPDATE tblGoods 
-      SET  orderType = 'FTYPE'
+      SET  orderType = 'ETYPE'
       ,    calcDataId = ( SELECT    id 
       FROM      CalcData with(nolock) 
       WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_02' AND [name] = 'Common Sticker ST 02' ) ) 
       WHERE strCategoryPath = '06ST02'
       
       UPDATE partnerGoods 
-      SET  orderType = 'FTYPE' 
+      SET  orderType = 'ETYPE' 
       ,    calcDataId = ( SELECT    id 
       FROM      CalcData with(nolock) 
       WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_02' AND [name] = 'Common Sticker ST 02' ) )  
@@ -390,14 +390,14 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_03' AND [name] = 'Common Sticker ST 03' ) ) 
     WHERE strCategoryPath = '06ST03'
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_03' AND [name] = 'Common Sticker ST 03' ) )  
@@ -408,14 +408,14 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_04' AND [name] = 'Common Sticker ST 04' ) ) 
     WHERE strCategoryPath = '06ST04'
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_04' AND [name] = 'Common Sticker ST 04' ) )  
@@ -426,14 +426,14 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_05' AND [name] = 'Common Sticker ST 05' ) ) 
     WHERE strCategoryPath = '06ST05'
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_05' AND [name] = 'Common Sticker ST 05' ) )  
@@ -444,14 +444,14 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_06' AND [name] = 'Common Sticker ST 06' ) ) 
     WHERE strCategoryPath = '06ST06'
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_06' AND [name] = 'Common Sticker ST 06' ) )  
@@ -463,14 +463,14 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_07' AND [name] = 'Common Sticker ST 07' ) ) 
     WHERE strCategoryPath = '06ST07'
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_07' AND [name] = 'Common Sticker ST 07' ) )  
@@ -481,14 +481,14 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01' AND [name] = 'Common Sticker SS 01' ) ) 
     WHERE strCategoryCodePath = '06SS01'
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01' AND [name] = 'Common Sticker SS 01' ) )  
@@ -499,14 +499,14 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_02' AND [name] = 'Common Sticker SS 02' ) ) 
     WHERE strCategoryCodePath = '06SS02'
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_02' AND [name] = 'Common Sticker SS 02' ) )  
@@ -517,14 +517,14 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_03' AND [name] = 'Common Sticker SS 03' ) ) 
     WHERE strCategoryCodePath = '06SS03'
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_03' AND [name] = 'Common Sticker SS 03' ) )  
@@ -535,14 +535,14 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_04' AND [name] = 'Common Sticker SS 04' ) ) 
     WHERE strCategoryCodePath = '06SS04'
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_04' AND [name] = 'Common Sticker SS 04' ) )  
@@ -553,14 +553,14 @@ history:
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_05' AND [name] = 'Common Sticker SS 05' ) ) 
     WHERE strCategoryCodePath = '06SS05'
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_05' AND [name] = 'Common Sticker SS 05' ) )  
@@ -571,14 +571,14 @@ history:
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_06' AND [name] = 'Common Sticker SS 06' ) ) 
     WHERE strCategoryCodePath = '06SS06'
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_06' AND [name] = 'Common Sticker SS 06' ) )  
@@ -589,14 +589,14 @@ history:
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_07' AND [name] = 'Common Sticker SS 07' ) ) 
     WHERE strCategoryCodePath = '06SS07'
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_07' AND [name] = 'Common Sticker SS 07' ) )  
@@ -607,7 +607,7 @@ history:
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SB_01' ) ) 
@@ -615,7 +615,7 @@ history:
     
   
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SB_01' ) )  
@@ -626,7 +626,7 @@ history:
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SE_01' ) ) 
@@ -634,7 +634,7 @@ history:
     
   
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SE_01' ) )  
@@ -645,7 +645,7 @@ history:
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'    
+    SET  orderType = 'ETYPE'    
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_01' ) ) 
@@ -653,7 +653,7 @@ history:
     
   
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_01' ) )  
@@ -664,7 +664,7 @@ history:
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'FTYPE'
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_02' ) ) 
@@ -672,7 +672,7 @@ history:
     
     
     UPDATE partnerGoods 
-    SET  orderType = 'FTYPE' 
+    SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
     FROM      CalcData with(nolock) 
     WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_02' ) )  
