@@ -198,9 +198,9 @@ history:
     ``` sql
     INSERT INTO [dbo].[CalcInfo]([joinerId], [name], [code], [template], [goodsSizeInput], [tmp_id])
     VALUES (0, N'Common Sticker ST', 'TQ_STICKER_ST_01', N'{"KR" : {"환율" : "", "소비세율" : "", "타공기본금액" : "", "달러전환" : "",  "후가공_HAKU_달러전환" : "", "후가공_HAKU_환율" : "", "후가공_HAKU_야리통수" : "", "후가공_HAKU_박지단가" : "", "후가공_HAKU_동판단가" : "", "후가공_HAKU_가공비기본" : "", "후가공_HAKU_세금" : "", "후가공_HAKU_박비용" : "",  "후가공_KATAOSI_달러전환" : "", "후가공_KATAOSI_환율" : "", "후가공_KATAOSI_야리통수" : "", "후가공_KATAOSI_박지단가" : "", "후가공_KATAOSI_동판단가" : "", "후가공_KATAOSI_가공비기본" : "", "후가공_KATAOSI_세금" : "", "후가공_KATAOSI_박비용" : "", "후가공_HOLE_달러전환" : "", "후가공_HOLE_환율" : "", "후가공_HOLE_타공기본금액" : ""}
-    , "EN" : {"exchangeRate" : "", "dutyRate" : "", "costPerHolePunch" : "", "currencyExhange" : "",  "postProc_HAKU_CurrencyExchange" : "", "postProc_HAKU_ExchangeRate" : "", "postProc_HAKU_ProofCount" : "", "postProc_HAKU_FoilCost" : "", "postProc_HAKU_FoilingDieProductionCost" : "", "postProc_HAKU_BaseCost" : "", "postProc_HAKU_Tax" : "", "postProc_HAKU_FoilPrintingCost" : "",  "postProc_KATAOSI_CurrencyExchange" : "", "postProc_KATAOSI_ExchangeRate" : "", "postProc_KATAOSI_ProofCount" : "", "postProc_KATAOSI_FoilCost" : "", "postProc_KATAOSI_FoilingDieProductionCost" : "", "postProc_KATAOSI_BaseCost" : "", "postProc_KATAOSI_Tax" : "", "postProc_KATAOSI_FoilPrintingCost" : "", "postProc_HOLE_CurrencyExchange" : "", "postProc_HOLE_ExchangeRate" : "", "postProc_HOLE_CostPerHolePunch" : "" }
-    , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "" }
-    , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "" }}', NULL, NULL)
+                                                                , "EN" : {"exchangeRate" : "", "dutyRate" : "", "costPerHolePunch" : "", "currencyExhange" : "",  "postProc_HAKU_CurrencyExchange" : "", "postProc_HAKU_ExchangeRate" : "", "postProc_HAKU_ProofCount" : "", "postProc_HAKU_FoilCost" : "", "postProc_HAKU_FoilingDieProductionCost" : "", "postProc_HAKU_BaseCost" : "", "postProc_HAKU_Tax" : "", "postProc_HAKU_FoilPrintingCost" : "",  "postProc_KATAOSI_CurrencyExchange" : "", "postProc_KATAOSI_ExchangeRate" : "", "postProc_KATAOSI_ProofCount" : "", "postProc_KATAOSI_FoilCost" : "", "postProc_KATAOSI_FoilingDieProductionCost" : "", "postProc_KATAOSI_BaseCost" : "", "postProc_KATAOSI_Tax" : "", "postProc_KATAOSI_FoilPrintingCost" : "", "postProc_HOLE_CurrencyExchange" : "", "postProc_HOLE_ExchangeRate" : "", "postProc_HOLE_CostPerHolePunch" : "" }
+                                                                , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "" }
+                                                                , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "" }}', NULL, NULL)
     ```
     
   * CalcInfo SS
@@ -208,9 +208,9 @@ history:
     ``` sql
     INSERT INTO [dbo].[CalcInfo]([joinerId], [name], [code], [template], [goodsSizeInput], [tmp_id])
     VALUES(0, N'Common Sticker SS', 'TQ_STICKER_SS_01', N'{"KR" : {"환율" : "", "소비세율" : "", "타공기본금액" : "", "달러전환" : "",  "후가공_HAKU_달러전환" : "", "후가공_HAKU_환율" : "", "후가공_HAKU_야리통수" : "", "후가공_HAKU_박지단가" : "", "후가공_HAKU_동판단가" : "", "후가공_HAKU_가공비기본" : "", "후가공_HAKU_세금" : "", "후가공_HAKU_박비용" : "",  "후가공_KATAOSI_달러전환" : "", "후가공_KATAOSI_환율" : "", "후가공_KATAOSI_야리통수" : "", "후가공_KATAOSI_박지단가" : "", "후가공_KATAOSI_동판단가" : "", "후가공_KATAOSI_가공비기본" : "", "후가공_KATAOSI_세금" : "", "후가공_KATAOSI_박비용" : "", "후가공_HOLE_달러전환" : "", "후가공_HOLE_환율" : "", "후가공_HOLE_타공기본금액" : "", "도무송기본형단가" : "", "도무송특수형단가" : "", "도무송기본매수" : "" }
-    , "EN" : {"exchangeRate" : "", "dutyRate" : "", "costPerHolePunch" : "", "currencyExhange" : "",  "postProc_HAKU_CurrencyExchange" : "", "postProc_HAKU_ExchangeRate" : "", "postProc_HAKU_ProofCount" : "", "postProc_HAKU_FoilCost" : "", "postProc_HAKU_FoilingDieProductionCost" : "", "postProc_HAKU_BaseCost" : "", "postProc_HAKU_Tax" : "", "postProc_HAKU_FoilPrintingCost" : "",  "postProc_KATAOSI_CurrencyExchange" : "", "postProc_KATAOSI_ExchangeRate" : "", "postProc_KATAOSI_ProofCount" : "", "postProc_KATAOSI_FoilCost" : "", "postProc_KATAOSI_FoilingDieProductionCost" : "", "postProc_KATAOSI_BaseCost" : "", "postProc_KATAOSI_Tax" : "", "postProc_KATAOSI_FoilPrintingCost" : "", "postProc_HOLE_CurrencyExchange" : "", "postProc_HOLE_ExchangeRate" : "", "postProc_HOLE_CostPerHolePunch" : "", "priceForStandardCutShapes" : "", "priceForCustomCutShape" : "", "baseStickerCountPerSheet" : "" }
-    , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "", "トムソン基本型単価" : "", "トムソン特殊型単価" : "", "トムソン基本枚数" : "" }
-    , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "", "基本形刀版单价" : "", "特殊形刀版单价" : "", "刀版基本张数" : "" }}', NULL, NULL)
+                                                            , "EN" : {"exchangeRate" : "", "dutyRate" : "", "costPerHolePunch" : "", "currencyExhange" : "",  "postProc_HAKU_CurrencyExchange" : "", "postProc_HAKU_ExchangeRate" : "", "postProc_HAKU_ProofCount" : "", "postProc_HAKU_FoilCost" : "", "postProc_HAKU_FoilingDieProductionCost" : "", "postProc_HAKU_BaseCost" : "", "postProc_HAKU_Tax" : "", "postProc_HAKU_FoilPrintingCost" : "",  "postProc_KATAOSI_CurrencyExchange" : "", "postProc_KATAOSI_ExchangeRate" : "", "postProc_KATAOSI_ProofCount" : "", "postProc_KATAOSI_FoilCost" : "", "postProc_KATAOSI_FoilingDieProductionCost" : "", "postProc_KATAOSI_BaseCost" : "", "postProc_KATAOSI_Tax" : "", "postProc_KATAOSI_FoilPrintingCost" : "", "postProc_HOLE_CurrencyExchange" : "", "postProc_HOLE_ExchangeRate" : "", "postProc_HOLE_CostPerHolePunch" : "", "priceForStandardCutShapes" : "", "priceForCustomCutShape" : "", "baseStickerCountPerSheet" : "" }
+                                                            , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "", "トムソン基本型単価" : "", "トムソン特殊型単価" : "", "トムソン基本枚数" : "" }
+                                                            , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "", "基本形刀版单价" : "", "特殊形刀版单价" : "", "刀版基本张数" : "" }}', NULL, NULL)
     ```
 
   * CalcInfo SB
@@ -218,9 +218,9 @@ history:
     ``` sql
     INSERT INTO [dbo].[CalcInfo]([joinerId], [name], [code], [template], [goodsSizeInput], [tmp_id])
     VALUES(0, N'Common Sticker SB', 'TQ_STICKER_SB_01', N'{"KR" : {"환율" : "", "소비세율" : "", "타공기본금액" : "", "달러전환" : "",  "후가공_HAKU_달러전환" : "", "후가공_HAKU_환율" : "", "후가공_HAKU_야리통수" : "", "후가공_HAKU_박지단가" : "", "후가공_HAKU_동판단가" : "", "후가공_HAKU_가공비기본" : "", "후가공_HAKU_세금" : "", "후가공_HAKU_박비용" : "",  "후가공_KATAOSI_달러전환" : "", "후가공_KATAOSI_환율" : "", "후가공_KATAOSI_야리통수" : "", "후가공_KATAOSI_박지단가" : "", "후가공_KATAOSI_동판단가" : "", "후가공_KATAOSI_가공비기본" : "", "후가공_KATAOSI_세금" : "", "후가공_KATAOSI_박비용" : "", "후가공_HOLE_달러전환" : "", "후가공_HOLE_환율" : "", "후가공_HOLE_타공기본금액" : "", "최소제작비" : "", "간격" : "", "mmTocm" : "", "가격비율_기본형" : "", "가격비율_특수형" : "", "개별재단비YES" : "", "무게요율" : "", "기본매수" : "" }
-    , "EN" : {"exchangeRate" : "", "dutyRate" : "", "costPerHolePunch" : "", "currencyExhange" : "",  "postProc_HAKU_CurrencyExchange" : "", "postProc_HAKU_ExchangeRate" : "", "postProc_HAKU_ProofCount" : "", "postProc_HAKU_FoilCost" : "", "postProc_HAKU_FoilingDieProductionCost" : "", "postProc_HAKU_BaseCost" : "", "postProc_HAKU_Tax" : "", "postProc_HAKU_FoilPrintingCost" : "",  "postProc_KATAOSI_CurrencyExchange" : "", "postProc_KATAOSI_ExchangeRate" : "", "postProc_KATAOSI_ProofCount" : "", "postProc_KATAOSI_FoilCost" : "", "postProc_KATAOSI_FoilingDieProductionCost" : "", "postProc_KATAOSI_BaseCost" : "", "postProc_KATAOSI_Tax" : "", "postProc_KATAOSI_FoilPrintingCost" : "", "postProc_HOLE_CurrencyExchange" : "", "postProc_HOLE_ExchangeRate" : "", "postProc_HOLE_CostPerHolePunch" : "", "minimumPrice" : "", "spacing" : "", "mmTocm" : "", "priceRateStandardShapes" : "", "priceRateCustomShapes" : "", "individualCutFees" : "", "shippingRateByWeight" : "", "minimumStickerCount" : "" }
-    , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "", "最小製作費" : "", "間隔" : "", "mmTocm" : "", "価格比率＿基本型" : "", "価格比率＿特殊型" : "", "個別裁断費YES" : "", "重量料率" : "", "基本枚数" : "" }
-    , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "", "最低制作费用" : "", "间隔" : "", "mmTocm" : "", "价格比率_基本型" : "", "价格比率_特殊型" : "", "个别剪裁费用YES" : "", "重量费率" : "", "基本张数" : "" }}', NULL, NULL)
+                                                            , "EN" : {"exchangeRate" : "", "dutyRate" : "", "costPerHolePunch" : "", "currencyExhange" : "",  "postProc_HAKU_CurrencyExchange" : "", "postProc_HAKU_ExchangeRate" : "", "postProc_HAKU_ProofCount" : "", "postProc_HAKU_FoilCost" : "", "postProc_HAKU_FoilingDieProductionCost" : "", "postProc_HAKU_BaseCost" : "", "postProc_HAKU_Tax" : "", "postProc_HAKU_FoilPrintingCost" : "",  "postProc_KATAOSI_CurrencyExchange" : "", "postProc_KATAOSI_ExchangeRate" : "", "postProc_KATAOSI_ProofCount" : "", "postProc_KATAOSI_FoilCost" : "", "postProc_KATAOSI_FoilingDieProductionCost" : "", "postProc_KATAOSI_BaseCost" : "", "postProc_KATAOSI_Tax" : "", "postProc_KATAOSI_FoilPrintingCost" : "", "postProc_HOLE_CurrencyExchange" : "", "postProc_HOLE_ExchangeRate" : "", "postProc_HOLE_CostPerHolePunch" : "", "minimumPrice" : "", "spacing" : "", "mmTocm" : "", "priceRateStandardShapes" : "", "priceRateCustomShapes" : "", "individualCutFees" : "", "shippingRateByWeight" : "", "minimumStickerCount" : "" }
+                                                            , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "", "最小製作費" : "", "間隔" : "", "mmTocm" : "", "価格比率＿基本型" : "", "価格比率＿特殊型" : "", "個別裁断費YES" : "", "重量料率" : "", "基本枚数" : "" }
+                                                            , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "", "最低制作费用" : "", "间隔" : "", "mmTocm" : "", "价格比率_基本型" : "", "价格比率_特殊型" : "", "个别剪裁费用YES" : "", "重量费率" : "", "基本张数" : "" }}', NULL, NULL)
     ```
   
   * CalcInfo SE 
@@ -228,19 +228,19 @@ history:
     ``` sql
     INSERT INTO [dbo].[CalcInfo]([joinerId], [name], [code], [template], [goodsSizeInput], [tmp_id])
     VALUES(0, N'Common Sticker SE', 'TQ_STICKER_SE_01', N'{"KR" : {"환율" : "", "소비세율" : "", "타공기본금액" : "", "달러전환" : "",  "후가공_HAKU_달러전환" : "", "후가공_HAKU_환율" : "", "후가공_HAKU_야리통수" : "", "후가공_HAKU_박지단가" : "", "후가공_HAKU_동판단가" : "", "후가공_HAKU_가공비기본" : "", "후가공_HAKU_세금" : "", "후가공_HAKU_박비용" : "",  "후가공_KATAOSI_달러전환" : "", "후가공_KATAOSI_환율" : "", "후가공_KATAOSI_야리통수" : "", "후가공_KATAOSI_박지단가" : "", "후가공_KATAOSI_동판단가" : "", "후가공_KATAOSI_가공비기본" : "", "후가공_KATAOSI_세금" : "", "후가공_KATAOSI_박비용" : "", "후가공_HOLE_달러전환" : "", "후가공_HOLE_환율" : "", "후가공_HOLE_타공기본금액" : "", "용지사이즈W" : "", "용지사이즈H" : "", "내외측" : "", "기본자리수" : "", "도당필름값" : "", "도당인쇄값" : "", "야리지" : "", "배달비용" : "", "무게요율" : "", "마진" : "" }
-    , "EN" : {"exchangeRate" : "", "dutyRate" : "", "costPerHolePunch" : "", "currencyExhange" : "",  "postProc_HAKU_CurrencyExchange" : "", "postProc_HAKU_ExchangeRate" : "", "postProc_HAKU_ProofCount" : "", "postProc_HAKU_FoilCost" : "", "postProc_HAKU_FoilingDieProductionCost" : "", "postProc_HAKU_BaseCost" : "", "postProc_HAKU_Tax" : "", "postProc_HAKU_FoilPrintingCost" : "",  "postProc_KATAOSI_CurrencyExchange" : "", "postProc_KATAOSI_ExchangeRate" : "", "postProc_KATAOSI_ProofCount" : "", "postProc_KATAOSI_FoilCost" : "", "postProc_KATAOSI_FoilingDieProductionCost" : "", "postProc_KATAOSI_BaseCost" : "", "postProc_KATAOSI_Tax" : "", "postProc_KATAOSI_FoilPrintingCost" : "", "postProc_HOLE_CurrencyExchange" : "", "postProc_HOLE_ExchangeRate" : "", "postProc_HOLE_CostPerHolePunch" : "", "materialWidth" : "", "materialHeight" : "", "stickerMargin" : "", "stickersPerSheet" : "", "filmPricePerColor" : "", "printingPricePerColor" : "", "proofCount" : "", "shippingCosts" : "", "shippingRateByWeight" : "", "priceMargin" : "" }
-    , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "", "用紙サイズ_幅" : "", "用紙サイズ_高さ" : "", "内外側" : "", "基本桁数" : "", "1色毎フィルム料金" : "", "1色毎印刷料金" : "", "ヤレ紙" : "", "国内送料" : "", "海外運送費" : "", "マージン" : "" }
-    , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "", "用纸尺寸W" : "", "用纸尺寸H" : "", "内外侧" : "", "基本排版数" : "", "1色印刷胶卷费用" : "", "1色印刷费用" : "", "多余印刷张数" : "", "国内运费" : "", "海外运输费" : "", "成本" : "" }}', NULL, NULL)
+                                                            , "EN" : {"exchangeRate" : "", "dutyRate" : "", "costPerHolePunch" : "", "currencyExhange" : "",  "postProc_HAKU_CurrencyExchange" : "", "postProc_HAKU_ExchangeRate" : "", "postProc_HAKU_ProofCount" : "", "postProc_HAKU_FoilCost" : "", "postProc_HAKU_FoilingDieProductionCost" : "", "postProc_HAKU_BaseCost" : "", "postProc_HAKU_Tax" : "", "postProc_HAKU_FoilPrintingCost" : "",  "postProc_KATAOSI_CurrencyExchange" : "", "postProc_KATAOSI_ExchangeRate" : "", "postProc_KATAOSI_ProofCount" : "", "postProc_KATAOSI_FoilCost" : "", "postProc_KATAOSI_FoilingDieProductionCost" : "", "postProc_KATAOSI_BaseCost" : "", "postProc_KATAOSI_Tax" : "", "postProc_KATAOSI_FoilPrintingCost" : "", "postProc_HOLE_CurrencyExchange" : "", "postProc_HOLE_ExchangeRate" : "", "postProc_HOLE_CostPerHolePunch" : "", "materialWidth" : "", "materialHeight" : "", "stickerMargin" : "", "stickersPerSheet" : "", "filmPricePerColor" : "", "printingPricePerColor" : "", "proofCount" : "", "shippingCosts" : "", "shippingRateByWeight" : "", "priceMargin" : "" }
+                                                            , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "", "用紙サイズ_幅" : "", "用紙サイズ_高さ" : "", "内外側" : "", "基本桁数" : "", "1色毎フィルム料金" : "", "1色毎印刷料金" : "", "ヤレ紙" : "", "国内送料" : "", "海外運送費" : "", "マージン" : "" }
+                                                            , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "", "用纸尺寸W" : "", "用纸尺寸H" : "", "内外侧" : "", "基本排版数" : "", "1色印刷胶卷费用" : "", "1色印刷费用" : "", "多余印刷张数" : "", "国内运费" : "", "海外运输费" : "", "成本" : "" }}', NULL, NULL)
     ```
     
   * CalcInfo PD 01
   
     ``` sql
-      INSERT INTO [dbo].[CalcInfo]([joinerId], [name], [code], [template], [goodsSizeInput], [tmp_id])
-      VALUES(0, N'Common Sticker PD 01', 'TQ_STICKER_PD_01', N'{"KR" : {"환율" : "", "소비세율" : "", "타공기본금액" : "", "달러전환" : "",  "후가공_HAKU_달러전환" : "", "후가공_HAKU_환율" : "", "후가공_HAKU_야리통수" : "", "후가공_HAKU_박지단가" : "", "후가공_HAKU_동판단가" : "", "후가공_HAKU_가공비기본" : "", "후가공_HAKU_세금" : "", "후가공_HAKU_박비용" : "",  "후가공_KATAOSI_달러전환" : "", "후가공_KATAOSI_환율" : "", "후가공_KATAOSI_야리통수" : "", "후가공_KATAOSI_박지단가" : "", "후가공_KATAOSI_동판단가" : "", "후가공_KATAOSI_가공비기본" : "", "후가공_KATAOSI_세금" : "", "후가공_KATAOSI_박비용" : "", "후가공_HOLE_달러전환" : "", "후가공_HOLE_환율" : "", "후가공_HOLE_타공기본금액" : "", "무게요율" : "", "마진" : "", "필름원" : "", "수지원" : "", "수지간격" : "", "사이드간격" : "", "스티커간격" : "", "야리통수" : "", "통인쇄비" : "", "기본통수" : "" }
-      , "EN" : {"exchangeRate" : "", "dutyRate" : "", "costPerHolePunch" : "", "currencyExhange" : "",  "postProc_HAKU_CurrencyExchange" : "", "postProc_HAKU_ExchangeRate" : "", "postProc_HAKU_ProofCount" : "", "postProc_HAKU_FoilCost" : "", "postProc_HAKU_FoilingDieProductionCost" : "", "postProc_HAKU_BaseCost" : "", "postProc_HAKU_Tax" : "", "postProc_HAKU_FoilPrintingCost" : "",  "postProc_KATAOSI_CurrencyExchange" : "", "postProc_KATAOSI_ExchangeRate" : "", "postProc_KATAOSI_ProofCount" : "", "postProc_KATAOSI_FoilCost" : "", "postProc_KATAOSI_FoilingDieProductionCost" : "", "postProc_KATAOSI_BaseCost" : "", "postProc_KATAOSI_Tax" : "", "postProc_KATAOSI_FoilPrintingCost" : "", "postProc_HOLE_CurrencyExchange" : "", "postProc_HOLE_ExchangeRate" : "", "postProc_HOLE_CostPerHolePunch" : "", "shippingRateByWeight" : "", "priceMargin" : "", "filmCost" : "", "plateCost" : "", "plateSpacing" : "", "spacingFromEdges" : "", "stickerSpacing" : "", "proofCount" : "", "costPerRoll" : "", "rollCount" : "" }
-      , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "", "重量率" : "", "マージン" : "", "フィルムコスト" : "", "印刷版コスト" : "", "印刷版の間隔" : "", "左右の間隔" : "", "ステッカーの間隔" : "", "ヤレ紙ロール数" : "", "ロール印刷費" : "", "基本ロール数" : "" }
-      , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "", "重量费率" : "", "成本" : "", "印版成本" : "", "印刷版费用" : "", "印刷版间隔" : "", "左右间隔" : "", "贴纸间隔" : "", "废弃_印刷纸卷数" : "", "印刷费" : "", "基本卷数" : "" }}', NULL, NULL)
+    INSERT INTO [dbo].[CalcInfo]([joinerId], [name], [code], [template], [goodsSizeInput], [tmp_id])
+    VALUES(0, N'Common Sticker PD 01', 'TQ_STICKER_PD_01', N'{"KR" : {"환율" : "", "소비세율" : "", "타공기본금액" : "", "달러전환" : "",  "후가공_HAKU_달러전환" : "", "후가공_HAKU_환율" : "", "후가공_HAKU_야리통수" : "", "후가공_HAKU_박지단가" : "", "후가공_HAKU_동판단가" : "", "후가공_HAKU_가공비기본" : "", "후가공_HAKU_세금" : "", "후가공_HAKU_박비용" : "",  "후가공_KATAOSI_달러전환" : "", "후가공_KATAOSI_환율" : "", "후가공_KATAOSI_야리통수" : "", "후가공_KATAOSI_박지단가" : "", "후가공_KATAOSI_동판단가" : "", "후가공_KATAOSI_가공비기본" : "", "후가공_KATAOSI_세금" : "", "후가공_KATAOSI_박비용" : "", "후가공_HOLE_달러전환" : "", "후가공_HOLE_환율" : "", "후가공_HOLE_타공기본금액" : "", "무게요율" : "", "마진" : "", "필름원" : "", "수지원" : "", "수지간격" : "", "사이드간격" : "", "스티커간격" : "", "야리통수" : "", "통인쇄비" : "", "기본통수" : "" }
+                                                                , "EN" : {"exchangeRate" : "", "dutyRate" : "", "costPerHolePunch" : "", "currencyExhange" : "",  "postProc_HAKU_CurrencyExchange" : "", "postProc_HAKU_ExchangeRate" : "", "postProc_HAKU_ProofCount" : "", "postProc_HAKU_FoilCost" : "", "postProc_HAKU_FoilingDieProductionCost" : "", "postProc_HAKU_BaseCost" : "", "postProc_HAKU_Tax" : "", "postProc_HAKU_FoilPrintingCost" : "",  "postProc_KATAOSI_CurrencyExchange" : "", "postProc_KATAOSI_ExchangeRate" : "", "postProc_KATAOSI_ProofCount" : "", "postProc_KATAOSI_FoilCost" : "", "postProc_KATAOSI_FoilingDieProductionCost" : "", "postProc_KATAOSI_BaseCost" : "", "postProc_KATAOSI_Tax" : "", "postProc_KATAOSI_FoilPrintingCost" : "", "postProc_HOLE_CurrencyExchange" : "", "postProc_HOLE_ExchangeRate" : "", "postProc_HOLE_CostPerHolePunch" : "", "shippingRateByWeight" : "", "priceMargin" : "", "filmCost" : "", "plateCost" : "", "plateSpacing" : "", "spacingFromEdges" : "", "stickerSpacing" : "", "proofCount" : "", "costPerRoll" : "", "rollCount" : "" }
+                                                                , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "", "重量率" : "", "マージン" : "", "フィルムコスト" : "", "印刷版コスト" : "", "印刷版の間隔" : "", "左右の間隔" : "", "ステッカーの間隔" : "", "ヤレ紙ロール数" : "", "ロール印刷費" : "", "基本ロール数" : "" }
+                                                                , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "", "重量费率" : "", "成本" : "", "印版成本" : "", "印刷版费用" : "", "印刷版间隔" : "", "左右间隔" : "", "贴纸间隔" : "", "废弃_印刷纸卷数" : "", "印刷费" : "", "基本卷数" : "" }}', NULL, NULL)
     ```
     
   * CalcInfo PD 02
@@ -248,9 +248,9 @@ history:
     ```sql
   INSERT INTO [dbo].[CalcInfo]([joinerId], [name], [code], [template], [goodsSizeInput], [tmp_id])
     VALUES(0, N'Common Sticker PD 02', 'TQ_STICKER_PD_02', N'{"KR" : {"환율" : "", "소비세율" : "", "타공기본금액" : "", "달러전환" : "",  "후가공_HAKU_달러전환" : "", "후가공_HAKU_환율" : "", "후가공_HAKU_야리통수" : "", "후가공_HAKU_박지단가" : "", "후가공_HAKU_동판단가" : "", "후가공_HAKU_가공비기본" : "", "후가공_HAKU_세금" : "", "후가공_HAKU_박비용" : "",  "후가공_KATAOSI_달러전환" : "", "후가공_KATAOSI_환율" : "", "후가공_KATAOSI_야리통수" : "", "후가공_KATAOSI_박지단가" : "", "후가공_KATAOSI_동판단가" : "", "후가공_KATAOSI_가공비기본" : "", "후가공_KATAOSI_세금" : "", "후가공_KATAOSI_박비용" : "", "후가공_HOLE_달러전환" : "", "후가공_HOLE_환율" : "", "후가공_HOLE_타공기본금액" : "", "마진" : "", "원단가격" : "", "원단폭" : "", "야리지길이" : "", "사이드간격" : "", "스티커간격" : "", "여분매수" : "", "기본통수" : "", "재단비용" : "", "통인쇄비" : "", "인쇄비기본" : "", "인쇄기본통수" : "", "원단무게" : "" }
-    , "EN" : {"exchangeRate" : "", "dutyRate" : "", "costPerHolePunch" : "", "currencyExhange" : "",  "postProc_HAKU_CurrencyExchange" : "", "postProc_HAKU_ExchangeRate" : "", "postProc_HAKU_ProofCount" : "", "postProc_HAKU_FoilCost" : "", "postProc_HAKU_FoilingDieProductionCost" : "", "postProc_HAKU_BaseCost" : "", "postProc_HAKU_Tax" : "", "postProc_HAKU_FoilPrintingCost" : "",  "postProc_KATAOSI_CurrencyExchange" : "", "postProc_KATAOSI_ExchangeRate" : "", "postProc_KATAOSI_ProofCount" : "", "postProc_KATAOSI_FoilCost" : "", "postProc_KATAOSI_FoilingDieProductionCost" : "", "postProc_KATAOSI_BaseCost" : "", "postProc_KATAOSI_Tax" : "", "postProc_KATAOSI_FoilPrintingCost" : "", "postProc_HOLE_CurrencyExchange" : "", "postProc_HOLE_ExchangeRate" : "", "postProc_HOLE_CostPerHolePunch" : "", "priceMargin" : "", "materialCosts" : "", "materialWidth" : "", "proofingLength" : "", "spacingFromEdges" : "", "stickerSpacing" : "", "excessPrintCount" : "", "baseRollCount" : "", "cuttingFees" : "", "costPerRoll" : "", "basePrintingFee" : "", "basePrintingRollCount" : "", "materialWeight" : "" }
-    , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "", "マージン" : "", "生地価格" : "", "生地幅" : "", "ヤレ紙長さ" : "", "左右の間隔" : "", "ステッカーの間隔" : "", "余分枚数" : "", "基本ロール数" : "", "裁断費用" : "", "ロール印刷費" : "", "印刷費基本" : "", "印刷基本ロール数" : "", "生地重さ" : "" }
-    , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "", "成本" : "", "材质单价" : "", "材质宽度" : "", "废弃_印刷纸长" : "", "左右间隔" : "", "贴纸间隔" : "", "多余张数" : "", "基本卷数" : "", "切割费用" : "", "卷筒印刷费" : "", "基本印刷费用" : "", "印刷基本卷数" : "", "材质重量" : "" }}', NULL, NULL)
+                                                                , "EN" : {"exchangeRate" : "", "dutyRate" : "", "costPerHolePunch" : "", "currencyExhange" : "",  "postProc_HAKU_CurrencyExchange" : "", "postProc_HAKU_ExchangeRate" : "", "postProc_HAKU_ProofCount" : "", "postProc_HAKU_FoilCost" : "", "postProc_HAKU_FoilingDieProductionCost" : "", "postProc_HAKU_BaseCost" : "", "postProc_HAKU_Tax" : "", "postProc_HAKU_FoilPrintingCost" : "",  "postProc_KATAOSI_CurrencyExchange" : "", "postProc_KATAOSI_ExchangeRate" : "", "postProc_KATAOSI_ProofCount" : "", "postProc_KATAOSI_FoilCost" : "", "postProc_KATAOSI_FoilingDieProductionCost" : "", "postProc_KATAOSI_BaseCost" : "", "postProc_KATAOSI_Tax" : "", "postProc_KATAOSI_FoilPrintingCost" : "", "postProc_HOLE_CurrencyExchange" : "", "postProc_HOLE_ExchangeRate" : "", "postProc_HOLE_CostPerHolePunch" : "", "priceMargin" : "", "materialCosts" : "", "materialWidth" : "", "proofingLength" : "", "spacingFromEdges" : "", "stickerSpacing" : "", "excessPrintCount" : "", "baseRollCount" : "", "cuttingFees" : "", "costPerRoll" : "", "basePrintingFee" : "", "basePrintingRollCount" : "", "materialWeight" : "" }
+                                                                , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "", "マージン" : "", "生地価格" : "", "生地幅" : "", "ヤレ紙長さ" : "", "左右の間隔" : "", "ステッカーの間隔" : "", "余分枚数" : "", "基本ロール数" : "", "裁断費用" : "", "ロール印刷費" : "", "印刷費基本" : "", "印刷基本ロール数" : "", "生地重さ" : "" }
+                                                                , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "", "成本" : "", "材质单价" : "", "材质宽度" : "", "废弃_印刷纸长" : "", "左右间隔" : "", "贴纸间隔" : "", "多余张数" : "", "基本卷数" : "", "切割费用" : "", "卷筒印刷费" : "", "基本印刷费用" : "", "印刷基本卷数" : "", "材质重量" : "" }}', NULL, NULL)
     ```
   
 * calcData 데이터 변경 쿼리
@@ -330,14 +330,14 @@ history:
 
     ``` SQL
     INSERT INTO [dbo].[CalcData]([calcInfoId], [name], [contents], [priceTableInfo], [goodsSizeInput], [tmp_id])
-    VALUES((SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_01'), N'Common Sticker PD 01', N'{"환율" : 800, "소비세율" : 1.07, "타공기본금액" : 35000, "달러전환" : 100, "후가공_HAKU_달러전환" : 100, "후가공_HAKU_환율" : 800, "후가공_HAKU_야리통수" : 2000, "후가공_HAKU_박지단가" : 0.2, "후가공_HAKU_동판단가" : 250, "후가공_HAKU_가공비기본" : 100000, "후가공_HAKU_세금" : 1.07, "후가공_HAKU_박비용" : 0.5,  "후가공_KATAOSI_달러전환" : 100, "후가공_KATAOSI_환율" : 800, "후가공_KATAOSI_야리통수" : 2000, "후가공_KATAOSI_박지단가" : 0.2, "후가공_KATAOSI_동판단가" : 250, "후가공_KATAOSI_가공비기본" : 100000, "후가공_KATAOSI_세금" : 1.07, "후가공_KATAOSI_박비용" : 0.5, "후가공_HOLE_달러전환" : 100, "후가공_HOLE_환율" : 800, "후가공_HOLE_타공기본금액" : 35000, "무게요율" : 0.0002, "마진" : 0.5, "필름원" : 10000, "수지원" : 100, "수지간격" : 50, "사이드간격" : 10, "스티커간격" : 5, "야리통수" : 2000, "통인쇄비" : 15, "기본통수" : 3000 }', '', NULL, NULL)  
+    VALUES((SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_01'), N'Common Sticker PD 01', N'{"환율" : 800, "소비세율" : 1.07, "타공기본금액" : 35000, "달러전환" : 100, "후가공_HAKU_달러전환" : 100, "후가공_HAKU_환율" : 800, "후가공_HAKU_야리통수" : 2000, "후가공_HAKU_박지단가" : 0.2, "후가공_HAKU_동판단가" : 250, "후가공_HAKU_가공비기본" : 100000, "후가공_HAKU_세금" : 1.07, "후가공_HAKU_박비용" : 0.5,  "후가공_KATAOSI_달러전환" : 100, "후가공_KATAOSI_환율" : 800, "후가공_KATAOSI_야리통수" : 2000, "후가공_KATAOSI_박지단가" : 0.2, "후가공_KATAOSI_동판단가" : 250, "후가공_KATAOSI_가공비기본" : 100000, "후가공_KATAOSI_세금" : 1.07, "후가공_KATAOSI_박비용" : 0.5, "후가공_HOLE_달러전환" : 100, "후가공_HOLE_환율" : 800, "후가공_HOLE_타공기본금액" : 35000, "무게요율" : 0.0002, "마진" : 0.5, "필름원" : 10000, "수지원" : 100, "수지간격" : 50, "사이드간격" : 10, "스티커간격" : 5, "야리통수" : 2000, "통인쇄비" : 15, "기본통수" : 3000 }', '', NULL, NULL)
     ```
 
   * CalcData PD 02
 
     ``` sql
     INSERT INTO [dbo].[CalcData]([calcInfoId], [name], [contents], [priceTableInfo], [goodsSizeInput], [tmp_id])
-    VALUES((SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_02'), N'Common Sticker PD 02', N'{"환율" : 800, "소비세율" : 1.07, "타공기본금액" : 35000, "달러전환" : 100, "후가공_HAKU_달러전환" : 100, "후가공_HAKU_환율" : 800, "후가공_HAKU_야리통수" : 2000, "후가공_HAKU_박지단가" : 0.2, "후가공_HAKU_동판단가" : 250, "후가공_HAKU_가공비기본" : 100000, "후가공_HAKU_세금" : 1.07, "후가공_HAKU_박비용" : 0.5,  "후가공_KATAOSI_달러전환" : 100, "후가공_KATAOSI_환율" : 800, "후가공_KATAOSI_야리통수" : 2000, "후가공_KATAOSI_박지단가" : 0.2, "후가공_KATAOSI_동판단가" : 250, "후가공_KATAOSI_가공비기본" : 100000, "후가공_KATAOSI_세금" : 1.07, "후가공_KATAOSI_박비용" : 0.5, "후가공_HOLE_달러전환" : 100, "후가공_HOLE_환율" : 800, "후가공_HOLE_타공기본금액" : 35000, "마진" : 0.3, "원단가격" : 3500, "원단폭" : 230, "야리지길이" : 150, "사이드간격" : 20, "스티커간격" : 5, "여분매수" : 500, "기본통수" : 2000, "재단비용" : 50000, "통인쇄비" : 120, "인쇄비기본" : 180000, "인쇄기본통수" : 2000, "원단무게" : 0.025  }', '', NULL, NULL)  
+    VALUES((SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_02'), N'Common Sticker PD 02', N'{"환율" : 800, "소비세율" : 1.07, "타공기본금액" : 35000, "달러전환" : 100, "후가공_HAKU_달러전환" : 100, "후가공_HAKU_환율" : 800, "후가공_HAKU_야리통수" : 2000, "후가공_HAKU_박지단가" : 0.2, "후가공_HAKU_동판단가" : 250, "후가공_HAKU_가공비기본" : 100000, "후가공_HAKU_세금" : 1.07, "후가공_HAKU_박비용" : 0.5,  "후가공_KATAOSI_달러전환" : 100, "후가공_KATAOSI_환율" : 800, "후가공_KATAOSI_야리통수" : 2000, "후가공_KATAOSI_박지단가" : 0.2, "후가공_KATAOSI_동판단가" : 250, "후가공_KATAOSI_가공비기본" : 100000, "후가공_KATAOSI_세금" : 1.07, "후가공_KATAOSI_박비용" : 0.5, "후가공_HOLE_달러전환" : 100, "후가공_HOLE_환율" : 800, "후가공_HOLE_타공기본금액" : 35000, "마진" : 0.3, "원단가격" : 3500, "원단폭" : 230, "야리지길이" : 150, "사이드간격" : 20, "스티커간격" : 5, "여분매수" : 500, "기본통수" : 2000, "재단비용" : 50000, "통인쇄비" : 120, "인쇄비기본" : 180000, "인쇄기본통수" : 2000, "원단무게" : 0.025  }', '', NULL, NULL)
     ```
 
 * calcData.basicCalcData 데이터 변경 쿼리
@@ -355,16 +355,18 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01' AND [name] = 'Common Sticker ST 01') ) 
-    WHERE strCategoryPath = '06ST01'
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01' )
+                        AND       [name] = 'Common Sticker ST 01' ) 
+    WHERE strCategoryCodePath = '06ST01'
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01' AND [name] = 'Common Sticker ST 01' ) )  
-    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryPath = '06ST01')  
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                    AND           [name] = 'Common Sticker ST 01'  )  
+    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06ST01')
     ```
   
   * ST 02
@@ -373,35 +375,38 @@ history:
       UPDATE tblGoods 
       SET  orderType = 'ETYPE'
       ,    calcDataId = ( SELECT    id 
-      FROM      CalcData with(nolock) 
-      WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_02' AND [name] = 'Common Sticker ST 02' ) ) 
-      WHERE strCategoryPath = '06ST02'
+                          FROM      CalcData with(nolock) 
+                          WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                          AND       [name] = 'Common Sticker ST 02'  ) 
+      WHERE strCategoryCodePath = '06ST02'
       
       UPDATE partnerGoods 
       SET  orderType = 'ETYPE' 
       ,    calcDataId = ( SELECT    id 
-      FROM      CalcData with(nolock) 
-      WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_02' AND [name] = 'Common Sticker ST 02' ) )  
-      WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryPath = '06ST02')
-      
-     ```
-  
+                          FROM      CalcData with(nolock) 
+                          WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                          AND       [name] = 'Common Sticker ST 02' ) 
+     WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06ST02')
+  ```
+    
   * ST 03
   
     ``` sql
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_03' AND [name] = 'Common Sticker ST 03' ) ) 
-    WHERE strCategoryPath = '06ST03'
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                        AND       [name] = 'Common Sticker ST 03' ) 
+    WHERE strCategoryCodePath = '06ST03'
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_03' AND [name] = 'Common Sticker ST 03' ) )  
-    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryPath = '06ST03')
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                        AND       [name] = 'Common Sticker ST 03' ) 
+    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06ST03')
     ```
   
   * ST 04
@@ -410,16 +415,18 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_04' AND [name] = 'Common Sticker ST 04' ) ) 
-    WHERE strCategoryPath = '06ST04'
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                        AND       [name] = 'Common Sticker ST 04' ) 
+    WHERE strCategoryCodePath = '06ST04'
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_04' AND [name] = 'Common Sticker ST 04' ) )  
-    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock)  WHERE strCategoryPath = '06ST04')
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                        AND       [name] = 'Common Sticker ST 04' ) 
+    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06ST04')
     ```
   
   * ST 05
@@ -428,16 +435,18 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_05' AND [name] = 'Common Sticker ST 05' ) ) 
-    WHERE strCategoryPath = '06ST05'
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                        AND       [name] = 'Common Sticker ST 05' ) 
+    WHERE strCategoryCodePath = '06ST05'
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_05' AND [name] = 'Common Sticker ST 05' ) )  
-    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock)  WHERE strCategoryPath = '06ST05')
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                        AND       [name] = 'Common Sticker ST 05' ) 
+    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06ST05')
     ```
   
   * ST 06
@@ -446,17 +455,18 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_06' AND [name] = 'Common Sticker ST 06' ) ) 
-    WHERE strCategoryPath = '06ST06'
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                        AND       [name] = 'Common Sticker ST 06' )
+    WHERE strCategoryCodePath = '06ST06'
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_06' AND [name] = 'Common Sticker ST 06' ) )  
-    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryPath = '06ST06')
-    
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                        AND       [name] = 'Common Sticker ST 06' ) 
+    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06ST06')
     ```
   
   * ST 07
@@ -465,16 +475,18 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_07' AND [name] = 'Common Sticker ST 07' ) ) 
-    WHERE strCategoryPath = '06ST07'
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                        AND       [name] = 'Common Sticker ST 07' ) 
+    WHERE strCategoryCodePath = '06ST07'
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_07' AND [name] = 'Common Sticker ST 07' ) )  
-    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryPath = '06ST07')
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                        AND       [name] = 'Common Sticker ST 07' ) 
+    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06ST07')
     ```
   
   * SS 01
@@ -483,15 +495,17 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01' AND [name] = 'Common Sticker SS 01' ) ) 
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 01' ) 
     WHERE strCategoryCodePath = '06SS01'
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01' AND [name] = 'Common Sticker SS 01' ) )  
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 01' )  
     WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06SS01')
     ```
   
@@ -501,15 +515,17 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_02' AND [name] = 'Common Sticker SS 02' ) ) 
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 02' ) 
     WHERE strCategoryCodePath = '06SS02'
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_02' AND [name] = 'Common Sticker SS 02' ) )  
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 02' ) 
     WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06SS02')
     ```
   
@@ -519,15 +535,17 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_03' AND [name] = 'Common Sticker SS 03' ) ) 
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 03' ) 
     WHERE strCategoryCodePath = '06SS03'
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_03' AND [name] = 'Common Sticker SS 03' ) )  
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 03' ) 
     WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06SS03')
     ```
   
@@ -537,15 +555,17 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_04' AND [name] = 'Common Sticker SS 04' ) ) 
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 04' ) 
     WHERE strCategoryCodePath = '06SS04'
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_04' AND [name] = 'Common Sticker SS 04' ) )  
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 04' ) 
     WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06SS04')
     ```
   
@@ -555,15 +575,17 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_05' AND [name] = 'Common Sticker SS 05' ) ) 
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 05' )
     WHERE strCategoryCodePath = '06SS05'
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_05' AND [name] = 'Common Sticker SS 05' ) )  
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 05' ) 
     WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06SS05')
     ```
   
@@ -573,15 +595,17 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_06' AND [name] = 'Common Sticker SS 06' ) ) 
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 06' )
     WHERE strCategoryCodePath = '06SS06'
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_06' AND [name] = 'Common Sticker SS 06' ) )  
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 06' )
     WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06SS06')
     ```
   
@@ -591,15 +615,17 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_07' AND [name] = 'Common Sticker SS 07' ) ) 
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 07' ) 
     WHERE strCategoryCodePath = '06SS07'
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_07' AND [name] = 'Common Sticker SS 07' ) )  
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
+                        AND       [name] = 'Common Sticker SS 07' ) 
     WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06SS07')
     ```
   
@@ -609,17 +635,17 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SB_01' ) ) 
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SB_01' ) ) 
     WHERE strCategoryCodePath = '06SB01' AND orderType = 'DTYPE'
     
   
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SB_01' ) )  
-    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06SB01' AND orderType = 'FTYPE')
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SB_01' ) )  
+    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06SB01' AND orderType = 'ETYPE')
     ```
   
   * SE 01
@@ -628,36 +654,36 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SE_01' ) ) 
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SE_01' ) ) 
     WHERE strCategoryCodePath IN ('06SE01', '06SE02') AND orderType = 'DTYPE'
     
   
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SE_01' ) )  
-    WHERE id IN (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath IN ('06SE01', '06SE02') AND orderType = 'FTYPE')
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SE_01' ) )  
+    WHERE id IN (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath IN ('06SE01', '06SE02') AND orderType = 'ETYPE')
     ```
   
   * PD 01
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'    
+    SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_01' ) ) 
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_01' ) ) 
     WHERE strCategoryCodePath IN ('06PD01', '06PD02', '06PD03', '06PD04', '06PD05', '06PD09', '06PD10', '06PD11', '06PD12', '06PD13', '06PD14') AND orderType = 'DTYPE'
     
   
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_01' ) )  
-    WHERE id IN (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath IN ('06PD01', '06PD02', '06PD03', '06PD04', '06PD05', '06PD09', '06PD10', '06PD11', '06PD12', '06PD13', '06PD14') AND orderType = 'FTYPE')
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_01' ) )  
+    WHERE id IN (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath IN ('06PD01', '06PD02', '06PD03', '06PD04', '06PD05', '06PD09', '06PD10', '06PD11', '06PD12', '06PD13', '06PD14') AND orderType = 'ETYPE')
     ```
   
   * PD 02
@@ -666,17 +692,17 @@ history:
     UPDATE tblGoods 
     SET  orderType = 'ETYPE'
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_02' ) ) 
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_02' ) ) 
     WHERE strCategoryCodePath IN ('06PD06', '06PD07', '06PD08') AND orderType = 'DTYPE'
     
     
     UPDATE partnerGoods 
     SET  orderType = 'ETYPE' 
     ,    calcDataId = ( SELECT    id 
-    FROM      CalcData with(nolock) 
-    WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_02' ) )  
-    WHERE id IN (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath IN ('06PD06', '06PD07', '06PD08') AND orderType = 'FTYPE')
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_02' ) )  
+    WHERE id IN (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath IN ('06PD06', '06PD07', '06PD08') AND orderType = 'ETYPE')
     ```
 
 ---
@@ -685,12 +711,19 @@ history:
 
 * 국가별 계산식 클래스 소스를 추가하면 안됨. (이후 해당 소스들은 지울 예정)
   * ![그림_5_1_1](https://user-images.githubusercontent.com/40411714/87893422-c9484900-ca7a-11ea-998a-239b72b82f63.PNG)
+  
   * calcInfo 데이터 추가
+  
   * CalcData 데이터 추가
+  
   * tblGoods & partnerGoods 에서 스티커 상품 orderType 변경 (FType)
+  
   * tblGoods & partnerGoods 에서 calcDataId 맞춰 줌
+  
   * 테스트 실행
+  
   * JSON 데이터 입력시 [] (배열) 처리 잘 확인해야함.
+  
   * AMCalc_Sub_1, AMCalc_Sub_2, AMCalc_Sub_3 앞에 첨부된 신규 파일로 변경
     * [후가공_AMCalc_Sub_1_HAKU](/pages/devguide/webProject/tqoon2/formula/aftermake/AMCalc_Sub_1_HAKU.html) 
     * [후가공_AMCalc_Sub_1_HAKU_New2](/pages/devguide/webProject/tqoon2/formula/aftermake/AMCalc_Sub_1_HAKU_New2.html) 
@@ -698,5 +731,80 @@ history:
     * [후가공_AMCalc_Sub_2_KATAOSI_New2](/pages/devguide/webProject/tqoon2/formula/aftermake/AMCalc_Sub_2_KATAOSI_New2.html) 
     * [후가공_AMCalc_Sub_3_HOLE](/pages/devguide/webProject/tqoon2/formula/aftermake/AMCalc_Sub_3_HOLE.html) 
     * [후가공_AMCalc_Sub_3_HOLE_new2](/pages/devguide/webProject/tqoon2/formula/aftermake/AMCalc_Sub_3_HOLE_New2.html) 
+    
   * 프로그램내에 변수 기본값 국가에 맞게 수정
+    
     * ![image](https://user-images.githubusercontent.com/40411714/88866935-049b0280-d247-11ea-92d0-f417d6928ebe.png)
+    
+  * 후가공 정보 등록
+  
+    * ```sql
+      -- tblAfterMake 데이터 추가
+      INSERT INTO tblAfterMake (intCateGoryNum, strAfMakeName, strAfMakeNameEng, strAfMakeNameJP, strState, datRegDate)
+      VALUES (40710, N'타공', N'HOLE', N'Hole Punching', 'REG', getDate())
+      
+      INSERT INTO tblAfterMake (intCateGoryNum, strAfMakeName, strAfMakeNameEng, strAfMakeNameJP, strState, datRegDate)
+      VALUES (40710, N'박가공', N'HAKU', N'Foil', 'REG', getDate())
+      
+      INSERT INTO tblAfterMake (intCateGoryNum, strAfMakeName, strAfMakeNameEng, strAfMakeNameJP, strState, datRegDate)
+      VALUES (40710, N'형압가공', N'KATAOSI', N'Emboss', 'REG', getDate())
+      
+      INSERT AfterMakeCalcInfo (joinerId, name, code, template, sizeInput)
+      VALUES (15, N'스티커후가공-넓이높이-박가공', '01', '{}', '{"widthLeaf":"","heightLeaf":""}')
+      
+      -- AfterMakeCalcInfo 데이터 추가
+      INSERT AfterMakeCalcInfo (joinerId, name, code, template, sizeInput)
+      VALUES (15, N'스티커후가공-넓이높이-형압', '02', '{}', '{"widthPress":"","heightPress":""}')
+      
+      INSERT AfterMakeCalcInfo (joinerId, name, code, template, sizeInput)
+      VALUES (15, N'스티커후가공-타공', '03', '', '')
+      
+      INSERT AfterMakeCalcData (calcInfoId, name, contents, sizeInput)
+      VALUES (1, N'스티커후가공-넓이높이-박가공', '{}', '{"widthLeaf":"Width(mm)","heightLeaf":"Height(mm)"}')
+      
+      INSERT AfterMakeCalcData (calcInfoId, name, contents, sizeInput)
+      VALUES (2, N'스티커후가공-넓이높이-형압', '{}', '{"widthPress":"Width(mm)","heightPress":"Height(mm)"}')
+      
+      INSERT AfterMakeCalcData (calcInfoId, name, contents, sizeInput)
+      VALUES (3, N'스티커후가공-타공', '{}', '')
+      
+      -- tblAfterMakePrice 데이터 추가
+      INSERT INTO tblAfterMakePrice (intAfterMakeNum, strAfMakeType, intWidth, intHeight, intSellCount, intAFMakePrice, intFormPrice, intPrintPrice, strState, datRegDate, intStep, afterMakeCalcDataId)
+      VALUES (7, 'one', 0, 0, 1, 1, 0, 0,  'REG', getDate(), NULL, 3)
+      
+      INSERT INTO tblAfterMakePrice (intAfterMakeNum, strAfMakeType, intWidth, intHeight, intSellCount, intAFMakePrice, intFormPrice, intPrintPrice, strState, datRegDate, intStep, afterMakeCalcDataId)
+      VALUES (7, 'two', 0, 0, 1, 1, 0, 0,  'REG', getDate(), NULL, 3)
+      
+      INSERT INTO tblAfterMakePrice (intAfterMakeNum, strAfMakeType, intWidth, intHeight, intSellCount, intAFMakePrice, intFormPrice, intPrintPrice, strState, datRegDate, intStep, afterMakeCalcDataId)
+      VALUES (8, 'Gold gloss', 0, 0, 1, 1, 0, 0,  'REG', getDate(), NULL, 1)
+      
+      INSERT INTO tblAfterMakePrice (intAfterMakeNum, strAfMakeType, intWidth, intHeight, intSellCount, intAFMakePrice, intFormPrice, intPrintPrice, strState, datRegDate, intStep, afterMakeCalcDataId)
+      VALUES (8, 'Gold matt', 0, 0, 1, 1, 0, 0,  'REG', getDate(), NULL, 1)
+      
+      INSERT INTO tblAfterMakePrice (intAfterMakeNum, strAfMakeType, intWidth, intHeight, intSellCount, intAFMakePrice, intFormPrice, intPrintPrice, strState, datRegDate, intStep, afterMakeCalcDataId)
+      VALUES (8, 'Silver gloss', 0, 0, 1, 1, 0, 0,  'REG', getDate(), NULL, 1)
+      
+      INSERT INTO tblAfterMakePrice (intAfterMakeNum, strAfMakeType, intWidth, intHeight, intSellCount, intAFMakePrice, intFormPrice, intPrintPrice, strState, datRegDate, intStep, afterMakeCalcDataId)
+      VALUES (8, 'Silver matt', 0, 0, 1, 1, 0, 0,  'REG', getDate(), NULL, 1)
+      
+      INSERT INTO tblAfterMakePrice (intAfterMakeNum, strAfMakeType, intWidth, intHeight, intSellCount, intAFMakePrice, intFormPrice, intPrintPrice, strState, datRegDate, intStep, afterMakeCalcDataId)
+      VALUES (8, 'Red', 0, 0, 1, 1, 0, 0, 'REG', getDate(), NULL, 1)
+      
+      INSERT INTO tblAfterMakePrice (intAfterMakeNum, strAfMakeType, intWidth, intHeight, intSellCount, intAFMakePrice, intFormPrice, intPrintPrice, strState, datRegDate, intStep, afterMakeCalcDataId)
+      VALUES (8, 'Blue', 0, 0, 1, 1, 0, 0,  'REG', getDate(), NULL, 1)
+      
+      INSERT INTO tblAfterMakePrice (intAfterMakeNum, strAfMakeType, intWidth, intHeight, intSellCount, intAFMakePrice, intFormPrice, intPrintPrice, strState, datRegDate, intStep, afterMakeCalcDataId)
+      VALUES (8, 'Green', 0, 0, 1, 1, 0, 0,  'REG', getDate(), NULL, 1)
+      
+      INSERT INTO tblAfterMakePrice (intAfterMakeNum, strAfMakeType, intWidth, intHeight, intSellCount, intAFMakePrice, intFormPrice, intPrintPrice, strState, datRegDate, intStep, afterMakeCalcDataId)
+      VALUES (8, 'Black', 0, 0, 1, 1, 0, 0,  'REG', getDate(), NULL, 1)
+      
+      INSERT INTO tblAfterMakePrice (intAfterMakeNum, strAfMakeType, intWidth, intHeight, intSellCount, intAFMakePrice, intFormPrice, intPrintPrice, strState, datRegDate, intStep, afterMakeCalcDataId)
+      VALUES (8, 'Hologram Gold gloss ', 0, 0, 1, 1, 0, 0,  'REG', getDate(), NULL, 1)
+      
+      INSERT INTO tblAfterMakePrice (intAfterMakeNum, strAfMakeType, intWidth, intHeight, intSellCount, intAFMakePrice, intFormPrice, intPrintPrice, strState, datRegDate, intStep, afterMakeCalcDataId)
+      VALUES (8, 'Hologram Silver gloss', 0, 0, 1, 1, 0, 0,  'REG', getDate(), NULL, 1)
+      
+      INSERT INTO tblAfterMakePrice (intAfterMakeNum, strAfMakeType, intWidth, intHeight, intSellCount, intAFMakePrice, intFormPrice, intPrintPrice, strState, datRegDate, intStep, afterMakeCalcDataId)
+      VALUES (9, 'Embossing', 0, 0, 1, 1, 0, 0,  'REG', getDate(), NULL, 2)
+      ```
