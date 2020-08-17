@@ -7,11 +7,18 @@ tags: [개발가이드, 템플릿, 환경설정 ]
 # 개발 환경 설정
 개발을 시작하기 앞서 테스트 가능한 개발 환경을 만듭니다.
 
+
 ## 기본 폴더 생성
 각 프로젝트를 체크아웃 받을 기본 폴더와 테스트에 사용할 데이터를 저장해둘 기본 폴더가 필요합니다.
 보통 프로젝트는 C:\Dev 폴더에
 데이터는 D:\WebData 폴더를 사용합니다.
 
+## 기본 프로그램 설치
+SVN과 GIT 을 사용하기 위해 다음 프로그램을 다운 후 순서대로 설치합니다.
+
+TortoiseSVN https://tortoisesvn.net/downloads.html
+Git https://git-scm.com/downloads
+TortoiseGit https://tortoisegit.org/download/
 
 ## 소스 체크아웃
 C:\Dev 에 필요한 각 프로젝트를 체크 아웃 합니다.
@@ -19,8 +26,8 @@ C:\Dev 에 필요한 각 프로젝트를 체크 아웃 합니다.
 
 | 프로젝트명 | 저장소 | 주소 | 용도 |
 | :--- |:--- | :--- | :--- |
-| Libs | SVN | http://192.168.1.42:81/svn/Libs | 공통 라이브러리 저장용 |
-| Providers | SVN | http://192.168.1.42:81/svn/Provider | DB 커넥션 정보 |
+| Libs | SVN | http://192.168.1.42:81/svn/Libs/trunk | 공통 라이브러리 저장용 |
+| Providers | SVN | http://192.168.1.42:81/svn/Provider/trunk | DB 커넥션 정보 |
 | TqoonLibraries | Github | https://github.com/TqoonDevTeam/TqoonLibraries.git | 티쿤 라이브러리 |
 
 ## 데이터 다운로드
