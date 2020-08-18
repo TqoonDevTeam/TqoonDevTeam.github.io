@@ -25,6 +25,7 @@ C:\Dev 에 필요한 각 프로젝트를 체크 아웃 합니다.
 기본적으로 필요한 프로젝트는 다음과 같습니다.
 
 ### 필수
+
 | 프로젝트명 | 저장소 | 주소 | 용도 |
 | :--- |:--- | :--- | :--- |
 | Libs | SVN | http://192.168.1.42:81/svn/Libs/trunk | 공통 라이브러리 저장용 |
@@ -33,12 +34,14 @@ C:\Dev 에 필요한 각 프로젝트를 체크 아웃 합니다.
 
 
 ### 자주 사용하는 웹 프로젝트
+
 | 프로젝트명 | 저장소 | 주소 | 용도 |
 | :--- |:--- | :--- | :--- |
 | AdprintWeb | Github | https://github.com/TqoonDevTeam/AdprintWeb.git | 애드프린트 |
 | Admin2 | Github | https://github.com/TqoonDevTeam/AdAdmin.git | 어드민 관리 시스템 |
 | Tqoon 2.0 | Github | https://github.com/TqoonDevTeam/v2Test.git | 티쿤 2.0 |
 | Partner | Github | https://github.com/TqoonDevTeam/Partner | 이용사 관리 시스템 |
+
 
 ## 데이터 다운로드
 D:\WebData 에 필요한 데이터를 다운로드 받습니다. 시스템 담당자에게 연락하면 필요한 파일을 전달 받을 수 있습니다.
