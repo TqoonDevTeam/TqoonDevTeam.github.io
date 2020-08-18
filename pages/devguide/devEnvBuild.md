@@ -14,11 +14,22 @@ tags: [개발가이드, 템플릿, 환경설정 ]
 데이터는 D:\WebData 폴더를 사용합니다.
 
 ## 기본 프로그램 설치
-SVN과 GIT 을 사용하기 위해 다음 프로그램을 다운 후 순서대로 설치합니다.
 
-TortoiseSVN https://tortoisesvn.net/downloads.html
-Git https://git-scm.com/downloads
-TortoiseGit https://tortoisegit.org/download/
+다음 요소를 다운받아 설치 합니다.
+
+| 프로그램명 | 경로 |
+| :--- |:--- | 
+| TortoiseSVN | [https://tortoisesvn.net/downloads.html](https://tortoisesvn.net/downloads.html) |
+| Git | [https://git-scm.com/downloads](https://git-scm.com/downloads) | 
+| TortoiseGit | [https://tortoisegit.org/download/](https://tortoisegit.org/download/) | 
+| .Net MVC 2 | [https://www.microsoft.com/en-us/download/details.aspx?id=22079](https://www.microsoft.com/en-us/download/details.aspx?id=22079) | 
+| .Net Framework 4.8 | [https://dotnet.microsoft.com/download/dotnet-framework/net48](https://dotnet.microsoft.com/download/dotnet-framework/net48) | 
+
+IIS 구성 요소 설치
+
+윈도우 제어판 > 프로그램 및 기능 > Windows 기능 켜기/끄기 > 인터넷 정보 서비스
+항목을 모두 체크하여 설치
+
 
 ## 소스 체크아웃
 C:\Dev 에 필요한 각 프로젝트를 체크 아웃 합니다.
