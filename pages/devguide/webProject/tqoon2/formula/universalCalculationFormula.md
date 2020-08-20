@@ -170,8 +170,6 @@ history:
         ALTER TABLE calcData ADD basicCalcData nvarchar(max) NULL;
 
     END
-    ```
-
 
     IF NOT EXISTS (select * from INFORMATION_SCHEMA.COLUMNS where table_name='CalcInfo' and column_name='defaultBasicCalcData')
     
@@ -222,9 +220,9 @@ history:
                                                             , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "", "最小製作費" : "", "間隔" : "", "mmTocm" : "", "価格比率＿基本型" : "", "価格比率＿特殊型" : "", "個別裁断費YES" : "", "重量料率" : "", "基本枚数" : "" }
                                                             , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "", "最低制作费用" : "", "间隔" : "", "mmTocm" : "", "价格比率_基本型" : "", "价格比率_特殊型" : "", "个别剪裁费用YES" : "", "重量费率" : "", "基本张数" : "" }}', NULL, NULL)
     ```
-  
+
   * CalcInfo SE 
-  
+
     ``` sql
     INSERT INTO [dbo].[CalcInfo]([joinerId], [name], [code], [template], [goodsSizeInput], [tmp_id])
     VALUES(0, N'Common Sticker SE', 'TQ_STICKER_SE_01', N'{"KR" : {"환율" : "", "소비세율" : "", "타공기본금액" : "", "달러전환" : "",  "후가공_HAKU_달러전환" : "", "후가공_HAKU_환율" : "", "후가공_HAKU_야리통수" : "", "후가공_HAKU_박지단가" : "", "후가공_HAKU_동판단가" : "", "후가공_HAKU_가공비기본" : "", "후가공_HAKU_세금" : "", "후가공_HAKU_박비용" : "",  "후가공_KATAOSI_달러전환" : "", "후가공_KATAOSI_환율" : "", "후가공_KATAOSI_야리통수" : "", "후가공_KATAOSI_박지단가" : "", "후가공_KATAOSI_동판단가" : "", "후가공_KATAOSI_가공비기본" : "", "후가공_KATAOSI_세금" : "", "후가공_KATAOSI_박비용" : "", "후가공_HOLE_달러전환" : "", "후가공_HOLE_환율" : "", "후가공_HOLE_타공기본금액" : "", "용지사이즈W" : "", "용지사이즈H" : "", "내외측" : "", "기본자리수" : "", "도당필름값" : "", "도당인쇄값" : "", "야리지" : "", "배달비용" : "", "무게요율" : "", "마진" : "" }
@@ -234,7 +232,7 @@ history:
     ```
     
   * CalcInfo PD 01
-  
+
     ``` sql
     INSERT INTO [dbo].[CalcInfo]([joinerId], [name], [code], [template], [goodsSizeInput], [tmp_id])
     VALUES(0, N'Common Sticker PD 01', 'TQ_STICKER_PD_01', N'{"KR" : {"환율" : "", "소비세율" : "", "타공기본금액" : "", "달러전환" : "",  "후가공_HAKU_달러전환" : "", "후가공_HAKU_환율" : "", "후가공_HAKU_야리통수" : "", "후가공_HAKU_박지단가" : "", "후가공_HAKU_동판단가" : "", "후가공_HAKU_가공비기본" : "", "후가공_HAKU_세금" : "", "후가공_HAKU_박비용" : "",  "후가공_KATAOSI_달러전환" : "", "후가공_KATAOSI_환율" : "", "후가공_KATAOSI_야리통수" : "", "후가공_KATAOSI_박지단가" : "", "후가공_KATAOSI_동판단가" : "", "후가공_KATAOSI_가공비기본" : "", "후가공_KATAOSI_세금" : "", "후가공_KATAOSI_박비용" : "", "후가공_HOLE_달러전환" : "", "후가공_HOLE_환율" : "", "후가공_HOLE_타공기본금액" : "", "무게요율" : "", "마진" : "", "필름원" : "", "수지원" : "", "수지간격" : "", "사이드간격" : "", "스티커간격" : "", "야리통수" : "", "통인쇄비" : "", "기본통수" : "" }
@@ -246,13 +244,17 @@ history:
   * CalcInfo PD 02
 
     ```sql
-  INSERT INTO [dbo].[CalcInfo]([joinerId], [name], [code], [template], [goodsSizeInput], [tmp_id])
+    INSERT INTO [dbo].[CalcInfo]([joinerId], [name], [code], [template], [goodsSizeInput], [tmp_id])
     VALUES(0, N'Common Sticker PD 02', 'TQ_STICKER_PD_02', N'{"KR" : {"환율" : "", "소비세율" : "", "타공기본금액" : "", "달러전환" : "",  "후가공_HAKU_달러전환" : "", "후가공_HAKU_환율" : "", "후가공_HAKU_야리통수" : "", "후가공_HAKU_박지단가" : "", "후가공_HAKU_동판단가" : "", "후가공_HAKU_가공비기본" : "", "후가공_HAKU_세금" : "", "후가공_HAKU_박비용" : "",  "후가공_KATAOSI_달러전환" : "", "후가공_KATAOSI_환율" : "", "후가공_KATAOSI_야리통수" : "", "후가공_KATAOSI_박지단가" : "", "후가공_KATAOSI_동판단가" : "", "후가공_KATAOSI_가공비기본" : "", "후가공_KATAOSI_세금" : "", "후가공_KATAOSI_박비용" : "", "후가공_HOLE_달러전환" : "", "후가공_HOLE_환율" : "", "후가공_HOLE_타공기본금액" : "", "마진" : "", "원단가격" : "", "원단폭" : "", "야리지길이" : "", "사이드간격" : "", "스티커간격" : "", "여분매수" : "", "기본통수" : "", "재단비용" : "", "통인쇄비" : "", "인쇄비기본" : "", "인쇄기본통수" : "", "원단무게" : "" }
                                                                 , "EN" : {"exchangeRate" : "", "dutyRate" : "", "costPerHolePunch" : "", "currencyExhange" : "",  "postProc_HAKU_CurrencyExchange" : "", "postProc_HAKU_ExchangeRate" : "", "postProc_HAKU_ProofCount" : "", "postProc_HAKU_FoilCost" : "", "postProc_HAKU_FoilingDieProductionCost" : "", "postProc_HAKU_BaseCost" : "", "postProc_HAKU_Tax" : "", "postProc_HAKU_FoilPrintingCost" : "",  "postProc_KATAOSI_CurrencyExchange" : "", "postProc_KATAOSI_ExchangeRate" : "", "postProc_KATAOSI_ProofCount" : "", "postProc_KATAOSI_FoilCost" : "", "postProc_KATAOSI_FoilingDieProductionCost" : "", "postProc_KATAOSI_BaseCost" : "", "postProc_KATAOSI_Tax" : "", "postProc_KATAOSI_FoilPrintingCost" : "", "postProc_HOLE_CurrencyExchange" : "", "postProc_HOLE_ExchangeRate" : "", "postProc_HOLE_CostPerHolePunch" : "", "priceMargin" : "", "materialCosts" : "", "materialWidth" : "", "proofingLength" : "", "spacingFromEdges" : "", "stickerSpacing" : "", "excessPrintCount" : "", "baseRollCount" : "", "cuttingFees" : "", "costPerRoll" : "", "basePrintingFee" : "", "basePrintingRollCount" : "", "materialWeight" : "" }
                                                                 , "JP" : {"為替レート" : "", "消費税率" : "", "穴加工基本料金" : "", "外貨変換" : "",  "後加工_HAKU_外貨変換" : "", "後加工_HAKU_為替レート" : "", "後加工_HAKU_ヤレ紙ロール数" : "", "後加工_HAKU_ホイル単価" : "", "後加工_HAKU_銅版単価" : "", "後加工_HAKU_加工費基本" : "", "後加工_HAKU_税金" : "", "後加工_HAKU_箔費用" : "",  "後加工_KATAOSI_外貨変換" : "", "後加工_KATAOSI_為替レート" : "", "後加工_KATAOSI_ヤレ紙ロール数" : "", "後加工_KATAOSI_ホイル単価" : "", "後加工_KATAOSI_銅版単価" : "", "後加工_KATAOSI_加工費基本" : "", "後加工_KATAOSI_税金" : "", "後加工_KATAOSI_箔費用" : "", "後加工_HOLE_外貨変換" : "", "後加工_HOLE_為替レート" : "", "後加工_HOLE_穴加工基本料金" : "", "マージン" : "", "生地価格" : "", "生地幅" : "", "ヤレ紙長さ" : "", "左右の間隔" : "", "ステッカーの間隔" : "", "余分枚数" : "", "基本ロール数" : "", "裁断費用" : "", "ロール印刷費" : "", "印刷費基本" : "", "印刷基本ロール数" : "", "生地重さ" : "" }
                                                                 , "CN" : {"汇率" : "", "消费税率" : "", "打孔基本金额" : "", "货币兑换" : "",  "加工_HAKU_货币兑换" : "", "加工_HAKU_汇率" : "", "加工_HAKU_废弃_印刷纸卷数" : "", "加工_HAKU_烫金单价" : "", "加工_HAKU_铜板单价" : "", "加工_HAKU_加工基本费用" : "", "加工_HAKU_消费税率" : "", "加工_HAKU_烫金费用" : "",  "加工_KATAOSI_货币兑换" : "", "加工_KATAOSI_汇率" : "", "加工_KATAOSI_废弃_印刷纸卷数" : "", "加工_KATAOSI_烫金单价" : "", "加工_KATAOSI_铜板单价" : "", "加工_KATAOSI_加工基本费用" : "", "加工_KATAOSI_消费税率" : "", "加工_KATAOSI_烫金费用" : "", "加工_HOLE_货币兑换" : "", "加工_HOLE_汇率" : "", "加工_HOLE_打孔基本费用" : "", "成本" : "", "材质单价" : "", "材质宽度" : "", "废弃_印刷纸长" : "", "左右间隔" : "", "贴纸间隔" : "", "多余张数" : "", "基本卷数" : "", "切割费用" : "", "卷筒印刷费" : "", "基本印刷费用" : "", "印刷基本卷数" : "", "材质重量" : "" }}', NULL, NULL)
     ```
-  
+
+  * calcInfo.defaultBasicData 에 싱가폴 BasicCalcData_SG.txt의 각각 ST01, SS01, SB01, SE01, PD01, PD02 의 컨텐츠 Update
+
+    * ![image](https://user-images.githubusercontent.com/40411714/90717166-e70f0500-e2e9-11ea-852f-f204edfe2085.png)
+
 * calcData 데이터 변경 쿼리
 
   * CalcData ST
@@ -330,15 +332,19 @@ history:
 
     ``` SQL
     INSERT INTO [dbo].[CalcData]([calcInfoId], [name], [contents], [priceTableInfo], [goodsSizeInput], [tmp_id])
-    VALUES((SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_01'), N'Common Sticker PD 01', N'{"환율" : 800, "소비세율" : 1.07, "타공기본금액" : 35000, "달러전환" : 100, "후가공_HAKU_달러전환" : 100, "후가공_HAKU_환율" : 800, "후가공_HAKU_야리통수" : 2000, "후가공_HAKU_박지단가" : 0.2, "후가공_HAKU_동판단가" : 250, "후가공_HAKU_가공비기본" : 100000, "후가공_HAKU_세금" : 1.07, "후가공_HAKU_박비용" : 0.5,  "후가공_KATAOSI_달러전환" : 100, "후가공_KATAOSI_환율" : 800, "후가공_KATAOSI_야리통수" : 2000, "후가공_KATAOSI_박지단가" : 0.2, "후가공_KATAOSI_동판단가" : 250, "후가공_KATAOSI_가공비기본" : 100000, "후가공_KATAOSI_세금" : 1.07, "후가공_KATAOSI_박비용" : 0.5, "후가공_HOLE_달러전환" : 100, "후가공_HOLE_환율" : 800, "후가공_HOLE_타공기본금액" : 35000, "무게요율" : 0.0002, "마진" : 0.5, "필름원" : 10000, "수지원" : 100, "수지간격" : 50, "사이드간격" : 10, "스티커간격" : 5, "야리통수" : 2000, "통인쇄비" : 15, "기본통수" : 3000 }', '', NULL, NULL)
+    VALUES((SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_01'), N'Common Sticker PD 01', N'{"환율" : 800, "소비세율" : 1.07, "타공기본금액" : 35000, "달러전환" : 100, "후가공_HAKU_달러전환" : 100, "후가공_HAKU_환율" : 800, "후가공_HAKU_야리통수" : 2000, "후가공_HAKU_박지단가" : 0.2, "후가공_HAKU_동판단가" : 250, "후가공_HAKU_가공비기본" : 100000, "후가공_HAKU_세금" : 1.07, "후가공_HAKU_박비용" : 0.5,  "후가공_KATAOSI_달러전환" : 100, "후가공_KATAOSI_환율" : 800, "후가공_KATAOSI_야리통수" : 2000, "후가공_KATAOSI_박지단가" : 0.2, "후가공_KATAOSI_동판단가" : 250, "후가공_KATAOSI_가공비기본" : 100000, "후가공_KATAOSI_세금" : 1.07, "후가공_KATAOSI_박비용" : 0.5, "후가공_HOLE_달러전환" : 100, "후가공_HOLE_환율" : 800, "후가공_HOLE_타공기본금액" : 35000, "무게요율" : 0.0002, "마진" : 0.5, "필름원" : 10000, "수지원" : 100, "수지간격" : 50, "사이드간격" : 10, "스티커간격" : 5, "야리통수" : 2000, "통인쇄비" : 15, "기본통수" : 3000 }', '', NULL, NULL)  
     ```
 
   * CalcData PD 02
 
     ``` sql
     INSERT INTO [dbo].[CalcData]([calcInfoId], [name], [contents], [priceTableInfo], [goodsSizeInput], [tmp_id])
-    VALUES((SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_02'), N'Common Sticker PD 02', N'{"환율" : 800, "소비세율" : 1.07, "타공기본금액" : 35000, "달러전환" : 100, "후가공_HAKU_달러전환" : 100, "후가공_HAKU_환율" : 800, "후가공_HAKU_야리통수" : 2000, "후가공_HAKU_박지단가" : 0.2, "후가공_HAKU_동판단가" : 250, "후가공_HAKU_가공비기본" : 100000, "후가공_HAKU_세금" : 1.07, "후가공_HAKU_박비용" : 0.5,  "후가공_KATAOSI_달러전환" : 100, "후가공_KATAOSI_환율" : 800, "후가공_KATAOSI_야리통수" : 2000, "후가공_KATAOSI_박지단가" : 0.2, "후가공_KATAOSI_동판단가" : 250, "후가공_KATAOSI_가공비기본" : 100000, "후가공_KATAOSI_세금" : 1.07, "후가공_KATAOSI_박비용" : 0.5, "후가공_HOLE_달러전환" : 100, "후가공_HOLE_환율" : 800, "후가공_HOLE_타공기본금액" : 35000, "마진" : 0.3, "원단가격" : 3500, "원단폭" : 230, "야리지길이" : 150, "사이드간격" : 20, "스티커간격" : 5, "여분매수" : 500, "기본통수" : 2000, "재단비용" : 50000, "통인쇄비" : 120, "인쇄비기본" : 180000, "인쇄기본통수" : 2000, "원단무게" : 0.025  }', '', NULL, NULL)
+    VALUES((SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_02'), N'Common Sticker PD 02', N'{"환율" : 800, "소비세율" : 1.07, "타공기본금액" : 35000, "달러전환" : 100, "후가공_HAKU_달러전환" : 100, "후가공_HAKU_환율" : 800, "후가공_HAKU_야리통수" : 2000, "후가공_HAKU_박지단가" : 0.2, "후가공_HAKU_동판단가" : 250, "후가공_HAKU_가공비기본" : 100000, "후가공_HAKU_세금" : 1.07, "후가공_HAKU_박비용" : 0.5,  "후가공_KATAOSI_달러전환" : 100, "후가공_KATAOSI_환율" : 800, "후가공_KATAOSI_야리통수" : 2000, "후가공_KATAOSI_박지단가" : 0.2, "후가공_KATAOSI_동판단가" : 250, "후가공_KATAOSI_가공비기본" : 100000, "후가공_KATAOSI_세금" : 1.07, "후가공_KATAOSI_박비용" : 0.5, "후가공_HOLE_달러전환" : 100, "후가공_HOLE_환율" : 800, "후가공_HOLE_타공기본금액" : 35000, "마진" : 0.3, "원단가격" : 3500, "원단폭" : 230, "야리지길이" : 150, "사이드간격" : 20, "스티커간격" : 5, "여분매수" : 500, "기본통수" : 2000, "재단비용" : 50000, "통인쇄비" : 120, "인쇄비기본" : 180000, "인쇄기본통수" : 2000, "원단무게" : 0.025  }', '', NULL, NULL) 
     ```
+    
+  * calcData.basicCalcData에 아래의 calcData.basicCalcData 데이터 변경쿼리의 내용들을 적용
+
+    * ![image](https://user-images.githubusercontent.com/40411714/90717242-1c1b5780-e2ea-11ea-9c14-7ca034922f57.png)
 
 * calcData.basicCalcData 데이터 변경 쿼리
 
@@ -353,7 +359,7 @@ history:
 
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01' )
@@ -361,7 +367,7 @@ history:
     WHERE strCategoryCodePath = '06ST01'
     
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
@@ -371,29 +377,29 @@ history:
   
   * ST 02
     
-      ``` sql
-      UPDATE tblGoods 
-      SET  orderType = 'ETYPE'
-      ,    calcDataId = ( SELECT    id 
-                          FROM      CalcData with(nolock) 
-                          WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
-                          AND       [name] = 'Common Sticker ST 02'  ) 
-      WHERE strCategoryCodePath = '06ST02'
-      
-      UPDATE partnerGoods 
-      SET  orderType = 'ETYPE' 
-      ,    calcDataId = ( SELECT    id 
-                          FROM      CalcData with(nolock) 
-                          WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
-                          AND       [name] = 'Common Sticker ST 02' ) 
-     WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06ST02')
-  ```
+    ``` sql
+    UPDATE tblGoods 
+    SET  orderType = 'FTYPE'
+    ,    calcDataId = ( SELECT    id 
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                        AND       [name] = 'Common Sticker ST 02'  ) 
+    WHERE strCategoryCodePath = '06ST02'
+    
+    UPDATE partnerGoods 
+    SET  orderType = 'FTYPE' 
+    ,    calcDataId = ( SELECT    id 
+                        FROM      CalcData with(nolock) 
+                        WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
+                        AND       [name] = 'Common Sticker ST 02' ) 
+    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06ST02')
+    ```
     
   * ST 03
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
@@ -401,7 +407,7 @@ history:
     WHERE strCategoryCodePath = '06ST03'
     
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
@@ -413,15 +419,15 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
                         AND       [name] = 'Common Sticker ST 04' ) 
     WHERE strCategoryCodePath = '06ST04'
-    
+
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
@@ -433,15 +439,15 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
                         AND       [name] = 'Common Sticker ST 05' ) 
     WHERE strCategoryCodePath = '06ST05'
-    
+
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
@@ -453,15 +459,15 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
                         AND       [name] = 'Common Sticker ST 06' )
     WHERE strCategoryCodePath = '06ST06'
-    
+
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
@@ -473,15 +479,15 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
                         AND       [name] = 'Common Sticker ST 07' ) 
     WHERE strCategoryCodePath = '06ST07'
-    
+
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_ST_01')
@@ -493,15 +499,15 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
                         AND       [name] = 'Common Sticker SS 01' ) 
     WHERE strCategoryCodePath = '06SS01'
-    
+
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
@@ -513,15 +519,15 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
                         AND       [name] = 'Common Sticker SS 02' ) 
     WHERE strCategoryCodePath = '06SS02'
-    
+
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
@@ -533,7 +539,7 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
@@ -541,7 +547,7 @@ history:
     WHERE strCategoryCodePath = '06SS03'
     
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
@@ -553,7 +559,7 @@ history:
   
     ``` sql
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
@@ -561,7 +567,7 @@ history:
     WHERE strCategoryCodePath = '06SS04'
     
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
@@ -573,7 +579,7 @@ history:
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
@@ -581,7 +587,7 @@ history:
     WHERE strCategoryCodePath = '06SS05'
     
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
@@ -593,7 +599,7 @@ history:
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
@@ -601,7 +607,7 @@ history:
     WHERE strCategoryCodePath = '06SS06'
     
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
@@ -613,7 +619,7 @@ history:
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
@@ -621,7 +627,7 @@ history:
     WHERE strCategoryCodePath = '06SS07'
     
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SS_01')
@@ -633,45 +639,45 @@ history:
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SB_01' ) ) 
-    WHERE strCategoryCodePath = '06SB01' AND orderType = 'DTYPE'
+    WHERE strCategoryCodePath = '06SB01' AND orderType = 'ETYPE'
     
   
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SB_01' ) )  
-    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06SB01' AND orderType = 'ETYPE')
+    WHERE id = (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath = '06SB01' AND orderType = 'FTYPE')
     ```
   
   * SE 01
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SE_01' ) ) 
-    WHERE strCategoryCodePath IN ('06SE01', '06SE02') AND orderType = 'DTYPE'
+    WHERE strCategoryCodePath IN ('06SE01', '06SE02') AND orderType = 'ETYPE'
     
   
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_SE_01' ) )  
-    WHERE id IN (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath IN ('06SE01', '06SE02') AND orderType = 'ETYPE')
+    WHERE id IN (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath IN ('06SE01', '06SE02') AND orderType = 'FTYPE')
     ```
   
   * PD 01
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_01' ) ) 
@@ -679,18 +685,18 @@ history:
     
   
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_01' ) )  
-    WHERE id IN (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath IN ('06PD01', '06PD02', '06PD03', '06PD04', '06PD05', '06PD09', '06PD10', '06PD11', '06PD12', '06PD13', '06PD14') AND orderType = 'ETYPE')
+    WHERE id IN (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath IN ('06PD01', '06PD02', '06PD03', '06PD04', '06PD05', '06PD09', '06PD10', '06PD11', '06PD12', '06PD13', '06PD14') AND orderType = 'FTYPE')
     ```
   
   * PD 02
   
     ``` SQL
     UPDATE tblGoods 
-    SET  orderType = 'ETYPE'
+    SET  orderType = 'FTYPE'
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_02' ) ) 
@@ -698,11 +704,11 @@ history:
     
     
     UPDATE partnerGoods 
-    SET  orderType = 'ETYPE' 
+    SET  orderType = 'FTYPE' 
     ,    calcDataId = ( SELECT    id 
                         FROM      CalcData with(nolock) 
                         WHERE     calcInfoId = (SELECT id FROM CalcInfo with(nolock) WHERE [code] = 'TQ_STICKER_PD_02' ) )  
-    WHERE id IN (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath IN ('06PD06', '06PD07', '06PD08') AND orderType = 'ETYPE')
+    WHERE id IN (SELECT partnerGoodsId FROM tblGoods with(nolock) WHERE strCategoryCodePath IN ('06PD06', '06PD07', '06PD08') AND orderType = 'FTYPE')
     ```
 
 ---
@@ -711,6 +717,21 @@ history:
 
 * 국가별 계산식 클래스 소스를 추가하면 안됨. (이후 해당 소스들은 지울 예정)
   * ![그림_5_1_1](https://user-images.githubusercontent.com/40411714/87893422-c9484900-ca7a-11ea-998a-239b72b82f63.PNG)
+  
+  * 아래 select를 실행하여 FTYPE이 존재하는지 확인
+  
+    * ``` sql
+      select a.*,b.strCodeTypeEng from tblCode a 
+      inner join tblCodeType b on a.intCodeTypeNum = b.intCodeTypeNum 
+      WHERE b.strCodeTypeEng = 'orderType' AND a.strState='REG'
+      ```
+  
+  * FTYPE이 존재하지 않으면 아래를 실행하여 추가
+  
+    * ``` sql
+      INSERT INTO tblCode ( intCodeTypeNum, strCodeNameEng, strCodeName, strCodeNameJP, strState, strCodeNameCN)
+      VALUES (25, 'FTYPE', N'계산식(수량선택)', 'FTYPE', 'REG', 'FTYPE')
+      ```
   
   * calcInfo 데이터 추가
   

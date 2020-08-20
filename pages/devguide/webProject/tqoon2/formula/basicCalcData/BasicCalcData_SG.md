@@ -2003,7 +2003,7 @@ tags: [개발가이드, BasicCalcData ]
             , {"bandage" : "L1", "coating" : "NOLAMINATION", "shape" : "THOMSON_DCUT" , "color" : "F4B1"  , "cmRate" : [{ "sellUnit" : 100, "rate" : "3.576"}, { "sellUnit" : 200, "rate" : "1.89" }, { "sellUnit" : 300, "rate" : "1.328" }, { "sellUnit" : 400, "rate" : "1.048" }, { "sellUnit" : 500, "rate" : "0.878"}, { "sellUnit" : 1000, "rate" : "0.55" }]}
         ]
     }
-```
+    ```
     
 * SG SS05
     ``` json
@@ -2812,7 +2812,7 @@ tags: [개발가이드, BasicCalcData ]
             , { "key": "MATTE",         "value" : 0.15 }
         ]
     }
-```
+    ```
     
 * SG PD2
     ``` json
