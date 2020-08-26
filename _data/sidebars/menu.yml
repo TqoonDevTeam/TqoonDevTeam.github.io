@@ -106,6 +106,8 @@
         url: "/pages/devguide/webProject/tqoon2/linkTree.html"
       - title: "Static Info"
         url: "/pages/devguide/webProject/tqoon2/staticInfo.html"
+      - title: "2.0 페이징 처리"
+        url: "/pages/devguide/webProject/tqoon2/paging.html"
       - title: "부가기능"
         items:
           - title: "GoodsOptionDependency사용법"
