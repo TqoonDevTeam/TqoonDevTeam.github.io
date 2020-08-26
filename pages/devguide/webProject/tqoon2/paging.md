@@ -47,7 +47,7 @@ PagingInfo 객체에는 현재 페이지 수 Page와 페이지 당 리스트 수
     }
 ```
 ###  PagingListQuery<T>
- * ListQuery의 경우 정렬 필수 (ORDER BY절) 
+ * ListQuery의 경우 정렬 필수 (ORDER BY 정확한 컬럼명 기재) 
 
 ```c#
  public PagingListResult<UserItem> GetUser(PagingInfo pagingInfo)
@@ -55,7 +55,7 @@ PagingInfo 객체에는 현재 페이지 수 Page와 페이지 당 리스트 수
       return Query(new PagingListQuery<UserItem>
        {
           ListQuery = $@
-              "SELECT * FROM tblUser with(nolock) ORDER BY 1 DES",
+              "SELECT * FROM tblUser with(nolock) ORDER BY intUserNum DES",
           CountQuery = $@
              "SELECT COUNT(*) FROM tblUser with(nolock)",
           PagingInfo = pagingInfo
