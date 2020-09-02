@@ -55,7 +55,7 @@ PagingInfo 객체에는 현재 페이지 수 Page와 페이지 당 리스트 수
       return Query(new PagingListQuery<UserItem>
        {
           ListQuery = $@
-              "SELECT * FROM tblUser with(nolock) ORDER BY intUserNum DES",
+              "SELECT * FROM tblUser with(nolock) ORDER BY intUserNum DESC",
           CountQuery = $@
              "SELECT COUNT(*) FROM tblUser with(nolock)",
           PagingInfo = pagingInfo
