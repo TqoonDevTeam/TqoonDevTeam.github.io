@@ -56,3 +56,6 @@ public JsonResult GetList(PagingParam pagingParam)
     return Json(result);
 }
 ```
+
+---
+백앤드 관련 페이징 처리는 <https://tqoondevteam.github.io/pages/pages/devguide/webProject/tqoon2/paging.html> 기술되어 있습니다.

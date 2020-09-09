@@ -21,6 +21,10 @@
   fa : "fa-send"
   url: "/pages/devguide/gettingStarted.html"
 
+- title: "개발환경"
+  fa : "fa-refresh"
+  url : "/pages/devguide/devEnvBuild.html"
+
 - title: "Coding Convention"
   fa : "fa-indent"
   items:
@@ -102,6 +106,8 @@
         url: "/pages/devguide/webProject/tqoon2/linkTree.html"
       - title: "Static Info"
         url: "/pages/devguide/webProject/tqoon2/staticInfo.html"
+      - title: "2.0 페이징 처리"
+        url: "/pages/devguide/webProject/tqoon2/paging.html"
       - title: "부가기능"
         items:
           - title: "GoodsOptionDependency사용법"
@@ -132,6 +138,8 @@
             url: "/pages/devguide/webProject/tqoon2/formula/aftermake/AMCalc_Sub_3_HOLE.html"
           - title: "후가공_AMCalc_Sub_3_HOLE_New2"
             url: "/pages/devguide/webProject/tqoon2/formula/aftermake/AMCalc_Sub_3_HOLE_New2.html"
+          - title: "후가공_AMCalc_Main_New4"
+            url: "/pages/devguide/webProject/tqoon2/formula/aftermake/AMCalc_Main_New4.html"
         - title: "범용 스티커 계산식"
           url: "/pages/devguide/webProject/tqoon2/formula/universalCalculationFormula.html"
     

@@ -52,6 +52,17 @@ Configuration file: C:/Dev/Tqoon/tqoondevteam.github.io/_config.yml
 
 ```
 
+ 오류 발생할 경우 bundle install --system 설치
+
+```cmd
+ C:\Dev\tqoondevteam.github.io>bundle exec jekyll serve
+     Could not find rexml-3.2.4 in any of the sources
+     Run `bundle install` to install missing gems.
+```
+```cmd
+ C:\Dev\tqoondevteam.github.io>bundle install --system
+```
+
 ## 페이지 접속
 
 <http://localhost:4000> 에서 확인
