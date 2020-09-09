@@ -142,7 +142,10 @@
             url: "/pages/devguide/webProject/tqoon2/formula/aftermake/AMCalc_Main_New4.html"
         - title: "범용 스티커 계산식"
           url: "/pages/devguide/webProject/tqoon2/formula/universalCalculationFormula.html"
-    
+      - title: "PG"
+        items:
+          - title: "PG관련 테이블"
+            url: "/pages/devguide/webProject/tqoon2/PG/PGTable.html"
     - title: "Partner"
       items:
         - title: "구조"
