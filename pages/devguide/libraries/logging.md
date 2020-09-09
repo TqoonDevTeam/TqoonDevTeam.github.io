@@ -24,9 +24,11 @@ history:
 
   ![image](https://user-images.githubusercontent.com/40411714/92543649-f816ba80-f286-11ea-9708-ed127f9d4680.png)
 
-* 각 프로젝트의 log4net 설정은 프로젝트 시작시 실행되는 Application_Start() 메소드의 위치해 있습니다.
+* Tqlogger를 사용하기전에 각 프로젝트 시작전에 아래 예제와 같이 Log4net 설정을 해주어야 합니다.
 
-  ![log4net](https://user-images.githubusercontent.com/40411714/92543683-18df1000-f287-11ea-8e5f-f59c68b20184.png)
+  ``` c#
+  log4net.Config.XmlConfigurator.ConfigureAndWatch(new FileInfo(Server.MapPath("~/App_Config/Provider/log4net.xml")));
+  ```
 
 ---
 
