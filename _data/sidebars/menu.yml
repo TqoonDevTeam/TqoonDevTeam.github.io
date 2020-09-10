@@ -65,6 +65,8 @@
       url: "/pages/devguide/libraries/exceptions.html"
     - title: "Transaction"
       url: "/pages/devguide/libraries/transaction.html"
+    - title: "로깅가이드"
+      url: "/pages/devguide/libraries/logging.html"
     - title: "공통기능"
       items: 
         - title: "TCon"
