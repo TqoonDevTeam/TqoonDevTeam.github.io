@@ -40,8 +40,8 @@ history:
        * ex ) 
 
          ~~~ mssql
-         insert into GoodsOptionDependencyRule values (355,54,N'GoodsAddedOption',N'MATERIAL_PEGAMENTO',N'GoodsAddedOption',N'LAMINATION',N'["MT"]','false',99,1,'REG',GETDATE());
-         insert into GoodsOptionDependencyRule values (355,54,N'GoodsAddedOption',N'MATERIAL_PEGAMENTO',N'GoodsAddedOption',N'LAMINATION',N'["NG","BR"]','true',99,2,'REG',GETDATE());
+         insert into GoodsOptionDependencyRule values (54,1,N'GoodsAddedOption',N'MATERIAL_PEGAMENTO',N'["PB80_RM"]',2,'GoodsAddedOption',N'LAMINATION','["NG","BR"]','true',99,2,'REG',GETDATE());
+         insert into GoodsOptionDependencyRule values (54,1,N'GoodsAddedOption',N'MATERIAL_PEGAMENTO',N'["PB80_RM"]',2,'GoodsAddedOption',N'LAMINATION','["MT"]','false',99,1,'REG',GETDATE());
          ~~~
 
        * MATERIAL_PEGAMENTO 옵션 그룹에 **PB80_RM**옵션 선택시 LAMINATION 그룹에 **NG, BR** 옵션을 숨기는 룰
