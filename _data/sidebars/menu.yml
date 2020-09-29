@@ -44,7 +44,8 @@
       url: "/pages/devguide/database/commonFunction.html"
     - title: "배포"
       url: "/pages/devguide/database/deploy.html"
-
+    - title: "DB접속가이드"
+      url: "/pages/devguide/database/dbConnection.html"
 - title: "Libraries"
   fa: "fa-book"
   url: "test"
