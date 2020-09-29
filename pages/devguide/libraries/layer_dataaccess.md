@@ -8,22 +8,22 @@ history:
     user: '최동호'
     desc: '초안'
 ---
-# 4. DataAccess 계층
+# DataAccess 계층
 
-## 4.1. 소개
+## 소개
 이 문서는 백엔드 개발 중 DataAccess 계층 개발에 대한 설명을 담고 있습니다.
 
-## 4.2. DataAccess 계층 설명
+## DataAccess 계층 설명
 DataAccess 계층은 백엔드 개발 중 Database를 핸들링을 하기 위한 계층입니다.
 이 계층은 Database에 접근할 수 있는 최상위 계층이자 마지막 계층입니다.
 이 계층에서는 여러 DAO 객체를 생성하여 Database에 접근하며 테이블 뿐만 아니라 뷰, 프로시져 또는 특정목적의 접근방식의 필요로 모듈화 하여 구현할 수 있습니다.
 
-### 4.2.1. DataAccess 계층 구성
+### DataAccess 계층 구성
 DataAccess 계층은 DAO(Data Access Object)객체와 DTO(Data Transfer Object)객체로 이루어져 있습니다.
 DataAccess 계층 개발은 데이터 처리적 측면의 핵심관심사항이 파편화 되지 않고 모듈화 되도록 주의하며 관리 해야 합니다.
 관리 방법은 모두 디렉토리 및 네임스페이스의 패턴화된 구조로 관리하고 있습니다.
 
-#### 4.2.1.1. 네임스페이스 구조
+#### 네임스페이스 구조
 서비스의 객체들은 아래의 네임스페이스 구조 아래 생성됩니다.
 
 ```cs
@@ -37,7 +37,7 @@ namespace app.info.MyDaoName.Dao.Model {}
 | info.MyDaoName.Dao | `MyDaoName`가 의미하는 데이터 처리적 측면의 DAO(Data Access Object)객체가 위치 합니다. |
 | info.MyDaoName.Dao.Model | 테이블 또는 뷰에서 조회하는 데이터와 매칭되는 DTO(Data Transfer Object) 객체 또는 특수한 엔티티 객체가 위치 하는 곳 입니다. |
 
-#### 4.2.1.2. 디렉토리 구조
+#### 디렉토리 구조
 DataAccess 계층에서 필요한 DAO객체와, DTO객체가 위치해야 하는 규칙입니다.
 보통 아래의 모습처럼 디렉토리를 생성합니다.
 
@@ -49,17 +49,17 @@ DataAccess 계층에서 필요한 DAO객체와, DTO객체가 위치해야 하는
         └──📁Model /* Dao 객체가 사용하는 엔티티객체 또는 모델객체가 위치 */
 ```
 
-## 4.3. DataAccess 계층 생성
+## DataAccess 계층 생성
 DAO(Data Access Object)객체와 DTO(Data Transfer Object)객체로 구성됩니다.
 이 중 DAO객체는 ADO.NET 기술을 사용하며 이를 지원하는 Spring.NET의 템플릿 기반의 DAO작성 패턴을 따릅니다.
 티쿤은 자체개발한 Spring.NET의 AdoDaoSupport로 부터 파생된 ObjectDao 지원객체를 이용하여 일반화된 기능이 추가된 DAO객체를 만듭니다.
 ObjectDao를 사용함으로써 티쿤의 DAO객체는 대부분 Generic 기술(Spring.Data.Generic)을 사용하며, 때문에 DTO객체가 항상 함께 구성될 필요가 있습니다.
 
-### 4.3.1 DTO (엔티티, 모델) 객체 생성
+### DTO (엔티티, 모델) 객체 생성
 티쿤의 DAO는 Spring.NET의 Spring.Data.Generic 네임스페이스에 포함된 기술을 사용합니다. 때문에 이 기술의 Generic 객체로 사용할 DTO 객체는 항상 필요합니다.
 DTO 객체는 조회 전용의 리터럴한 모델 객체로 사용하거나, Database의 테이블과 매칭되는 엔티티 객체를 통해 제공되는 일반화된 CRUD 기능을 시도할 수 있습니다.
 
-#### 4.3.1.1. 엔티티 객체 생성 (~DbItem)
+#### 엔티티 객체 생성 (~DbItem)
 엔티티 객체는 Database의 테이블과 매칭됩니다.
 이 객체는 테이블이름을 유추할 수 있는 이름과 함께 접미어 **DbItem**를 사용하여 명명되거나, 또는 기능적 측면의 이름을 사용한다면 **TableInfo**특성을 사용하여 Database의 Table을 유추할 수 있도록 해야합니다.
 제공되는 특별한 특성과 함께 DAO객체에서 사용하면 Table의 입력, 수정, 삭제, 조회를 쉽게 작성할 수 있습니다.
@@ -86,7 +86,7 @@ public class SimpleUserInfoDbItem
 | `TableInfo(string tableName)` | 테이블명을 가르키는 정보가 들어있는 특성입니다.<br>클래스명이 접미어 `DbItem`을 사용하고 있다면, 이 특성을 선언하지 않아도 됩니다.<br>`tableName`을 전달하지 않으면, 클래스명으로 부터 유추 합니다.
 | `IdColumn` | 엔티티객체의 속성 중, 자동증가되는 Identity임을 명시하는 특성입니다.<br>이 특성이 선언되면 입력, 수정 시 해당 속성에 접근하지 않도록 처리됩니다.  |
 
-#### 4.3.1.2. Model 객체 생성
+#### Model 객체 생성
 모델 객체는 View나 Join된 데이터를 가져올 때, 리터럴하게 사용되는 객체 입니다.
 또는 특별하게 입력, 수정, 삭제가 필요할 경우에도 목적에 맞는 객체로써 생성될 수 있습니다.
 또한, 조회조건이 되는 파라메터 객체가 될 수도 있습니다.
@@ -112,7 +112,7 @@ public class SimpleUserSearchParam
 }
 ```
 
-#### 4.3.1.3. DTO 접미어 규칙
+#### DTO 접미어 규칙
 Model과 엔티티 객체는 사용방법에 따라 접미어 규칙을 가지고 있습니다.
 이 규칙들은 프로그램에 의해 특별하게 제어되지는 않지만, 객체의 사용용도에 따라 약속된 명명 규칙입니다.
 
@@ -125,7 +125,7 @@ Model과 엔티티 객체는 사용방법에 따라 접미어 규칙을 가지�
 | `Param` | 파라메터 | 특별한 입력, 수정, 삭제, 조회에 필요한 파라메터 묶음 객체 입니다. 메시징 기반의 많은 파라메터가 필요한 경우 이 객체를 사용합니다. |
 | `VO` | 모델 | 조회결과 만을 표현하기 위한 읽기전용 객체 입니다. 이 객체로 입력, 수정, 삭제의 기능을 수행해서는 안됩니다.<br>알려진 VO의 의미및 용도와는 조금 다르지만 조회영역에서 리터럴하게 사용한다는 것에 공통점을 두고 있습니다. |
 
-### 4.3.1.4. DTO 객체에서 사용하는 특성들
+### DTO 객체에서 사용하는 특성들
 아래는 DTO객체 생성시 사용되는 특성에 관한 설명입니다.
 이들 특성으로 **ObjectDao**지원객체에서 테이블명과 컬럼명 매핑방식 등의 힌트를 얻고 동작하게 됩니다.
 
@@ -159,7 +159,7 @@ public class MyTableDbItem
 | `JsonParsing` | Property | 속성을 Json String으로 변환하여 전달 합니다. 또 반대로 Json String을 객체로 변환하여 속성에 할당합니다. |
 | `NameChanged` | Property | 속성의 명칭과 컬럼의 명칭이 다를 때, 실제 컬럼명과 매칭을 위해 사용합니다.<br>`[NameChanged(string ChangedName)]]` - 특성에 값을 선언하면 해당 속성은 자동 생성 쿼리에서 변경된 이름으로 동작합니다.<br>엔티티 객체는 가능한한 컬럼명과 일치 시키십시오. |
 
-### 4.3.2. DAO (Data Access Object) 객체 생성
+### DAO (Data Access Object) 객체 생성
 DAO객체는 기본적으로 ADO.NET 기술을 사용하며 Spring.NET의 AdoDaoSupport 지원객체로 부터 파생된 **ObjectDao** 객체를 상속받음으로 써 생성합니다.
 보통 DTO 객체를 통하여 단일 인스턴스 템플릿기반의 DAO를 생성합니다만, 필요한 경우 Generic 형태가 아닌 비템플릿 기반의 DAO또한 생성할 수 있습니다.
 단일 인스턴스 템플릿과의 차이를 두기위해 **ObjectDao**는 ObjectDao&lt;ModelClass&gt;와 ObjectDao로 존재 합니다.
@@ -196,7 +196,7 @@ public class SimpleUserInfoDao2 : ObjectDao, ISimpleUserInfoDao2
 }
 ```
 
-#### 4.3.2.1. ObjectDao의 기본제공 기능
+#### ObjectDao의 기본제공 기능
 티쿤의 **ObjectDao** 지원객체는 Spring.NET의 AdoDaoSupport로 부터 파생되었습니다.
 때문에 **ObjectDao**를 상속받는 모든 DAO들은 AdoTemplate속성에 접근하여 Spring에서 제공하는 기능을 그대로 사용할 수 있습니다.
 또한 티쿤에서 자체 제공하는 일반화된 편의 기능을 사용할 수 있습니다.
@@ -328,10 +328,50 @@ return Query(new ExecuteQuery
 });
 ```
 
-### 4.3.3. Spring.NET의 AdoQuery, MappingAdoQuery, AdoNonQuery, StoredProcedure
-Spring.NET은 객체로써의 RDBMS 작업을 위해 AdoQuery, MappingAdoQuery, AdoNonQuery, StoredProcedure와 같은 매우 편리한 추상객체를 지원합니다.
-하지만, 티쿤에서는 위의 나열된 지원객체들은 사용하지 않습니다.
+### in 쿼리
+DbParam 을 이용해 in 쿼리 구현이 불가능하기 때문에 특별한 함수를 제공한다.
 
-위의 나열된 지원객체에서 지원하는 기능은 여럿 사용함으로써 다른 패턴이 발생하는 것을 주의하고 있습니다. 때문에, 티쿤에서는 위의 나열된 지원객체들은 사용하지 않습니다.
+```c#
+IEnumerable<int> ids = new int[] { 1, 2, 3 };
+var query = new ListQuery<TestItem>
+{
+    Query = $"SELECT * FROM Table WHERE id in ({ids.ToInQueryParam()}) " //name가 null 이거나 Count == 0 일경우 쿼리 구문 오류
+};
+var result = COD.Query(query);
+```
 
-자체 제공하는 일반화된 기본 제공기능을 사용하십시오.
+```c#
+IEnumerable<string> names = new string[] { "a", "b", "c" };
+var query = new ListQuery<TestItem>
+{
+    Query = $"SELECT * FROM Table WHERE name in ({names.ToInQueryParam()}) " //name가 null 이거나 Count == 0 일경우 쿼리 구문 오류
+};
+var result = COD.Query(query);
+```
+
+
+### bit flag 쿼리
+enum 타입을 bit flag 형식으로 사용하는 경우 사용 편의를 위해 특별한 함수를 제공한다.
+
+```c#
+[Flags]public enum FlagEnum
+{
+    FEV0 = 0, FEV1 = 1, FEV2 = 2, FEV4 = 4, FEV8 = 8, FEV16 = 16
+}
+
+var query = new ListQuery<EnumTestItem>
+{
+    Query = $"SELECT * FROM EnumTest WHERE flagEnum {Q.BitAny("@flagEnum")} ", // flagEnum 에 FEV1 이나 FEV4 둘 중 하나가 있을 경우 true
+    DbParam = new { flagEnum = FlagEnumValue.FEV1 | FlagEnumValue.FEV4 }
+};
+var result = COD.Query(query);
+```
+
+```c#
+var query = new ListQuery<EnumTestItem>
+{
+    Query = $"SELECT * FROM EnumTest WHERE flagEnum {Q.BitAll("@flagEnum")} ", // flagEnum 에 FEV1 와 FEV4 모두 있을 경우 true
+    DbParam = new { flagEnum = FlagEnumValue.FEV1 | FlagEnumValue.FEV4 }
+};
+var result = COD.Query(query);
+```
