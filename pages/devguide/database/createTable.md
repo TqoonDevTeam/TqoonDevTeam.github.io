@@ -36,7 +36,7 @@ CREATE TABLE TableNameIsPascalCase(    -- 테이블명은 PascalCase 를 사용�
 
 | DbType | c# Type | 비고 |
 | --- | --- | --- |
-| int | int |  |
+| int | int, enum |  |
 | float | double/float |  |
 | nvarchar | string |  |
 | bit | bool |  |
