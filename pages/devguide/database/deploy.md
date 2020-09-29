@@ -25,8 +25,8 @@ history:
 ## 배포 쿼리 생성시 주의사항
 요청 SQL 작성시 다음 사항을 주의해 주세요.
 
-1. 배포해야 하는 데이터 베이스명을 정확하게 기제
-2. 개발하면서 미리 적용된 데이터 베이스 기제
+1. 배포해야 하는 데이터 베이스명 (AdprintNewDb,OrderMallDb,JangBoGo 등)을 정확하게 기제
+2. 개발하면서 미리 적용된 향 (개발62 JP, 운영JP 등) 기제
 3. USE, GO 문 제거 - 순차적으로 쿼리를 실행해야 하는 경우 주석 사용
 4. [SqlFormatter](http://www.dpriver.com/pp/sqlformat.htm) 에서 쿼리 포멧팅
 
@@ -35,7 +35,7 @@ history:
 
 1. 배포 쿼리 리뷰
 2. Provider 폴더 업데이트
-3. 배포 프로그램(QueryToProvider)을 이용하여 데이터 베이스 조작
+3. 배포 프로그램(QueryToProvider)을 이용하여 데이터 베이스 조작, __모든 향에 배포__
 4. 오류가 발생한 데이터 베이스는 원인 파악후 재 처리
 
 
