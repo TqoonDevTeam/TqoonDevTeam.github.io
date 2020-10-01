@@ -23,7 +23,11 @@
 
 - title: "개발환경"
   fa : "fa-refresh"
-  url : "/pages/devguide/devEnvBuild.html"
+  items:
+    - title: "개발환경"
+      url: "/pages/devguide/devEnvBuild.html"
+    - title: "Git 환경 설정"  
+      url: "/pages/devguide/gitsetting.html"
 
 - title: "Coding Convention"
   fa : "fa-indent"
