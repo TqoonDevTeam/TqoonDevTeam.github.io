@@ -97,8 +97,7 @@ tags: [개발가이드, 신용결제, 기술 ]
 
 
  * FrexRequest
- - FrexRequset 테이블의 request로 요청값을 확인할 수 있으며, response로 결과값을 확인할 수 있습니다.
-
+ 
 |단계| State |Type|Response|내용
 |RequestRegistService.OrderReg() |STANDBY | ORDER_REG |접수대기
 |RequestTransService.OrderReg()|COMPLETE | ORDER_REG |접수완료
