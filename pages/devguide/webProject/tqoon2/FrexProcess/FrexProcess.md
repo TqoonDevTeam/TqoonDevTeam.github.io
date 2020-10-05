@@ -15,6 +15,12 @@ tags: [개발가이드, 신용결제, 기술 ]
 주문 완료 된 신용 결제 주문은 일정한 시간 간격으로 FrexOrderProcessWoker가 실행되어 신용결제사에 고객이 입력한 정보 토대로 심사를 요청합니다. 
 신용 결제사는 심사 후 결과를 전달하고, 전달 받은 결과로 결제 처리 및 취소를 진행합니다. 
 
+
+
+### 신용 결제 추가
+ 신용 결제는 joiner 테이블에 UseFrex 칼럼으로 결제 사용 유무를 판단합니다 . (사용 안할 경우 0, 사용 할 경우 1)
+ 신용 결제 추가 시 joiner 테이블의 UserFrex를 1로 업데이트 하여야 합니다.
+
 ### 신용 결제 주문단계 
 
 >> 최초 주문 등록 시 TELEGRAM_FREX_REQUEST, SBPAYMENT 주문 상태로 등록이 되며, 신용결제워커를 통해 심사 후 결과를 통해 주문 단계가 업데이트 됩니다.
@@ -91,23 +97,26 @@ tags: [개발가이드, 신용결제, 기술 ]
 
 
  * FrexRequest
+ - FrexRequset 테이블의 request로 요청값을 확인할 수 있으며, response로 결과값을 확인할 수 있습니다.
 
 |단계| State |Type|Response|내용
-|RequestRegistService.OrderReg() |STANDBY | ORDER_REG |접수대기| 신용 결제 접수대기 상태
-|RequestTransService.OrderReg|COMPLETE | ORDER_REG |접수완료| 신용 결제 접수가 완료 
-|RequestRegistService.OrderResult();|STANBY|ORDER_RESULT|접수결과요청|신용 결제 접수 결과 요청
-|RequestTransService.OrderResult();| COEMPLETE|ORDER_RESULT|접수결응답|신용 결제 접수 결과 응답
-|RquestRegistService.UpdateReg();| STANDBY|UPDATE_REG|거래수정요청|주문금액과 다를 때 실행
-|RequestTransService.UpdateReg();|COMPLETE|UPDATE_REG|거래수정완료|신용 결제 수정 완료
-|RequestRegistService.UpdateResult();| STANDBY|UPDATE_RESULT|거래수정결과요청|거래 수정 결과 요청
-|RequestTransService.UpdateResult();| COMPLETE | UPDATE_RESULT|거래수정결과응답|거래 수정 결과 응답
-|RequestRegistService.DeleteReg();|STANDBY|DELETE_REG|거래취소요청|거래취소요청
-|RequestTransService.DeleteReg();|COMPLETE|DELETE_REG|거래취소완료|거래취소완료
-|RequestRegistService.DeleteResult();|STNADBY|DELETE_RESULT|거래취소결과요청|거래취소결과요청
-|RequestTransService.DeleteResult();|COMPLETE|DELETE_RESULT|거래취소결과응답|거래취소결과응답
-|RequestRegistService.AuthorizeResult();|STANDBY|AUTHORIZE_RESULT|심사요청|심사요청
-|RequestTransService.AuthorizeResult();|COMPLETE|AUTHORIZE_RESULT|심사완료|심사완료
-|RequestRegistService.BillingReg();|STNADBY|BILLING_REG|청구대상요청|청구대상요청
-|RequestTransService.BillingReg();|COMPLETE|BILLING_REG|청구완료|청구완료
-|RequestRegistService.BillingResult();|STANDBY|BILLING_RESULT|청구결과요청|청구결과요청
-|RequestTransService.BillingResult();|COMPLETE|BILLING_RESULT|청구결과응답|청구결과응답
+|RequestRegistService.OrderReg() |STANDBY | ORDER_REG |접수대기
+|RequestTransService.OrderReg()|COMPLETE | ORDER_REG |접수완료
+|RequestRegistService.OrderResult();|STANBY|ORDER_RESULT|접수결과요청
+|RequestTransService.OrderResult();| COEMPLETE|ORDER_RESULT|접수결응답
+|RquestRegistService.UpdateReg();| STANDBY|UPDATE_REG|거래수정요청
+|RequestTransService.UpdateReg();|COMPLETE|UPDATE_REG|거래수정완료
+|RequestRegistService.UpdateResult();| STANDBY|UPDATE_RESULT|거래수정결과요청
+|RequestTransService.UpdateResult();| COMPLETE | UPDATE_RESULT|거래수정결과응답
+|RequestRegistService.DeleteReg();|STANDBY|DELETE_REG|거래취소요청
+|RequestTransService.DeleteReg();|COMPLETE|DELETE_REG|거래취소완료
+|RequestRegistService.DeleteResult();|STNADBY|DELETE_RESULT|거래취소결과요청
+|RequestTransService.DeleteResult();|COMPLETE|DELETE_RESULT|거래취소결과응답
+|RequestRegistService.AuthorizeResult();|STANDBY|AUTHORIZE_RESULT|심사요청
+|RequestTransService.AuthorizeResult();|COMPLETE|AUTHORIZE_RESULT|심사완료
+|RequestRegistService.BillingReg();|STNADBY|BILLING_REG|청구대상요청
+|RequestTransService.BillingReg();|COMPLETE|BILLING_REG|청구완료
+|RequestRegistService.BillingResult();|STANDBY|BILLING_RESULT|청구결과요청
+|RequestTransService.BillingResult();|COMPLETE|BILLING_RESULT|청구결과응답
+
+
