@@ -151,6 +151,12 @@
             url: "/pages/devguide/webProject/tqoon2/PG/PGTable.html"
           - title: "PG관련 클래스"
             url: "/pages/devguide/webProject/tqoon2/PG/PGClass.html"
+      - title: "신용결제"
+        items:
+          - title: "신용결제관련 테이블"
+            url: "/pages/devguide/webProject/tqoon2/FrexProcess/FrexTable.html"
+          - title: "신용결제 프로세스"
+            url: "/pages/devguide/webProject/tqoon2/FrexProcess/FrexProcess.html"
     - title: "Partner"
       items:
         - title: "구조"
