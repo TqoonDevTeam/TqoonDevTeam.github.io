@@ -101,6 +101,17 @@ public class MyStoreService : IMyStoreService
 티쿤의 DAO는 모두 AdoTemplate 속성이 주입되어야 하며, AdoTemplateName 규칙상 특성이 선언되어야 합니다.
 하지만, 개발 편의를 위해 DAO는 AdoTemplateName특성을 선언하지 않더라도 `[AdoTemplateName("AdoTemplate")]`이 선언된것과 동일하게 동작합니다.
 
+* AdoTemplateName Parameter
+
+  * AdoTemplateName에 넘기는 파라미터는 사용할 DB AdoTemplate의  Id를 명시해주면 됩니다.
+
+  * AdoTemplate의 Id는 AppContext.xml에 명시되어 있습니다.
+
+    * C:\Dev\Provider\사용DB폴더\AppContext.xml
+
+      ![image](https://user-images.githubusercontent.com/40411714/96962353-90b87f80-1541-11eb-9fe3-4eea4c49e0dd.png)
+
+
 #### AdoTemplateChange(string before, string after)
 티쿤에서는 법인에 따라 완전 동일한 Table 구조를 갖는 다른 법인용 Database를 가지고 있습니다.
 때문에, 두 곳 이상의 Database를 같은 특정 서비스 객체에서 처리하고자 할 때, 특정 위치로 부터 주입되는 DAO객체들은 모두 AdoTemplateName 특성을 달리 가질필요가 있습니다.
