@@ -98,7 +98,7 @@ tags: [개발가이드, 신용결제, 기술 ]
 
  * FrexRequest
  
-|단계| State |Type|Response|내용
+|단계| State |Type|Response
 |RequestRegistService.OrderReg() |STANDBY | ORDER_REG |접수대기
 |RequestTransService.OrderReg()|COMPLETE | ORDER_REG |접수완료
 |RequestRegistService.OrderResult();|STANBY|ORDER_RESULT|접수결과요청
