@@ -11,7 +11,7 @@ tags: [IIS, VS, VisualStudio, 디버깅 ]
 
 ## 로컬 IIS 세팅
 각 프로젝트별 환경 설정은 다음 문서를 참고 바랍니다.
-[프로젝트별 설정](/devGuide/devEnv/projectEvn.html)
+[프로젝트별 설정](/pages/devGuide/devEnv/projectEvn.html)
 
 
 ## Visual Studio 관리자 권한 실행
