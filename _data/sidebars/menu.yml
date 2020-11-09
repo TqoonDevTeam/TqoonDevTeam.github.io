@@ -20,14 +20,30 @@
 - title: "프로젝트"
   fa : "fa-send"
   url: "/pages/devguide/gettingStarted.html"
+  items:
+    - title: "구성"
+      url: "/pages/devguide/project/gettingStarted.html"
+    - title: "Adrpint"
+    - title: "Admin2"
+    - title: "Makumaku"
+    - title: "Tqoon 1.0"
+    - title: "Tqoon 2.0"
+    - title: "Partner"
+    - title: "API"
+    - title: "APILog"
+      
 
 - title: "개발환경"
   fa : "fa-refresh"
   items:
     - title: "개발환경"
-      url: "/pages/devguide/devEnvBuild.html"
+      url: "/pages/devguide/devEnv/devEnvBuild.html"
+    - title: "로컬 IIS 디버깅"
+      url: "/pages/devguide/devEnv/localIISDebugging.html"
+    - title: "프로젝트별 설정"
+      url: "/pages/devguide/devEnv/projectEnv.html"
     - title: "Git 환경 설정"  
-      url: "/pages/devguide/gitsetting.html"
+      url: "/pages/devguide/devEnv/gitsetting.html"
 
 - title: "Coding Convention"
   fa : "fa-indent"
