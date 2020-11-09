@@ -9,7 +9,7 @@ tags: [개발가이드, 신용결제, 기술 ]
 신용 결제 서비스는 전문 대행 업체를 통해 기업 간 결제 서비스인 FREX B2B 후불 결제 서비스를 이용합니다.
 후불 결제 심사는 FrexOrderProcessWoker 워커로 동작하며 전문 대행 업체(NP사)에 심사 요청, 처리를 진행합니다.
 
-![flow](./img/Frex1.png)
+![flow](./img/Frex1.jpg)
 
 고객이 주문페이지에서 신용 결제에  필요한 추가 정보를 입력 받아 주문을 완료합니다.
 주문 완료 된 신용 결제 주문은 일정한 시간 간격으로 FrexOrderProcessWoker가 실행되어 신용결제사에 고객이 입력한 정보 토대로 심사를 요청합니다. 
@@ -98,7 +98,7 @@ tags: [개발가이드, 신용결제, 기술 ]
 
  * FrexRequest
  
-|단계| State |Type|Response|내용
+|단계| State |Type|Response
 |RequestRegistService.OrderReg() |STANDBY | ORDER_REG |접수대기
 |RequestTransService.OrderReg()|COMPLETE | ORDER_REG |접수완료
 |RequestRegistService.OrderResult();|STANBY|ORDER_RESULT|접수결과요청
