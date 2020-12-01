@@ -23,7 +23,8 @@
   items:
     - title: "구성"
       url: "/pages/devguide/project/gettingStarted.html"
-    - title: "Adrpint"
+    - title: "Adprint"
+      url: "/pages/devguide/project/adprintGuide.html"
     - title: "Admin2"
       url: "/pages/devguide/project/admin2Guide.html"
     - title: "Makumaku"
