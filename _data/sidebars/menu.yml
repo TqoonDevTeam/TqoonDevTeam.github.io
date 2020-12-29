@@ -167,18 +167,6 @@
             url: "/pages/devguide/webProject/tqoon2/formula/aftermake/AMCalc_Main_New4.html"
         - title: "범용 스티커 계산식"
           url: "/pages/devguide/webProject/tqoon2/formula/universalCalculationFormula.html"
-      - title: "PG"
-        items:
-          - title: "PG관련 테이블"
-            url: "/pages/devguide/webProject/tqoon2/PG/PGTable.html"
-          - title: "PG관련 클래스"
-            url: "/pages/devguide/webProject/tqoon2/PG/PGClass.html"
-      - title: "신용결제"
-        items:
-          - title: "신용결제관련 테이블"
-            url: "/pages/devguide/webProject/tqoon2/FrexProcess/FrexTable.html"
-          - title: "신용결제 프로세스"
-            url: "/pages/devguide/webProject/tqoon2/FrexProcess/FrexProcess.html"
     - title: "Partner"
       items:
         - title: "구조"
@@ -206,7 +194,29 @@
       url: "/pages/devguide/tdd/backend.html"
     - title: "Frontend Test"
       url: "/pages/devguide/tdd/frontend.html"
-      
+- title: "결제"
+  fa: "fa-money"
+  items:
+    - title: "PG"
+      items:
+      - title: "티쿤 PG 개요"
+        url: "/pages/devguide/payment/pg/gettingStart.html"
+      - title: "신규 PG 개발"
+        url: "/pages/devguide/payment/pg/pgDev.html"
+      - title: "PGBridge"
+        url: "/pages/devguide/payment/pg/pgb.html"
+      - title: "PG관련 테이블"
+        url: "/pages/devguide/payment/pg/PGTable.html"
+      - title: "PG관련 클래스"
+        url: "/pages/devguide/payment/pg/PGClass.html"
+
+    - title: "신용결제"
+      items:
+      - title: "신용결제관련 테이블"
+        url: "/pages/devguide/payment/FrexProcess/FrexTable.html"
+      - title: "신용결제 프로세스"
+        url: "/pages/devguide/payment/FrexProcess/FrexProcess.html"
+  
 # - title: "테스트환경설정`"
 #   fa: "fa-check"
 #   url: "empty"
