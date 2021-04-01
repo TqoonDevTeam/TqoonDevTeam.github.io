@@ -179,6 +179,8 @@
             url: /pages/devguide/webProject/partner/common/pagination.html
           - title: "CurrentSite"
             url: "/pages/devguide/webProject/partner/common/currentSite.html"
+          - title: "언어처리"
+            url: /pages/devguide/webProject/partner/common/language.html
 - title: "CI/CD"
   fa: "fa-refresh"          
   items:
