@@ -22,7 +22,13 @@ INSERT INTO PGCommission(payType, rate, writeDate, pgId, pgType, AllowPartialCan
 ```sql
 INSERT INTO jangbogo.dbo.JoinerPGCommission (joinerId, pgCommissionId, [KEY], [state]) values (15, 3, '', 'REG')
 ```
+### 엑심베이 카드결제 연동 예시
 
+```sql
+update joiner set pgType ='EXIMBAY' where id =540; 
+INSERT INTO jangbogo.dbo.JoinerPGCommission (joinerId, pgCommissionId, [KEY], [state]) values (540, 11, '{"mid":"","secretKey": ""}', 'REG')
+```
+PG 테이블과 PGCommission 테이블도 추가를 해야하지만 이미 추가가 되어있다면 위에 쿼리 처럼 Jangbogo DB의 joinerPGCommission과 joiner 테이블에 정보 추가 및 수정을 하면 된다.
 
 ## Lib 작업
 Lib 내용은 BGP 개선 하면서 제거 해야함
